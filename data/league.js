@@ -1,0 +1,13946 @@
+window.LEAGUE_DATA = {
+  "meta": {
+    "leagueTitle": "Roslyn VFW American Darts",
+    "sheetTitle": "The Dart League at Roslyn VFW - Summer 2026",
+    "season": "Summer 2026",
+    "seasonStatus": "Finals",
+    "scheduleEdition": "EDITION 1.1 - JUNE 06, 2026",
+    "updated": "2026-11-02T14:16:49.683Z",
+    "venueName": "Roslyn VFW Post 3498",
+    "night": "Wednesday",
+    "teamCount": 12,
+    "playerCount": 76,
+    "weekCount": 11
+  },
+  "leagueAverage": {
+    "games": 1482,
+    "points": 25839,
+    "average": 17.43522267206478
+  },
+  "standings": [
+    {
+      "source": "Glazerbeam",
+      "name": "Glazerbeam",
+      "rank": 1,
+      "playoffs": true,
+      "gms": 44,
+      "w": 33,
+      "l": 11,
+      "t": 0,
+      "gb": "",
+      "pf": 2886,
+      "pa": 2484,
+      "pct": 0.75
+    },
+    {
+      "source": "RED GROUPER",
+      "name": "Red Grouper",
+      "rank": 2,
+      "playoffs": true,
+      "gms": 44,
+      "w": 32,
+      "l": 12,
+      "t": 0,
+      "gb": "- 3",
+      "pf": 2929,
+      "pa": 2656,
+      "pct": 0.7272727272727273
+    },
+    {
+      "source": "REDRUM",
+      "name": "Redrum",
+      "rank": 3,
+      "playoffs": true,
+      "gms": 44,
+      "w": 28,
+      "l": 16,
+      "t": 0,
+      "gb": "---",
+      "pf": 2968,
+      "pa": 2763,
+      "pct": 0.6363636363636364
+    },
+    {
+      "source": "Faces",
+      "name": "Faces",
+      "rank": 4,
+      "playoffs": true,
+      "gms": 44,
+      "w": 26,
+      "l": 18,
+      "t": 0,
+      "gb": "",
+      "pf": 2720,
+      "pa": 2709,
+      "pct": 0.5909090909090909
+    },
+    {
+      "source": "DAMAGE, INC.",
+      "name": "Damage, Inc.",
+      "rank": 5,
+      "playoffs": true,
+      "gms": 44,
+      "w": 23,
+      "l": 21,
+      "t": 0,
+      "gb": "",
+      "pf": 2429,
+      "pa": 2226,
+      "pct": 0.5227272727272727
+    },
+    {
+      "source": "OL' DIRTY BASTARDS",
+      "name": "Ol' Dirty Bastards",
+      "rank": 6,
+      "playoffs": true,
+      "gms": 44,
+      "w": 23,
+      "l": 21,
+      "t": 0,
+      "gb": "- 1",
+      "pf": 2585,
+      "pa": 2540,
+      "pct": 0.5227272727272727
+    },
+    {
+      "source": "THE FUCK-UPS",
+      "name": "The Fuck-Ups",
+      "rank": 7,
+      "playoffs": true,
+      "gms": 44,
+      "w": 21,
+      "l": 23,
+      "t": 0,
+      "gb": "---",
+      "pf": 2429,
+      "pa": 2455,
+      "pct": 0.4772727272727273
+    },
+    {
+      "source": "FUBAR",
+      "name": "FUBAR",
+      "rank": 8,
+      "playoffs": true,
+      "gms": 44,
+      "w": 21,
+      "l": 23,
+      "t": 0,
+      "gb": "- 3",
+      "pf": 2382,
+      "pa": 2487,
+      "pct": 0.4772727272727273
+    },
+    {
+      "source": "BAD COMPANY",
+      "name": "Bad Company",
+      "rank": 9,
+      "playoffs": false,
+      "gms": 44,
+      "w": 18,
+      "l": 26,
+      "t": 0,
+      "gb": "- 3",
+      "pf": 2616,
+      "pa": 2529,
+      "pct": 0.4090909090909091
+    },
+    {
+      "source": "ALL OUT OF ROSLYN",
+      "name": "All Out of Roslyn",
+      "rank": 10,
+      "playoffs": false,
+      "gms": 44,
+      "w": 13,
+      "l": 31,
+      "t": 0,
+      "gb": "",
+      "pf": 2181,
+      "pa": 2363,
+      "pct": 0.29545454545454547
+    },
+    {
+      "source": "Troopers",
+      "name": "Troopers",
+      "rank": 11,
+      "playoffs": false,
+      "gms": 44,
+      "w": 13,
+      "l": 31,
+      "t": 0,
+      "gb": "---",
+      "pf": 2172,
+      "pa": 2240,
+      "pct": 0.29545454545454547
+    },
+    {
+      "source": "Giggity",
+      "name": "Giggity",
+      "rank": 12,
+      "playoffs": false,
+      "gms": 44,
+      "w": 13,
+      "l": 31,
+      "t": 0,
+      "gb": "- 4",
+      "pf": 1498,
+      "pa": 2343,
+      "pct": 0.29545454545454547
+    }
+  ],
+  "teams": [
+    {
+      "source": "Glazerbeam",
+      "name": "Glazerbeam",
+      "rank": 1,
+      "playoffs": true,
+      "gms": 44,
+      "w": 33,
+      "l": 11,
+      "t": 0,
+      "gb": "",
+      "pf": 2886,
+      "pa": 2484,
+      "pct": 0.75,
+      "teamGames": 131,
+      "teamPoints": 2866,
+      "teamAverage": 21.87786259541985,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 255,
+          "pa": 248
+        },
+        {
+          "week": 2,
+          "pf": 245,
+          "pa": 245
+        },
+        {
+          "week": 3,
+          "pf": 268,
+          "pa": 214
+        },
+        {
+          "week": 4,
+          "pf": 267,
+          "pa": 255
+        },
+        {
+          "week": 5,
+          "pf": 262,
+          "pa": 221
+        },
+        {
+          "week": 6,
+          "pf": 268,
+          "pa": 257
+        },
+        {
+          "week": 7,
+          "pf": 294,
+          "pa": 240
+        },
+        {
+          "week": 8,
+          "pf": 240,
+          "pa": 265
+        },
+        {
+          "week": 9,
+          "pf": 274,
+          "pa": 272
+        },
+        {
+          "week": 10,
+          "pf": 285,
+          "pa": 267
+        },
+        {
+          "week": 11,
+          "pf": 228,
+          "pa": 0
+        }
+      ],
+      "roster": [
+        {
+          "source": "JAKE YANNESSA",
+          "name": "Jake Yannessa",
+          "games": 32,
+          "points": 856,
+          "average": 26.75
+        },
+        {
+          "source": "KEVIN MONEY",
+          "name": "Kevin Money",
+          "games": 14,
+          "points": 328,
+          "average": 23.428571428571427
+        },
+        {
+          "source": "PAUL YANNESSA",
+          "name": "Paul Yannessa",
+          "games": 23,
+          "points": 492,
+          "average": 21.391304347826086
+        },
+        {
+          "source": "BRIAN ROCKETT",
+          "name": "Brian Rockett",
+          "games": 23,
+          "points": 492,
+          "average": 21.391304347826086
+        },
+        {
+          "source": "SEAN O'BRIEN",
+          "name": "Sean O'Brien",
+          "games": 16,
+          "points": 324,
+          "average": 20.25
+        },
+        {
+          "source": "MATT YANNESSA",
+          "name": "Matt Yannessa",
+          "games": 21,
+          "points": 337,
+          "average": 16.047619047619047
+        },
+        {
+          "source": "FRANK YANNESSA",
+          "name": "Frank Yannessa",
+          "games": 2,
+          "points": 37,
+          "average": 17.85
+        }
+      ]
+    },
+    {
+      "source": "RED GROUPER",
+      "name": "Red Grouper",
+      "rank": 2,
+      "playoffs": true,
+      "gms": 44,
+      "w": 32,
+      "l": 12,
+      "t": 0,
+      "gb": "- 3",
+      "pf": 2929,
+      "pa": 2656,
+      "pct": 0.7272727272727273,
+      "teamGames": 132,
+      "teamPoints": 2867,
+      "teamAverage": 21.71969696969697,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 217,
+          "pa": 227
+        },
+        {
+          "week": 2,
+          "pf": 238,
+          "pa": 232
+        },
+        {
+          "week": 3,
+          "pf": 268,
+          "pa": 233
+        },
+        {
+          "week": 4,
+          "pf": 263,
+          "pa": 215
+        },
+        {
+          "week": 5,
+          "pf": 280,
+          "pa": 224
+        },
+        {
+          "week": 6,
+          "pf": 264,
+          "pa": 276
+        },
+        {
+          "week": 7,
+          "pf": 286,
+          "pa": 234
+        },
+        {
+          "week": 8,
+          "pf": 272,
+          "pa": 201
+        },
+        {
+          "week": 9,
+          "pf": 279,
+          "pa": 248
+        },
+        {
+          "week": 10,
+          "pf": 267,
+          "pa": 285
+        },
+        {
+          "week": 11,
+          "pf": 295,
+          "pa": 281
+        }
+      ],
+      "roster": [
+        {
+          "source": "DAN WHITE",
+          "name": "Dan White",
+          "games": 26,
+          "points": 707,
+          "average": 27.192307692307693
+        },
+        {
+          "source": "JOHN CLAUSS",
+          "name": "John Clauss",
+          "games": 25,
+          "points": 591,
+          "average": 23.64
+        },
+        {
+          "source": "JOEY CLAUSS",
+          "name": "Joey Clauss",
+          "games": 12,
+          "points": 270,
+          "average": 22.5
+        },
+        {
+          "source": "GREG YOUNG",
+          "name": "Greg Young",
+          "games": 21,
+          "points": 467,
+          "average": 22.238095238095237
+        },
+        {
+          "source": "DANNY CLAUSS",
+          "name": "Danny Clauss",
+          "games": 18,
+          "points": 386,
+          "average": 21.444444444444443
+        },
+        {
+          "source": "SEAN HUNSICKER",
+          "name": "Sean Hunsicker",
+          "games": 12,
+          "points": 198,
+          "average": 16.5
+        },
+        {
+          "source": "BRIAN ANSTOCK",
+          "name": "Brian Anstock",
+          "games": 18,
+          "points": 248,
+          "average": 13.777777777777779
+        }
+      ]
+    },
+    {
+      "source": "REDRUM",
+      "name": "Redrum",
+      "rank": 3,
+      "playoffs": true,
+      "gms": 44,
+      "w": 28,
+      "l": 16,
+      "t": 0,
+      "gb": "---",
+      "pf": 2968,
+      "pa": 2763,
+      "pct": 0.6363636363636364,
+      "teamGames": 131,
+      "teamPoints": 2943,
+      "teamAverage": 22.46564885496183,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 221,
+          "pa": 238
+        },
+        {
+          "week": 2,
+          "pf": 298,
+          "pa": 252
+        },
+        {
+          "week": 3,
+          "pf": 248,
+          "pa": 244
+        },
+        {
+          "week": 4,
+          "pf": 255,
+          "pa": 224
+        },
+        {
+          "week": 5,
+          "pf": 300,
+          "pa": 255
+        },
+        {
+          "week": 6,
+          "pf": 271,
+          "pa": 268
+        },
+        {
+          "week": 7,
+          "pf": 234,
+          "pa": 286
+        },
+        {
+          "week": 8,
+          "pf": 276,
+          "pa": 219
+        },
+        {
+          "week": 9,
+          "pf": 272,
+          "pa": 274
+        },
+        {
+          "week": 10,
+          "pf": 291,
+          "pa": 271
+        },
+        {
+          "week": 11,
+          "pf": 302,
+          "pa": 232
+        }
+      ],
+      "roster": [
+        {
+          "source": "BILL HETRICK",
+          "name": "Bill Hetrick",
+          "games": 15,
+          "points": 371,
+          "average": 24.733333333333334
+        },
+        {
+          "source": "JP UNGEREAN",
+          "name": "JP Ungerean",
+          "games": 31,
+          "points": 719,
+          "average": 23.193548387096776
+        },
+        {
+          "source": "HARRY YORGEY",
+          "name": "Harry Yorgey",
+          "games": 24,
+          "points": 555,
+          "average": 23.125
+        },
+        {
+          "source": "TOMMY CABULIS",
+          "name": "Tommy Cabulis",
+          "games": 32,
+          "points": 694,
+          "average": 21.6875
+        },
+        {
+          "source": "CHRIS TARLO",
+          "name": "Chris Tarlo",
+          "games": 29,
+          "points": 604,
+          "average": 20.82758620689655
+        }
+      ]
+    },
+    {
+      "source": "Faces",
+      "name": "Faces",
+      "rank": 4,
+      "playoffs": true,
+      "gms": 44,
+      "w": 26,
+      "l": 18,
+      "t": 0,
+      "gb": "",
+      "pf": 2720,
+      "pa": 2709,
+      "pct": 0.5909090909090909,
+      "teamGames": 121,
+      "teamPoints": 2423,
+      "teamAverage": 20.024793388429753,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 254,
+          "pa": 252
+        },
+        {
+          "week": 2,
+          "pf": 245,
+          "pa": 245
+        },
+        {
+          "week": 3,
+          "pf": 223,
+          "pa": 220
+        },
+        {
+          "week": 4,
+          "pf": 235,
+          "pa": 202
+        },
+        {
+          "week": 5,
+          "pf": 255,
+          "pa": 300
+        },
+        {
+          "week": 6,
+          "pf": 216,
+          "pa": 261
+        },
+        {
+          "week": 7,
+          "pf": 230,
+          "pa": 231
+        },
+        {
+          "week": 8,
+          "pf": 266,
+          "pa": 201
+        },
+        {
+          "week": 9,
+          "pf": 254,
+          "pa": 253
+        },
+        {
+          "week": 10,
+          "pf": 261,
+          "pa": 249
+        },
+        {
+          "week": 11,
+          "pf": 281,
+          "pa": 295
+        }
+      ],
+      "roster": [
+        {
+          "source": "HARRY BRATZLER",
+          "name": "Harry Bratzler",
+          "games": 20,
+          "points": 547,
+          "average": 27.35
+        },
+        {
+          "source": "JOHN SPEIDEL",
+          "name": "John Speidel",
+          "games": 11,
+          "points": 254,
+          "average": 23.09090909090909
+        },
+        {
+          "source": "JOHN WAGNER",
+          "name": "John Wagner",
+          "games": 24,
+          "points": 469,
+          "average": 19.541666666666668
+        },
+        {
+          "source": "MIKE BRUTON",
+          "name": "Mike Bruton",
+          "games": 16,
+          "points": 312,
+          "average": 19.5
+        },
+        {
+          "source": "FRANK GALLAGHER",
+          "name": "Frank Gallagher",
+          "games": 19,
+          "points": 359,
+          "average": 18.894736842105264
+        },
+        {
+          "source": "DAN FEDER",
+          "name": "Dan Feder",
+          "games": 16,
+          "points": 278,
+          "average": 17.375
+        },
+        {
+          "source": "MIKE WARD",
+          "name": "Mike Ward",
+          "games": 12,
+          "points": 190,
+          "average": 15.833333333333334
+        },
+        {
+          "source": "STEVE GALLAGHER",
+          "name": "Steve Gallagher",
+          "games": 3,
+          "points": 14,
+          "average": 10.64
+        }
+      ]
+    },
+    {
+      "source": "DAMAGE, INC.",
+      "name": "Damage, Inc.",
+      "rank": 5,
+      "playoffs": true,
+      "gms": 44,
+      "w": 23,
+      "l": 21,
+      "t": 0,
+      "gb": "",
+      "pf": 2429,
+      "pa": 2226,
+      "pct": 0.5227272727272727,
+      "teamGames": 132,
+      "teamPoints": 2134,
+      "teamAverage": 16.166666666666668,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 238,
+          "pa": 221
+        },
+        {
+          "week": 2,
+          "pf": 230,
+          "pa": 239
+        },
+        {
+          "week": 3,
+          "pf": 233,
+          "pa": 268
+        },
+        {
+          "week": 4,
+          "pf": 200,
+          "pa": 221
+        },
+        {
+          "week": 5,
+          "pf": 227,
+          "pa": 226
+        },
+        {
+          "week": 6,
+          "pf": 163,
+          "pa": 183
+        },
+        {
+          "week": 7,
+          "pf": 254,
+          "pa": 222
+        },
+        {
+          "week": 8,
+          "pf": 265,
+          "pa": 240
+        },
+        {
+          "week": 9,
+          "pf": 253,
+          "pa": 254
+        },
+        {
+          "week": 10,
+          "pf": 192,
+          "pa": 0
+        },
+        {
+          "week": 11,
+          "pf": 174,
+          "pa": 152
+        }
+      ],
+      "roster": [
+        {
+          "source": "EDDIE McCAULEY",
+          "name": "Eddie McCauley",
+          "games": 21,
+          "points": 473,
+          "average": 22.523809523809526
+        },
+        {
+          "source": "BRUCE BUTLER",
+          "name": "Bruce Butler",
+          "games": 23,
+          "points": 492,
+          "average": 21.391304347826086
+        },
+        {
+          "source": "CHRIS YOUNG",
+          "name": "Chris Young",
+          "games": 21,
+          "points": 376,
+          "average": 17.904761904761905
+        },
+        {
+          "source": "JOHN LIGHTNER",
+          "name": "John Lightner",
+          "games": 20,
+          "points": 306,
+          "average": 15.3
+        },
+        {
+          "source": "CHIP McC.",
+          "name": "Chip McClenaghan",
+          "games": 30,
+          "points": 431,
+          "average": 14.366666666666667
+        },
+        {
+          "source": "JOHN KLEIS",
+          "name": "John Kleis",
+          "games": 17,
+          "points": 56,
+          "average": 3.2941176470588234
+        }
+      ]
+    },
+    {
+      "source": "OL' DIRTY BASTARDS",
+      "name": "Ol' Dirty Bastards",
+      "rank": 6,
+      "playoffs": true,
+      "gms": 44,
+      "w": 23,
+      "l": 21,
+      "t": 0,
+      "gb": "- 1",
+      "pf": 2585,
+      "pa": 2540,
+      "pct": 0.5227272727272727,
+      "teamGames": 129,
+      "teamPoints": 2425,
+      "teamAverage": 18.7984496124031,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 233,
+          "pa": 218
+        },
+        {
+          "week": 2,
+          "pf": 242,
+          "pa": 233
+        },
+        {
+          "week": 3,
+          "pf": 244,
+          "pa": 248
+        },
+        {
+          "week": 4,
+          "pf": 255,
+          "pa": 267
+        },
+        {
+          "week": 5,
+          "pf": 226,
+          "pa": 227
+        },
+        {
+          "week": 6,
+          "pf": 276,
+          "pa": 264
+        },
+        {
+          "week": 7,
+          "pf": 238,
+          "pa": 207
+        },
+        {
+          "week": 8,
+          "pf": 201,
+          "pa": 266
+        },
+        {
+          "week": 9,
+          "pf": 209,
+          "pa": 212
+        },
+        {
+          "week": 10,
+          "pf": 209,
+          "pa": 201
+        },
+        {
+          "week": 11,
+          "pf": 252,
+          "pa": 197
+        }
+      ],
+      "roster": [
+        {
+          "source": "TODD VITELLI",
+          "name": "Todd Vitelli",
+          "games": 33,
+          "points": 712,
+          "average": 21.575757575757574
+        },
+        {
+          "source": "TOMMY REGAN",
+          "name": "Tommy Regan",
+          "games": 26,
+          "points": 556,
+          "average": 21.384615384615383
+        },
+        {
+          "source": "GEORGE KRAYNIK",
+          "name": "George Kraynik",
+          "games": 27,
+          "points": 514,
+          "average": 19.037037037037038
+        },
+        {
+          "source": "STEVE KRAYNIK",
+          "name": "Steve Kraynik",
+          "games": 20,
+          "points": 318,
+          "average": 15.9
+        },
+        {
+          "source": "MATT KRAYNIK",
+          "name": "Matt Kraynik",
+          "games": 23,
+          "points": 325,
+          "average": 14.130434782608695
+        }
+      ]
+    },
+    {
+      "source": "THE FUCK-UPS",
+      "name": "The Fuck-Ups",
+      "rank": 7,
+      "playoffs": true,
+      "gms": 44,
+      "w": 21,
+      "l": 23,
+      "t": 0,
+      "gb": "---",
+      "pf": 2429,
+      "pa": 2455,
+      "pct": 0.4772727272727273,
+      "teamGames": 129,
+      "teamPoints": 2162,
+      "teamAverage": 16.75968992248062,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 183,
+          "pa": 191
+        },
+        {
+          "week": 2,
+          "pf": 241,
+          "pa": 267
+        },
+        {
+          "week": 3,
+          "pf": 198,
+          "pa": 188
+        },
+        {
+          "week": 4,
+          "pf": 221,
+          "pa": 200
+        },
+        {
+          "week": 5,
+          "pf": 203,
+          "pa": 152
+        },
+        {
+          "week": 6,
+          "pf": 257,
+          "pa": 268
+        },
+        {
+          "week": 7,
+          "pf": 231,
+          "pa": 230
+        },
+        {
+          "week": 8,
+          "pf": 214,
+          "pa": 169
+        },
+        {
+          "week": 9,
+          "pf": 248,
+          "pa": 279
+        },
+        {
+          "week": 10,
+          "pf": 201,
+          "pa": 209
+        },
+        {
+          "week": 11,
+          "pf": 232,
+          "pa": 302
+        }
+      ],
+      "roster": [
+        {
+          "source": "RICH MALEY",
+          "name": "Rich Maley",
+          "games": 27,
+          "points": 623,
+          "average": 23.074074074074073
+        },
+        {
+          "source": "JOHN RAFA",
+          "name": "John Rafa",
+          "games": 27,
+          "points": 499,
+          "average": 18.48148148148148
+        },
+        {
+          "source": "CHIP DIEHL",
+          "name": "Chip Diehl",
+          "games": 14,
+          "points": 241,
+          "average": 17.214285714285715
+        },
+        {
+          "source": "MARK TORONIEWSKI",
+          "name": "Mark Toroniewski",
+          "games": 24,
+          "points": 349,
+          "average": 14.541666666666666
+        },
+        {
+          "source": "KEVIN MALEY",
+          "name": "Kevin Maley",
+          "games": 26,
+          "points": 374,
+          "average": 14.384615384615385
+        },
+        {
+          "source": "BOB HARKER",
+          "name": "Bob Harker",
+          "games": 11,
+          "points": 76,
+          "average": 6.909090909090909
+        }
+      ]
+    },
+    {
+      "source": "FUBAR",
+      "name": "FUBAR",
+      "rank": 8,
+      "playoffs": true,
+      "gms": 44,
+      "w": 21,
+      "l": 23,
+      "t": 0,
+      "gb": "- 3",
+      "pf": 2382,
+      "pa": 2487,
+      "pct": 0.4772727272727273,
+      "teamGames": 130,
+      "teamPoints": 1958,
+      "teamAverage": 15.061538461538461,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 227,
+          "pa": 217
+        },
+        {
+          "week": 2,
+          "pf": 239,
+          "pa": 230
+        },
+        {
+          "week": 3,
+          "pf": 262,
+          "pa": 225
+        },
+        {
+          "week": 4,
+          "pf": 202,
+          "pa": 235
+        },
+        {
+          "week": 5,
+          "pf": 180,
+          "pa": 190
+        },
+        {
+          "week": 6,
+          "pf": 199,
+          "pa": 198
+        },
+        {
+          "week": 7,
+          "pf": 240,
+          "pa": 294
+        },
+        {
+          "week": 8,
+          "pf": 169,
+          "pa": 214
+        },
+        {
+          "week": 9,
+          "pf": 212,
+          "pa": 209
+        },
+        {
+          "week": 10,
+          "pf": 271,
+          "pa": 291
+        },
+        {
+          "week": 11,
+          "pf": 181,
+          "pa": 184
+        }
+      ],
+      "roster": [
+        {
+          "source": "JOE THOMAS",
+          "name": "Joe Thomas",
+          "games": 22,
+          "points": 449,
+          "average": 20.40909090909091
+        },
+        {
+          "source": "RYAN HANDEL",
+          "name": "Ryan Handel",
+          "games": 24,
+          "points": 387,
+          "average": 16.125
+        },
+        {
+          "source": "PAUL KARSCH",
+          "name": "Paul Karsch",
+          "games": 26,
+          "points": 416,
+          "average": 16
+        },
+        {
+          "source": "MATT POOLE",
+          "name": "Matt Poole",
+          "games": 16,
+          "points": 255,
+          "average": 15.9375
+        },
+        {
+          "source": "DAVE DUKERT",
+          "name": "Dave Dukert",
+          "games": 19,
+          "points": 278,
+          "average": 14.631578947368421
+        },
+        {
+          "source": "MIKE TOKARCZYK",
+          "name": "Mike Tokarczyk",
+          "games": 10,
+          "points": 112,
+          "average": 11.2
+        },
+        {
+          "source": "CONNELL HENNESSEY",
+          "name": "Connell Hennessey",
+          "games": 13,
+          "points": 61,
+          "average": 4.6923076923076925
+        }
+      ]
+    },
+    {
+      "source": "BAD COMPANY",
+      "name": "Bad Company",
+      "rank": 9,
+      "playoffs": false,
+      "gms": 44,
+      "w": 18,
+      "l": 26,
+      "t": 0,
+      "gb": "- 3",
+      "pf": 2616,
+      "pa": 2529,
+      "pct": 0.4090909090909091,
+      "teamGames": 133,
+      "teamPoints": 2597,
+      "teamAverage": 19.526315789473685,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 248,
+          "pa": 255
+        },
+        {
+          "week": 2,
+          "pf": 267,
+          "pa": 241
+        },
+        {
+          "week": 3,
+          "pf": 225,
+          "pa": 262
+        },
+        {
+          "week": 4,
+          "pf": 239,
+          "pa": 229
+        },
+        {
+          "week": 5,
+          "pf": 224,
+          "pa": 280
+        },
+        {
+          "week": 6,
+          "pf": 268,
+          "pa": 271
+        },
+        {
+          "week": 7,
+          "pf": 222,
+          "pa": 254
+        },
+        {
+          "week": 8,
+          "pf": 235,
+          "pa": 0
+        },
+        {
+          "week": 9,
+          "pf": 242,
+          "pa": 224
+        },
+        {
+          "week": 10,
+          "pf": 249,
+          "pa": 261
+        },
+        {
+          "week": 11,
+          "pf": 197,
+          "pa": 252
+        }
+      ],
+      "roster": [
+        {
+          "source": "TOM KILKENNY",
+          "name": "Tom Kilkenny",
+          "games": 27,
+          "points": 706,
+          "average": 26.14814814814815
+        },
+        {
+          "source": "JARRED FOX",
+          "name": "Jarred Fox",
+          "games": 17,
+          "points": 420,
+          "average": 24.705882352941178
+        },
+        {
+          "source": "PAT FORRESTER",
+          "name": "Pat Forrester",
+          "games": 27,
+          "points": 547,
+          "average": 20.25925925925926
+        },
+        {
+          "source": "JIM KILKENNY",
+          "name": "Jim Kilkenny",
+          "games": 18,
+          "points": 335,
+          "average": 18.61111111111111
+        },
+        {
+          "source": "JERRY PURCELL",
+          "name": "Jerry Purcell",
+          "games": 21,
+          "points": 364,
+          "average": 17.333333333333332
+        },
+        {
+          "source": "TOM KILKENNY, JR.",
+          "name": "Tom Kilkenny Jr.",
+          "games": 13,
+          "points": 165,
+          "average": 12.692307692307692
+        },
+        {
+          "source": "TIFFANY FOX",
+          "name": "Tiffany Fox",
+          "games": 10,
+          "points": 60,
+          "average": 6
+        }
+      ]
+    },
+    {
+      "source": "ALL OUT OF ROSLYN",
+      "name": "All Out of Roslyn",
+      "rank": 10,
+      "playoffs": false,
+      "gms": 44,
+      "w": 13,
+      "l": 31,
+      "t": 0,
+      "gb": "",
+      "pf": 2181,
+      "pa": 2363,
+      "pct": 0.29545454545454547,
+      "teamGames": 125,
+      "teamPoints": 1405,
+      "teamAverage": 11.24,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 191,
+          "pa": 183
+        },
+        {
+          "week": 2,
+          "pf": 233,
+          "pa": 242
+        },
+        {
+          "week": 3,
+          "pf": 220,
+          "pa": 223
+        },
+        {
+          "week": 4,
+          "pf": 215,
+          "pa": 263
+        },
+        {
+          "week": 5,
+          "pf": 221,
+          "pa": 262
+        },
+        {
+          "week": 6,
+          "pf": 198,
+          "pa": 199
+        },
+        {
+          "week": 7,
+          "pf": 184,
+          "pa": 185
+        },
+        {
+          "week": 8,
+          "pf": 219,
+          "pa": 276
+        },
+        {
+          "week": 9,
+          "pf": 224,
+          "pa": 242
+        },
+        {
+          "week": 10,
+          "pf": 124,
+          "pa": 114
+        },
+        {
+          "week": 11,
+          "pf": 152,
+          "pa": 174
+        }
+      ],
+      "roster": [
+        {
+          "source": "IAN JENKINS",
+          "name": "Ian Jenkins",
+          "games": 21,
+          "points": 403,
+          "average": 19.19047619047619
+        },
+        {
+          "source": "COREY HOWER",
+          "name": "Corey Hower",
+          "games": 9,
+          "points": 122,
+          "average": 13.555555555555555
+        },
+        {
+          "source": "DON FOCHT",
+          "name": "Don Focht",
+          "games": 26,
+          "points": 338,
+          "average": 13
+        },
+        {
+          "source": "TARA PARRISH",
+          "name": "Tara Parrish",
+          "games": 22,
+          "points": 198,
+          "average": 9
+        },
+        {
+          "source": "LORI JAMES",
+          "name": "Lori James",
+          "games": 21,
+          "points": 168,
+          "average": 8
+        },
+        {
+          "source": "DONNA BENNETT",
+          "name": "Donna Bennett",
+          "games": 26,
+          "points": 176,
+          "average": 6.769230769230769
+        }
+      ]
+    },
+    {
+      "source": "Troopers",
+      "name": "Troopers",
+      "rank": 11,
+      "playoffs": false,
+      "gms": 44,
+      "w": 13,
+      "l": 31,
+      "t": 0,
+      "gb": "---",
+      "pf": 2172,
+      "pa": 2240,
+      "pct": 0.29545454545454547,
+      "teamGames": 123,
+      "teamPoints": 1400,
+      "teamAverage": 11.382113821138212,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 252,
+          "pa": 254
+        },
+        {
+          "week": 2,
+          "pf": 252,
+          "pa": 298
+        },
+        {
+          "week": 3,
+          "pf": 214,
+          "pa": 268
+        },
+        {
+          "week": 4,
+          "pf": 229,
+          "pa": 239
+        },
+        {
+          "week": 5,
+          "pf": 152,
+          "pa": 203
+        },
+        {
+          "week": 6,
+          "pf": 183,
+          "pa": 163
+        },
+        {
+          "week": 7,
+          "pf": 207,
+          "pa": 238
+        },
+        {
+          "week": 8,
+          "pf": 201,
+          "pa": 272
+        },
+        {
+          "week": 9,
+          "pf": 184,
+          "pa": 0
+        },
+        {
+          "week": 10,
+          "pf": 114,
+          "pa": 124
+        },
+        {
+          "week": 11,
+          "pf": 184,
+          "pa": 181
+        }
+      ],
+      "roster": [
+        {
+          "source": "VANCE THOMPSON",
+          "name": "Vance Thompson",
+          "games": 26,
+          "points": 397,
+          "average": 15.26923076923077
+        },
+        {
+          "source": "JERRY THOMPSON",
+          "name": "Jerry Thompson",
+          "games": 13,
+          "points": 169,
+          "average": 13
+        },
+        {
+          "source": "CHEYENNE DOUGHERTY",
+          "name": "Cheyenne Dougherty",
+          "games": 26,
+          "points": 280,
+          "average": 10.76923076923077
+        },
+        {
+          "source": "SEAN BENNETT",
+          "name": "Sean Bennett",
+          "games": 23,
+          "points": 241,
+          "average": 10.478260869565217
+        },
+        {
+          "source": "MIKE RATKA",
+          "name": "Mike Ratka",
+          "games": 18,
+          "points": 162,
+          "average": 9
+        },
+        {
+          "source": "NICK BENNETT",
+          "name": "Nick Bennett",
+          "games": 17,
+          "points": 151,
+          "average": 8.882352941176471
+        }
+      ]
+    },
+    {
+      "source": "Giggity",
+      "name": "Giggity",
+      "rank": 12,
+      "playoffs": false,
+      "gms": 44,
+      "w": 13,
+      "l": 31,
+      "t": 0,
+      "gb": "- 4",
+      "pf": 1498,
+      "pa": 2343,
+      "pct": 0.29545454545454547,
+      "teamGames": 86,
+      "teamPoints": 1206,
+      "teamAverage": 14.023255813953488,
+      "weekly": [
+        {
+          "week": 1,
+          "pf": 218,
+          "pa": 233
+        },
+        {
+          "week": 2,
+          "pf": 232,
+          "pa": 238
+        },
+        {
+          "week": 3,
+          "pf": 188,
+          "pa": 198
+        },
+        {
+          "week": 4,
+          "pf": 224,
+          "pa": 255
+        },
+        {
+          "week": 5,
+          "pf": 190,
+          "pa": 180
+        },
+        {
+          "week": 6,
+          "pf": 261,
+          "pa": 216
+        },
+        {
+          "week": 7,
+          "pf": 185,
+          "pa": 184
+        },
+        {
+          "week": 8,
+          "pf": 0,
+          "pa": 235
+        },
+        {
+          "week": 9,
+          "pf": 0,
+          "pa": 184
+        },
+        {
+          "week": 10,
+          "pf": 0,
+          "pa": 192
+        },
+        {
+          "week": 11,
+          "pf": 0,
+          "pa": 228
+        }
+      ],
+      "roster": [
+        {
+          "source": "CHRIS CIFALDI",
+          "name": "Chris Cifaldi",
+          "games": 14,
+          "points": 312,
+          "average": 22.285714285714285
+        },
+        {
+          "source": "SHAGGY VAN HORN",
+          "name": "Shaggy Van Horn",
+          "games": 17,
+          "points": 332,
+          "average": 19.529411764705884
+        },
+        {
+          "source": "DAN SLOTTERBACK",
+          "name": "Dan Slotterback",
+          "games": 9,
+          "points": 120,
+          "average": 13.333333333333334
+        },
+        {
+          "source": "CHIP CROTHAMEL",
+          "name": "Chip Crothamel",
+          "games": 16,
+          "points": 204,
+          "average": 12.75
+        },
+        {
+          "source": "JAY YOUNG",
+          "name": "Jay Young",
+          "games": 21,
+          "points": 205,
+          "average": 9.761904761904763
+        },
+        {
+          "source": "LYNN VALENTINE",
+          "name": "Lynn Valentine",
+          "games": 9,
+          "points": 33,
+          "average": 3.6666666666666665
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "source": "HARRY BRATZLER",
+      "name": "Harry Bratzler",
+      "teamSource": "Faces",
+      "team": "Faces",
+      "games": 20,
+      "points": 547,
+      "average": 27.35,
+      "highGame": 33,
+      "highSeries": 86,
+      "highSeriesWeek": 1,
+      "highSeriesDate": "06.10.26",
+      "thirtyCount": 4,
+      "thirty": [
+        {
+          "score": 33,
+          "times": 2
+        },
+        {
+          "score": 31,
+          "times": 1
+        },
+        {
+          "score": 30,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            28,
+            27,
+            31
+          ],
+          "total": 86,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            24,
+            26,
+            25
+          ],
+          "total": 75,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            21,
+            28,
+            33
+          ],
+          "total": 82,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            29,
+            33
+          ],
+          "total": 62,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            25,
+            30,
+            25
+          ],
+          "total": 80,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            29,
+            26,
+            25
+          ],
+          "total": 80,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            26,
+            28,
+            28
+          ],
+          "total": 82,
+          "complete": true
+        }
+      ],
+      "rank": 1,
+      "id": "harry-bratzler",
+      "ginzburgh": 31,
+      "powCount": 5
+    },
+    {
+      "source": "DAN WHITE",
+      "name": "Dan White",
+      "teamSource": "RED GROUPER",
+      "team": "Red Grouper",
+      "games": 26,
+      "points": 707,
+      "average": 27.192307692307693,
+      "highGame": 32,
+      "highSeries": 92,
+      "highSeriesWeek": 11,
+      "highSeriesDate": "08.19.26",
+      "thirtyCount": 7,
+      "thirty": [
+        {
+          "score": 32,
+          "times": 2
+        },
+        {
+          "score": 31,
+          "times": 1
+        },
+        {
+          "score": 30,
+          "times": 4
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            28,
+            30,
+            16
+          ],
+          "total": 74,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            20,
+            24,
+            27
+          ],
+          "total": 71,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            29,
+            29,
+            30
+          ],
+          "total": 88,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            26,
+            32,
+            23
+          ],
+          "total": 81,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            29,
+            31,
+            22
+          ],
+          "total": 82,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            29,
+            28,
+            29
+          ],
+          "total": 86,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            28,
+            29,
+            null
+          ],
+          "total": 57,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            26,
+            24,
+            26
+          ],
+          "total": 76,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            30,
+            30,
+            32
+          ],
+          "total": 92,
+          "complete": true
+        }
+      ],
+      "rank": 2,
+      "id": "dan-white",
+      "ginzburgh": 17,
+      "powCount": 4
+    },
+    {
+      "source": "JAKE YANNESSA",
+      "name": "Jake Yannessa",
+      "teamSource": "Glazerbeam",
+      "team": "Glazerbeam",
+      "games": 32,
+      "points": 856,
+      "average": 26.75,
+      "highGame": 42,
+      "highSeries": 107,
+      "highSeriesWeek": 7,
+      "highSeriesDate": "07.22.26",
+      "thirtyCount": 11,
+      "thirty": [
+        {
+          "score": 42,
+          "times": 1
+        },
+        {
+          "score": 39,
+          "times": 2
+        },
+        {
+          "score": 34,
+          "times": 1
+        },
+        {
+          "score": 32,
+          "times": 3
+        },
+        {
+          "score": 31,
+          "times": 2
+        },
+        {
+          "score": 30,
+          "times": 2
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            17,
+            32,
+            19
+          ],
+          "total": 68,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            16,
+            28,
+            6
+          ],
+          "total": 50,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            19,
+            31,
+            31
+          ],
+          "total": 81,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            29,
+            32,
+            25
+          ],
+          "total": 86,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            28,
+            21,
+            39
+          ],
+          "total": 88,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            30,
+            30,
+            28
+          ],
+          "total": 88,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            39,
+            42,
+            26
+          ],
+          "total": 107,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            33,
+            22,
+            27
+          ],
+          "total": 82,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            34,
+            18,
+            26
+          ],
+          "total": 78,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            24,
+            25,
+            22
+          ],
+          "total": 71,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            null,
+            18,
+            39
+          ],
+          "total": 57,
+          "complete": false
+        }
+      ],
+      "rank": 3,
+      "id": "jake-yannessa",
+      "ginzburgh": 11,
+      "powCount": 6
+    },
+    {
+      "source": "TOM KILKENNY",
+      "name": "Tom Kilkenny",
+      "teamSource": "BAD COMPANY",
+      "team": "Bad Company",
+      "games": 27,
+      "points": 706,
+      "average": 26.14814814814815,
+      "highGame": 35,
+      "highSeries": 90,
+      "highSeriesWeek": 6,
+      "highSeriesDate": "07.15.26",
+      "thirtyCount": 5,
+      "thirty": [
+        {
+          "score": 35,
+          "times": 1
+        },
+        {
+          "score": 33,
+          "times": 2
+        },
+        {
+          "score": 31,
+          "times": 1
+        },
+        {
+          "score": 30,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            33,
+            28
+          ],
+          "total": 61,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            21,
+            null,
+            31
+          ],
+          "total": 52,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            23,
+            22,
+            30
+          ],
+          "total": 75,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            28,
+            26,
+            null
+          ],
+          "total": 54,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            23,
+            35,
+            19
+          ],
+          "total": 77,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            28,
+            29,
+            33
+          ],
+          "total": 90,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            25,
+            null,
+            29
+          ],
+          "total": 54,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            25,
+            22,
+            24
+          ],
+          "total": 71,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            28,
+            29,
+            null
+          ],
+          "total": 57,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            33,
+            27,
+            25
+          ],
+          "total": 85,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            15,
+            null,
+            15
+          ],
+          "total": 30,
+          "complete": false
+        }
+      ],
+      "rank": 4,
+      "id": "tom-kilkenny",
+      "ginzburgh": 24,
+      "powCount": 4
+    },
+    {
+      "source": "BILL HETRICK",
+      "name": "Bill Hetrick",
+      "teamSource": "REDRUM",
+      "team": "Redrum",
+      "games": 15,
+      "points": 371,
+      "average": 24.733333333333334,
+      "highGame": 36,
+      "highSeries": 87,
+      "highSeriesWeek": 11,
+      "highSeriesDate": "08.19.26",
+      "thirtyCount": 5,
+      "thirty": [
+        {
+          "score": 36,
+          "times": 1
+        },
+        {
+          "score": 34,
+          "times": 1
+        },
+        {
+          "score": 32,
+          "times": 1
+        },
+        {
+          "score": 31,
+          "times": 1
+        },
+        {
+          "score": 30,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            14,
+            12,
+            18
+          ],
+          "total": 44,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            32,
+            18,
+            null
+          ],
+          "total": 50,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            27,
+            30,
+            27
+          ],
+          "total": 84,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            36,
+            29
+          ],
+          "total": 65,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            25,
+            16,
+            null
+          ],
+          "total": 41,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            34,
+            31,
+            22
+          ],
+          "total": 87,
+          "complete": true
+        }
+      ],
+      "rank": 5,
+      "id": "bill-hetrick",
+      "ginzburgh": 9,
+      "powCount": 7
+    },
+    {
+      "source": "JARRED FOX",
+      "name": "Jarred Fox",
+      "teamSource": "BAD COMPANY",
+      "team": "Bad Company",
+      "games": 17,
+      "points": 420,
+      "average": 24.705882352941178,
+      "highGame": 32,
+      "highSeries": 79,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "06.17.26",
+      "thirtyCount": 3,
+      "thirty": [
+        {
+          "score": 32,
+          "times": 1
+        },
+        {
+          "score": 31,
+          "times": 1
+        },
+        {
+          "score": 30,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            28,
+            25,
+            null
+          ],
+          "total": 53,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            22,
+            32,
+            25
+          ],
+          "total": 79,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            null,
+            23,
+            28
+          ],
+          "total": 51,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            19,
+            null,
+            21
+          ],
+          "total": 40,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            21,
+            31,
+            25
+          ],
+          "total": 77,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            null,
+            19,
+            27
+          ],
+          "total": 46,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            24,
+            null,
+            30
+          ],
+          "total": 54,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            null,
+            20,
+            null
+          ],
+          "total": 20,
+          "complete": false
+        }
+      ],
+      "rank": 6,
+      "id": "jarred-fox",
+      "ginzburgh": 8,
+      "powCount": null
+    },
+    {
+      "source": "JOHN CLAUSS",
+      "name": "John Clauss",
+      "teamSource": "RED GROUPER",
+      "team": "Red Grouper",
+      "games": 25,
+      "points": 591,
+      "average": 23.64,
+      "highGame": 30,
+      "highSeries": 84,
+      "highSeriesWeek": 11,
+      "highSeriesDate": "08.19.26",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 30,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            23,
+            18
+          ],
+          "total": 41,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            27,
+            22,
+            20
+          ],
+          "total": 69,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            null,
+            16,
+            null
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            24,
+            26,
+            23
+          ],
+          "total": 73,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            20,
+            21,
+            21
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            24,
+            25,
+            23
+          ],
+          "total": 72,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            null,
+            27,
+            22
+          ],
+          "total": 49,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            24,
+            null,
+            28
+          ],
+          "total": 52,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            23,
+            25,
+            25
+          ],
+          "total": 73,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            30,
+            29,
+            25
+          ],
+          "total": 84,
+          "complete": true
+        }
+      ],
+      "rank": 7,
+      "id": "john-clauss",
+      "ginzburgh": 43,
+      "powCount": 7
+    },
+    {
+      "source": "KEVIN MONEY",
+      "name": "Kevin Money",
+      "teamSource": "Glazerbeam",
+      "team": "Glazerbeam",
+      "games": 14,
+      "points": 328,
+      "average": 23.428571428571427,
+      "highGame": 30,
+      "highSeries": 79,
+      "highSeriesWeek": 10,
+      "highSeriesDate": "08.12.26",
+      "thirtyCount": 2,
+      "thirty": [
+        {
+          "score": 30,
+          "times": 2
+        }
+      ],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            21,
+            30,
+            23
+          ],
+          "total": 74,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            null,
+            22,
+            22
+          ],
+          "total": 44,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            23,
+            29
+          ],
+          "total": 52,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            15,
+            24,
+            null
+          ],
+          "total": 39,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            24,
+            25,
+            30
+          ],
+          "total": 79,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            null,
+            24,
+            16
+          ],
+          "total": 40,
+          "complete": false
+        }
+      ],
+      "rank": 8,
+      "id": "kevin-money",
+      "ginzburgh": 18,
+      "powCount": 8
+    },
+    {
+      "source": "JP UNGEREAN",
+      "name": "JP Ungerean",
+      "teamSource": "REDRUM",
+      "team": "Redrum",
+      "games": 31,
+      "points": 719,
+      "average": 23.193548387096776,
+      "highGame": 38,
+      "highSeries": 88,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "06.17.26",
+      "thirtyCount": 3,
+      "thirty": [
+        {
+          "score": 38,
+          "times": 1
+        },
+        {
+          "score": 31,
+          "times": 1
+        },
+        {
+          "score": 30,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            28,
+            20,
+            13
+          ],
+          "total": 61,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            31,
+            27,
+            30
+          ],
+          "total": 88,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            24,
+            15,
+            20
+          ],
+          "total": 59,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            26,
+            9,
+            23
+          ],
+          "total": 58,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            23,
+            26,
+            26
+          ],
+          "total": 75,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            25,
+            27,
+            27
+          ],
+          "total": 79,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            19,
+            26,
+            17
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            null,
+            20,
+            22
+          ],
+          "total": 42,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            21,
+            null,
+            24
+          ],
+          "total": 45,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            22,
+            38,
+            24
+          ],
+          "total": 84,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            23,
+            20,
+            23
+          ],
+          "total": 66,
+          "complete": true
+        }
+      ],
+      "rank": 9,
+      "id": "jp-ungerean",
+      "ginzburgh": 1,
+      "powCount": 1
+    },
+    {
+      "source": "HARRY YORGEY",
+      "name": "Harry Yorgey",
+      "teamSource": "REDRUM",
+      "team": "Redrum",
+      "games": 24,
+      "points": 555,
+      "average": 23.125,
+      "highGame": 31,
+      "highSeries": 82,
+      "highSeriesWeek": 3,
+      "highSeriesDate": "06.24.26",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 31,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            null,
+            23,
+            23
+          ],
+          "total": 46,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            28,
+            23,
+            31
+          ],
+          "total": 82,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            29,
+            15,
+            29
+          ],
+          "total": 73,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            23,
+            29,
+            29
+          ],
+          "total": 81,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            24,
+            20,
+            16
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            22,
+            14,
+            15
+          ],
+          "total": 51,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            20,
+            null,
+            26
+          ],
+          "total": 46,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            23,
+            null,
+            18
+          ],
+          "total": 41,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            24,
+            25,
+            26
+          ],
+          "total": 75,
+          "complete": true
+        }
+      ],
+      "rank": 10,
+      "id": "harry-yorgey",
+      "ginzburgh": null,
+      "powCount": 2
+    },
+    {
+      "source": "JOHN SPEIDEL",
+      "name": "John Speidel",
+      "teamSource": "Faces",
+      "team": "Faces",
+      "games": 11,
+      "points": 254,
+      "average": 23.09090909090909,
+      "highGame": 30,
+      "highSeries": 79,
+      "highSeriesWeek": 8,
+      "highSeriesDate": "07.29.26",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 30,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 5,
+          "scores": [
+            19,
+            24,
+            26
+          ],
+          "total": 69,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            16,
+            14,
+            27
+          ],
+          "total": 57,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            29,
+            30,
+            20
+          ],
+          "total": 79,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            25,
+            24,
+            null
+          ],
+          "total": 49,
+          "complete": false
+        }
+      ],
+      "rank": 11,
+      "id": "john-speidel",
+      "ginzburgh": 47,
+      "powCount": 7
+    },
+    {
+      "source": "RICH MALEY",
+      "name": "Rich Maley",
+      "teamSource": "THE FUCK-UPS",
+      "team": "The Fuck-Ups",
+      "games": 27,
+      "points": 623,
+      "average": 23.074074074074073,
+      "highGame": 31,
+      "highSeries": 78,
+      "highSeriesWeek": 4,
+      "highSeriesDate": "07.01.26",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 32,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            13,
+            null,
+            20
+          ],
+          "total": 33,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            18,
+            25,
+            23
+          ],
+          "total": 66,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            15,
+            25,
+            29
+          ],
+          "total": 69,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            21,
+            29,
+            28
+          ],
+          "total": 78,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            27,
+            19,
+            null
+          ],
+          "total": 46,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            21,
+            28,
+            16
+          ],
+          "total": 65,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            27,
+            19,
+            29
+          ],
+          "total": 75,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            29,
+            21,
+            null
+          ],
+          "total": 50,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            21,
+            20,
+            31
+          ],
+          "total": 72,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            25,
+            22,
+            22
+          ],
+          "total": 69,
+          "complete": true
+        }
+      ],
+      "rank": 12,
+      "id": "rich-maley",
+      "ginzburgh": 7,
+      "powCount": null
+    },
+    {
+      "source": "EDDIE McCAULEY",
+      "name": "Eddie McCauley",
+      "teamSource": "DAMAGE, INC.",
+      "team": "Damage, Inc.",
+      "games": 21,
+      "points": 473,
+      "average": 22.523809523809526,
+      "highGame": 32,
+      "highSeries": 75,
+      "highSeriesWeek": 9,
+      "highSeriesDate": "08.05.26",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 32,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            18,
+            22,
+            22
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            32,
+            18,
+            22
+          ],
+          "total": 72,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            22,
+            26,
+            25
+          ],
+          "total": 73,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            19,
+            15,
+            26
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            20,
+            26,
+            16
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            22,
+            26,
+            27
+          ],
+          "total": 75,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            24,
+            17,
+            28
+          ],
+          "total": 69,
+          "complete": true
+        }
+      ],
+      "rank": 13,
+      "id": "eddie-mccauley",
+      "ginzburgh": 10,
+      "powCount": 8
+    },
+    {
+      "source": "JOEY CLAUSS",
+      "name": "Joey Clauss",
+      "teamSource": "RED GROUPER",
+      "team": "Red Grouper",
+      "games": 12,
+      "points": 270,
+      "average": 22.5,
+      "highGame": 29,
+      "highSeries": 75,
+      "highSeriesWeek": 11,
+      "highSeriesDate": "08.19.26",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 3,
+          "scores": [
+            22,
+            null,
+            25
+          ],
+          "total": 47,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            23,
+            17,
+            null
+          ],
+          "total": 40,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            23,
+            23,
+            21
+          ],
+          "total": 67,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            25,
+            16
+          ],
+          "total": 41,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            29,
+            26,
+            20
+          ],
+          "total": 75,
+          "complete": true
+        }
+      ],
+      "rank": 14,
+      "id": "joey-clauss",
+      "ginzburgh": 9,
+      "powCount": 10
+    },
+    {
+      "source": "CHRIS CIFALDI",
+      "name": "Chris Cifaldi",
+      "teamSource": "Giggity",
+      "team": "Giggity",
+      "games": 14,
+      "points": 312,
+      "average": 22.285714285714285,
+      "highGame": 28,
+      "highSeries": 74,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "06.17.26",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            20,
+            26,
+            28
+          ],
+          "total": 74,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            27,
+            24,
+            null
+          ],
+          "total": 51,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            24,
+            17,
+            26
+          ],
+          "total": 67,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            21,
+            25,
+            18
+          ],
+          "total": 64,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            15,
+            22,
+            19
+          ],
+          "total": 56,
+          "complete": true
+        }
+      ],
+      "rank": 15,
+      "id": "chris-cifaldi",
+      "ginzburgh": 14,
+      "powCount": 10
+    },
+    {
+      "source": "GREG YOUNG",
+      "name": "Greg Young",
+      "teamSource": "RED GROUPER",
+      "team": "Red Grouper",
+      "games": 21,
+      "points": 467,
+      "average": 22.238095238095237,
+      "highGame": 31,
+      "highSeries": 76,
+      "highSeriesWeek": 9,
+      "highSeriesDate": "08.05.26",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 31,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            19,
+            18,
+            null
+          ],
+          "total": 37,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            23,
+            18,
+            22
+          ],
+          "total": 63,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            21,
+            27,
+            24
+          ],
+          "total": 72,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            null,
+            17,
+            22
+          ],
+          "total": 39,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            21,
+            22,
+            22
+          ],
+          "total": 65,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            17,
+            null,
+            28
+          ],
+          "total": 45,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            24,
+            21,
+            31
+          ],
+          "total": 76,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            25,
+            24,
+            21
+          ],
+          "total": 70,
+          "complete": true
+        }
+      ],
+      "rank": 16,
+      "id": "greg-young",
+      "ginzburgh": 42,
+      "powCount": 11
+    },
+    {
+      "source": "TOMMY CABULIS",
+      "name": "Tommy Cabulis",
+      "teamSource": "REDRUM",
+      "team": "Redrum",
+      "games": 32,
+      "points": 694,
+      "average": 21.6875,
+      "highGame": 29,
+      "highSeries": 76,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "06.17.26",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            15,
+            18,
+            29
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            23,
+            24,
+            29
+          ],
+          "total": 76,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            22,
+            11,
+            11
+          ],
+          "total": 44,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            25,
+            16,
+            25
+          ],
+          "total": 66,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            26,
+            20,
+            24
+          ],
+          "total": 70,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            22,
+            21,
+            26
+          ],
+          "total": 69,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            23,
+            15,
+            29
+          ],
+          "total": 67,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            23,
+            19,
+            20
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            24,
+            22,
+            14
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            null,
+            24,
+            26
+          ],
+          "total": 50,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            23,
+            29,
+            16
+          ],
+          "total": 68,
+          "complete": true
+        }
+      ],
+      "rank": 17,
+      "id": "tommy-cabulis",
+      "ginzburgh": 9,
+      "powCount": 3
+    },
+    {
+      "source": "TODD VITELLI",
+      "name": "Todd Vitelli",
+      "teamSource": "OL' DIRTY BASTARDS",
+      "team": "Ol' Dirty Bastards",
+      "games": 33,
+      "points": 712,
+      "average": 21.575757575757574,
+      "highGame": 29,
+      "highSeries": 73,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "06.17.26",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            18,
+            24,
+            17
+          ],
+          "total": 59,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            26,
+            28,
+            19
+          ],
+          "total": 73,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            24,
+            22,
+            16
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            21,
+            19,
+            15
+          ],
+          "total": 55,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            29,
+            24,
+            20
+          ],
+          "total": 73,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            25,
+            23,
+            20
+          ],
+          "total": 68,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            25,
+            25,
+            18
+          ],
+          "total": 68,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            21,
+            21,
+            16
+          ],
+          "total": 58,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            19,
+            28,
+            24
+          ],
+          "total": 71,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            17,
+            26,
+            17
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            20,
+            23,
+            22
+          ],
+          "total": 65,
+          "complete": true
+        }
+      ],
+      "rank": 18,
+      "id": "todd-vitelli",
+      "ginzburgh": 3,
+      "powCount": 1
+    },
+    {
+      "source": "DANNY CLAUSS",
+      "name": "Danny Clauss",
+      "teamSource": "RED GROUPER",
+      "team": "Red Grouper",
+      "games": 18,
+      "points": 386,
+      "average": 21.444444444444443,
+      "highGame": 31,
+      "highSeries": 76,
+      "highSeriesWeek": 5,
+      "highSeriesDate": "07.08.26",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 31,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            11,
+            null,
+            23
+          ],
+          "total": 34,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            19,
+            null,
+            20
+          ],
+          "total": 39,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            24,
+            21,
+            19
+          ],
+          "total": 64,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            20,
+            31,
+            25
+          ],
+          "total": 76,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            29,
+            19
+          ],
+          "total": 48,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            22,
+            24,
+            null
+          ],
+          "total": 46,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            19,
+            null,
+            null
+          ],
+          "total": 19,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            20,
+            20,
+            20
+          ],
+          "total": 60,
+          "complete": true
+        }
+      ],
+      "rank": 19,
+      "id": "danny-clauss",
+      "ginzburgh": 5,
+      "powCount": 3
+    },
+    {
+      "source": "BRIAN ROCKETT",
+      "name": "Brian Rockett",
+      "teamSource": "Glazerbeam",
+      "team": "Glazerbeam",
+      "games": 23,
+      "points": 492,
+      "average": 21.391304347826086,
+      "highGame": 28,
+      "highSeries": 73,
+      "highSeriesWeek": 3,
+      "highSeriesDate": "06.24.26",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            25,
+            17,
+            26
+          ],
+          "total": 68,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            21,
+            25,
+            27
+          ],
+          "total": 73,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            20,
+            null,
+            21
+          ],
+          "total": 41,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            null,
+            25,
+            20
+          ],
+          "total": 45,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            17,
+            null,
+            22
+          ],
+          "total": 39,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            24,
+            28,
+            19
+          ],
+          "total": 71,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            null,
+            19,
+            18
+          ],
+          "total": 37,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            21,
+            23,
+            20
+          ],
+          "total": 64,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            16,
+            19,
+            19
+          ],
+          "total": 54,
+          "complete": true
+        }
+      ],
+      "rank": 20,
+      "id": "brian-rockett",
+      "ginzburgh": 9,
+      "powCount": 8
+    },
+    {
+      "source": "BRUCE BUTLER",
+      "name": "Bruce Butler",
+      "teamSource": "DAMAGE, INC.",
+      "team": "Damage, Inc.",
+      "games": 23,
+      "points": 492,
+      "average": 21.391304347826086,
+      "highGame": 31,
+      "highSeries": 72,
+      "highSeriesWeek": 7,
+      "highSeriesDate": "07.22.26",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 31,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            19,
+            21,
+            24
+          ],
+          "total": 64,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            19,
+            23,
+            25
+          ],
+          "total": 67,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            18,
+            19,
+            23
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            24,
+            15,
+            21
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            25,
+            23,
+            24
+          ],
+          "total": 72,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            18,
+            null,
+            17
+          ],
+          "total": 35,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            23,
+            16,
+            23
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            23,
+            31,
+            18
+          ],
+          "total": 72,
+          "complete": true
+        }
+      ],
+      "rank": 20,
+      "id": "bruce-butler",
+      "ginzburgh": 7,
+      "powCount": 3
+    },
+    {
+      "source": "PAUL YANNESSA",
+      "name": "Paul Yannessa",
+      "teamSource": "Glazerbeam",
+      "team": "Glazerbeam",
+      "games": 23,
+      "points": 492,
+      "average": 21.391304347826086,
+      "highGame": 33,
+      "highSeries": 71,
+      "highSeriesWeek": 9,
+      "highSeriesDate": "",
+      "thirtyCount": 2,
+      "thirty": [
+        {
+          "score": 33,
+          "times": 1
+        },
+        {
+          "score": 31,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            18,
+            19,
+            31
+          ],
+          "total": 68,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            null,
+            null,
+            26
+          ],
+          "total": 26,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            null,
+            null,
+            18
+          ],
+          "total": 18,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            null,
+            16,
+            null
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            16,
+            25,
+            25
+          ],
+          "total": 66,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            23,
+            24,
+            21
+          ],
+          "total": 68,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            18,
+            29,
+            19
+          ],
+          "total": 66,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            null,
+            21,
+            null
+          ],
+          "total": 21,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            19,
+            24,
+            28
+          ],
+          "total": 71,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            null,
+            33,
+            17
+          ],
+          "total": 50,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            11,
+            null,
+            11
+          ],
+          "total": 22,
+          "complete": false
+        }
+      ],
+      "rank": 20,
+      "id": "paul-yannessa",
+      "ginzburgh": 3,
+      "powCount": 3
+    },
+    {
+      "source": "TOMMY REGAN",
+      "name": "Tommy Regan",
+      "teamSource": "OL' DIRTY BASTARDS",
+      "team": "Ol' Dirty Bastards",
+      "games": 26,
+      "points": 556,
+      "average": 21.384615384615383,
+      "highGame": 28,
+      "highSeries": 81,
+      "highSeriesWeek": 11,
+      "highSeriesDate": "08.19.26",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            25,
+            21,
+            22
+          ],
+          "total": 68,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            20,
+            17,
+            21
+          ],
+          "total": 58,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            21,
+            13,
+            24
+          ],
+          "total": 58,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            15,
+            28,
+            16
+          ],
+          "total": 59,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            24,
+            26
+          ],
+          "total": 50,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            null,
+            28,
+            26
+          ],
+          "total": 54,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            26,
+            20,
+            12
+          ],
+          "total": 58,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            24,
+            13,
+            19
+          ],
+          "total": 56,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            14,
+            null,
+            null
+          ],
+          "total": 14,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            27,
+            27,
+            27
+          ],
+          "total": 81,
+          "complete": true
+        }
+      ],
+      "rank": 23,
+      "id": "tommy-regan",
+      "ginzburgh": 2,
+      "powCount": 1
+    },
+    {
+      "source": "CHRIS TARLO",
+      "name": "Chris Tarlo",
+      "teamSource": "REDRUM",
+      "team": "Redrum",
+      "games": 29,
+      "points": 604,
+      "average": 20.82758620689655,
+      "highGame": 34,
+      "highSeries": 75,
+      "highSeriesWeek": 11,
+      "highSeriesDate": "08.19.26",
+      "thirtyCount": 2,
+      "thirty": [
+        {
+          "score": 34,
+          "times": 1
+        },
+        {
+          "score": 30,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            13,
+            19,
+            22
+          ],
+          "total": 54,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            16,
+            null,
+            22
+          ],
+          "total": 38,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            19,
+            17,
+            29
+          ],
+          "total": 65,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            20,
+            17,
+            21
+          ],
+          "total": 58,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            21,
+            22,
+            29
+          ],
+          "total": 72,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            23,
+            21,
+            19
+          ],
+          "total": 63,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            21,
+            14,
+            19
+          ],
+          "total": 54,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            30,
+            12,
+            null
+          ],
+          "total": 42,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            26,
+            16,
+            null
+          ],
+          "total": 42,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            19,
+            null,
+            22
+          ],
+          "total": 41,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            19,
+            22,
+            34
+          ],
+          "total": 75,
+          "complete": true
+        }
+      ],
+      "rank": 24,
+      "id": "chris-tarlo",
+      "ginzburgh": 6,
+      "powCount": 4
+    },
+    {
+      "source": "JOE THOMAS",
+      "name": "Joe Thomas",
+      "teamSource": "FUBAR",
+      "team": "FUBAR",
+      "games": 22,
+      "points": 449,
+      "average": 20.40909090909091,
+      "highGame": 35,
+      "highSeries": 75,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "06.17.26",
+      "thirtyCount": 2,
+      "thirty": [
+        {
+          "score": 35,
+          "times": 1
+        },
+        {
+          "score": 32,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            23,
+            16,
+            13
+          ],
+          "total": 52,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            21,
+            32,
+            22
+          ],
+          "total": 75,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            null,
+            25,
+            35
+          ],
+          "total": 60,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            null,
+            22,
+            11
+          ],
+          "total": 33,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            22,
+            13,
+            21
+          ],
+          "total": 56,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            21,
+            18,
+            15
+          ],
+          "total": 54,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            24,
+            23,
+            13
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            19,
+            null,
+            25
+          ],
+          "total": 44,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            15,
+            null,
+            null
+          ],
+          "total": 15,
+          "complete": false
+        }
+      ],
+      "rank": 25,
+      "id": "joe-thomas",
+      "ginzburgh": 14,
+      "powCount": 14
+    },
+    {
+      "source": "PAT FORRESTER",
+      "name": "Pat Forrester",
+      "teamSource": "BAD COMPANY",
+      "team": "Bad Company",
+      "games": 27,
+      "points": 547,
+      "average": 20.25925925925926,
+      "highGame": 30,
+      "highSeries": 68,
+      "highSeriesWeek": 8,
+      "highSeriesDate": "",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 30,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            26,
+            21,
+            null
+          ],
+          "total": 47,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            null,
+            19,
+            18
+          ],
+          "total": 37,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            23,
+            22,
+            20
+          ],
+          "total": 65,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            20,
+            23,
+            16
+          ],
+          "total": 59,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            null,
+            20,
+            17
+          ],
+          "total": 37,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            15,
+            14
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            22,
+            14,
+            19
+          ],
+          "total": 55,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            27,
+            18,
+            23
+          ],
+          "total": 68,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            28,
+            30
+          ],
+          "total": 58,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            19,
+            18,
+            25
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            null,
+            16,
+            14
+          ],
+          "total": 30,
+          "complete": false
+        }
+      ],
+      "rank": 26,
+      "id": "pat-forrester",
+      "ginzburgh": 3,
+      "powCount": null
+    },
+    {
+      "source": "SEAN O'BRIEN",
+      "name": "Sean O'Brien",
+      "teamSource": "Glazerbeam",
+      "team": "Glazerbeam",
+      "games": 16,
+      "points": 324,
+      "average": 20.25,
+      "highGame": 26,
+      "highSeries": 71,
+      "highSeriesWeek": 3,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            15,
+            21,
+            18
+          ],
+          "total": 54,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            26,
+            20,
+            25
+          ],
+          "total": 71,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            22,
+            20,
+            null
+          ],
+          "total": 42,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            16,
+            null
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            13,
+            null,
+            25
+          ],
+          "total": 38,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            22,
+            22,
+            24
+          ],
+          "total": 68,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            19,
+            16,
+            null
+          ],
+          "total": 35,
+          "complete": false
+        }
+      ],
+      "rank": 27,
+      "id": "sean-obrien",
+      "ginzburgh": 2,
+      "powCount": 3
+    },
+    {
+      "source": "JOHN WAGNER",
+      "name": "John Wagner",
+      "teamSource": "Faces",
+      "team": "Faces",
+      "games": 24,
+      "points": 469,
+      "average": 19.541666666666668,
+      "highGame": 24,
+      "highSeries": 64,
+      "highSeriesWeek": 10,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            20,
+            24,
+            18
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            22,
+            16,
+            17
+          ],
+          "total": 55,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            15,
+            22,
+            23
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            24,
+            20,
+            16
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            16,
+            null,
+            17
+          ],
+          "total": 33,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            18,
+            11,
+            null
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            19,
+            null,
+            21
+          ],
+          "total": 40,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            null,
+            21,
+            24
+          ],
+          "total": 45,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            21,
+            null
+          ],
+          "total": 21,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            22,
+            20,
+            22
+          ],
+          "total": 64,
+          "complete": true
+        }
+      ],
+      "rank": 28,
+      "id": "john-wagner",
+      "ginzburgh": 5,
+      "powCount": 4
+    },
+    {
+      "source": "SHAGGY VAN HORN",
+      "name": "Shaggy Van Horn",
+      "teamSource": "Giggity",
+      "team": "Giggity",
+      "games": 17,
+      "points": 332,
+      "average": 19.529411764705884,
+      "highGame": 31,
+      "highSeries": 69,
+      "highSeriesWeek": 5,
+      "highSeriesDate": "",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 31,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            15,
+            16,
+            25
+          ],
+          "total": 56,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            13,
+            23,
+            27
+          ],
+          "total": 63,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            7,
+            null,
+            16
+          ],
+          "total": 23,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            27,
+            20,
+            22
+          ],
+          "total": 69,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            19,
+            31,
+            17
+          ],
+          "total": 67,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            16,
+            16,
+            22
+          ],
+          "total": 54,
+          "complete": true
+        }
+      ],
+      "rank": 29,
+      "id": "shaggy-van-horn",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "MIKE BRUTON",
+      "name": "Mike Bruton",
+      "teamSource": "Faces",
+      "team": "Faces",
+      "games": 16,
+      "points": 312,
+      "average": 19.5,
+      "highGame": 28,
+      "highSeries": 71,
+      "highSeriesWeek": 9,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 4,
+          "scores": [
+            15,
+            28,
+            26
+          ],
+          "total": 69,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            23,
+            10,
+            22
+          ],
+          "total": 55,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            17,
+            null,
+            null
+          ],
+          "total": 17,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            25,
+            23,
+            23
+          ],
+          "total": 71,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            18,
+            12,
+            18
+          ],
+          "total": 48,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            14,
+            19,
+            19
+          ],
+          "total": 52,
+          "complete": true
+        }
+      ],
+      "rank": 30,
+      "id": "mike-bruton",
+      "ginzburgh": 2,
+      "powCount": 2
+    },
+    {
+      "source": "IAN JENKINS",
+      "name": "Ian Jenkins",
+      "teamSource": "ALL OUT OF ROSLYN",
+      "team": "All Out of Roslyn",
+      "games": 21,
+      "points": 403,
+      "average": 19.19047619047619,
+      "highGame": 27,
+      "highSeries": 69,
+      "highSeriesWeek": 9,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            23,
+            19,
+            "F"
+          ],
+          "total": 42,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            8,
+            22,
+            17
+          ],
+          "total": 47,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            25,
+            20,
+            17
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            21,
+            27,
+            13
+          ],
+          "total": 61,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            25,
+            22,
+            20
+          ],
+          "total": 67,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            24,
+            22,
+            23
+          ],
+          "total": 69,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            12,
+            null,
+            17
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            12,
+            null,
+            14
+          ],
+          "total": 26,
+          "complete": false
+        }
+      ],
+      "rank": 31,
+      "id": "ian-jenkins",
+      "ginzburgh": 2,
+      "powCount": 4
+    },
+    {
+      "source": "GEORGE KRAYNIK",
+      "name": "George Kraynik",
+      "teamSource": "OL' DIRTY BASTARDS",
+      "team": "Ol' Dirty Bastards",
+      "games": 27,
+      "points": 514,
+      "average": 19.037037037037038,
+      "highGame": 25,
+      "highSeries": 67,
+      "highSeriesWeek": 4,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            15,
+            null,
+            18
+          ],
+          "total": 33,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            18,
+            23,
+            20
+          ],
+          "total": 61,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            20,
+            18,
+            17
+          ],
+          "total": 55,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            24,
+            19,
+            24
+          ],
+          "total": 67,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            12,
+            null,
+            25
+          ],
+          "total": 37,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            19,
+            21,
+            19
+          ],
+          "total": 59,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            24,
+            21,
+            17
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            13,
+            22,
+            23
+          ],
+          "total": 58,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            null,
+            23,
+            16
+          ],
+          "total": 39,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            13,
+            12,
+            18
+          ],
+          "total": 43,
+          "complete": true
+        }
+      ],
+      "rank": 32,
+      "id": "george-kraynik",
+      "ginzburgh": 5,
+      "powCount": 3
+    },
+    {
+      "source": "FRANK GALLAGHER",
+      "name": "Frank Gallagher",
+      "teamSource": "Faces",
+      "team": "Faces",
+      "games": 19,
+      "points": 359,
+      "average": 18.894736842105264,
+      "highGame": 30,
+      "highSeries": 73,
+      "highSeriesWeek": 11,
+      "highSeriesDate": "08.19.26",
+      "thirtyCount": 1,
+      "thirty": [
+        {
+          "score": 30,
+          "times": 1
+        }
+      ],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            null,
+            16
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            null,
+            20,
+            11
+          ],
+          "total": 31,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            21,
+            16,
+            19
+          ],
+          "total": 56,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            19,
+            20,
+            21
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            24,
+            9,
+            null
+          ],
+          "total": 33,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            null,
+            15,
+            null
+          ],
+          "total": 15,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            20,
+            24,
+            21
+          ],
+          "total": 65,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            null,
+            10
+          ],
+          "total": 10,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            30,
+            19,
+            24
+          ],
+          "total": 73,
+          "complete": true
+        }
+      ],
+      "rank": 33,
+      "id": "frank-gallagher",
+      "ginzburgh": 12,
+      "powCount": 7
+    },
+    {
+      "source": "JIM KILKENNY",
+      "name": "Jim Kilkenny",
+      "teamSource": "BAD COMPANY",
+      "team": "Bad Company",
+      "games": 18,
+      "points": 335,
+      "average": 18.61111111111111,
+      "highGame": 24,
+      "highSeries": 62,
+      "highSeriesWeek": 4,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            17,
+            null,
+            13
+          ],
+          "total": 30,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            20,
+            20,
+            null
+          ],
+          "total": 40,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            19,
+            15,
+            18
+          ],
+          "total": 52,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            21,
+            21,
+            20
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            21,
+            15,
+            null
+          ],
+          "total": 36,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            13,
+            null
+          ],
+          "total": 13,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            18,
+            23,
+            20
+          ],
+          "total": 61,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            17,
+            null,
+            24
+          ],
+          "total": 41,
+          "complete": false
+        }
+      ],
+      "rank": 34,
+      "id": "jim-kilkenny",
+      "ginzburgh": 4,
+      "powCount": 1
+    },
+    {
+      "source": "JOHN RAFA",
+      "name": "John Rafa",
+      "teamSource": "THE FUCK-UPS",
+      "team": "The Fuck-Ups",
+      "games": 27,
+      "points": 499,
+      "average": 18.48148148148148,
+      "highGame": 24,
+      "highSeries": 61,
+      "highSeriesWeek": 8,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            18,
+            24
+          ],
+          "total": 42,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            10,
+            22,
+            22
+          ],
+          "total": 54,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            null,
+            24,
+            13
+          ],
+          "total": 37,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            16,
+            19,
+            22
+          ],
+          "total": 57,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            14,
+            null,
+            21
+          ],
+          "total": 35,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            22,
+            17,
+            20
+          ],
+          "total": 59,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            16,
+            24,
+            20
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            23,
+            23,
+            15
+          ],
+          "total": 61,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            17,
+            12,
+            16
+          ],
+          "total": 45,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            16,
+            15,
+            18
+          ],
+          "total": 49,
+          "complete": true
+        }
+      ],
+      "rank": 35,
+      "id": "john-rafa",
+      "ginzburgh": 3,
+      "powCount": 6
+    },
+    {
+      "source": "CHRIS YOUNG",
+      "name": "Chris Young",
+      "teamSource": "DAMAGE, INC.",
+      "team": "Damage, Inc.",
+      "games": 21,
+      "points": 376,
+      "average": 17.904761904761905,
+      "highGame": 25,
+      "highSeries": 59,
+      "highSeriesWeek": 7,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            15,
+            null,
+            19
+          ],
+          "total": 34,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            16,
+            17,
+            25
+          ],
+          "total": 58,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            15,
+            null,
+            20
+          ],
+          "total": 35,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            20,
+            18,
+            11
+          ],
+          "total": 49,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            22,
+            20,
+            17
+          ],
+          "total": 59,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            14,
+            18,
+            null
+          ],
+          "total": 32,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            19,
+            15,
+            22
+          ],
+          "total": 56,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            19,
+            22,
+            12
+          ],
+          "total": 53,
+          "complete": true
+        }
+      ],
+      "rank": 36,
+      "id": "chris-young",
+      "ginzburgh": 5,
+      "powCount": 5
+    },
+    {
+      "source": "FRANK YANNESSA",
+      "name": "Frank Yannessa",
+      "teamSource": "Glazerbeam",
+      "team": "Glazerbeam",
+      "games": 2,
+      "points": 37,
+      "average": 17.85,
+      "highGame": 22,
+      "highSeries": null,
+      "highSeriesWeek": null,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 7,
+          "scores": [
+            null,
+            15,
+            22
+          ],
+          "total": 37,
+          "complete": false
+        }
+      ],
+      "rank": 37,
+      "id": "frank-yannessa",
+      "ginzburgh": 5,
+      "powCount": 3
+    },
+    {
+      "source": "DAN FEDER",
+      "name": "Dan Feder",
+      "teamSource": "Faces",
+      "team": "Faces",
+      "games": 16,
+      "points": 278,
+      "average": 17.375,
+      "highGame": 25,
+      "highSeries": 67,
+      "highSeriesWeek": 10,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 4,
+          "scores": [
+            13,
+            null,
+            21
+          ],
+          "total": 34,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            null,
+            9,
+            null
+          ],
+          "total": 9,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            13,
+            14,
+            13
+          ],
+          "total": 40,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            15,
+            21,
+            14
+          ],
+          "total": 50,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            12,
+            null,
+            null
+          ],
+          "total": 12,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            18,
+            25,
+            24
+          ],
+          "total": 67,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            24,
+            24,
+            18
+          ],
+          "total": 66,
+          "complete": true
+        }
+      ],
+      "rank": 38,
+      "id": "dan-feder",
+      "ginzburgh": null,
+      "powCount": 1
+    },
+    {
+      "source": "JERRY PURCELL",
+      "name": "Jerry Purcell",
+      "teamSource": "BAD COMPANY",
+      "team": "Bad Company",
+      "games": 21,
+      "points": 364,
+      "average": 17.333333333333332,
+      "highGame": 24,
+      "highSeries": 59,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            16,
+            24
+          ],
+          "total": 40,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            18,
+            21,
+            20
+          ],
+          "total": 59,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            15,
+            null,
+            18
+          ],
+          "total": 33,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            14,
+            null,
+            12
+          ],
+          "total": 26,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            13,
+            21,
+            19
+          ],
+          "total": 53,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            20,
+            18,
+            13
+          ],
+          "total": 51,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            20,
+            18,
+            21
+          ],
+          "total": 59,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            14,
+            13,
+            null
+          ],
+          "total": 27,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            null,
+            16,
+            null
+          ],
+          "total": 16,
+          "complete": false
+        }
+      ],
+      "rank": 39,
+      "id": "jerry-purcell",
+      "ginzburgh": 3,
+      "powCount": 2
+    },
+    {
+      "source": "CHIP DIEHL",
+      "name": "Chip Diehl",
+      "teamSource": "THE FUCK-UPS",
+      "team": "The Fuck-Ups",
+      "games": 14,
+      "points": 241,
+      "average": 17.214285714285715,
+      "highGame": 26,
+      "highSeries": 57,
+      "highSeriesWeek": 9,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            17,
+            17,
+            null
+          ],
+          "total": 34,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            14,
+            12,
+            22
+          ],
+          "total": 48,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            18,
+            13,
+            20
+          ],
+          "total": 51,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            14,
+            17,
+            26
+          ],
+          "total": 57,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            21,
+            12,
+            18
+          ],
+          "total": 51,
+          "complete": true
+        }
+      ],
+      "rank": 40,
+      "id": "chip-diehl",
+      "ginzburgh": 1,
+      "powCount": 1
+    },
+    {
+      "source": "SEAN HUNSICKER",
+      "name": "Sean Hunsicker",
+      "teamSource": "RED GROUPER",
+      "team": "Red Grouper",
+      "games": 12,
+      "points": 198,
+      "average": 16.5,
+      "highGame": 27,
+      "highSeries": 67,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            7,
+            null,
+            null
+          ],
+          "total": 7,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            27,
+            22,
+            18
+          ],
+          "total": 67,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            18,
+            null,
+            20
+          ],
+          "total": 38,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            13,
+            null,
+            null
+          ],
+          "total": 13,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            7,
+            null,
+            null
+          ],
+          "total": 7,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            null,
+            15,
+            14
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            null,
+            21,
+            16
+          ],
+          "total": 37,
+          "complete": false
+        }
+      ],
+      "rank": 41,
+      "id": "sean-hunsicker",
+      "ginzburgh": 1,
+      "powCount": null
+    },
+    {
+      "source": "RYAN HANDEL",
+      "name": "Ryan Handel",
+      "teamSource": "FUBAR",
+      "team": "FUBAR",
+      "games": 24,
+      "points": 387,
+      "average": 16.125,
+      "highGame": 21,
+      "highSeries": 56,
+      "highSeriesWeek": 6,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            16,
+            6,
+            null
+          ],
+          "total": 22,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            16,
+            15,
+            18
+          ],
+          "total": 49,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            21,
+            18,
+            16
+          ],
+          "total": 55,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            15,
+            18,
+            11
+          ],
+          "total": 44,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            20,
+            16,
+            20
+          ],
+          "total": 56,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            18,
+            16,
+            19
+          ],
+          "total": 53,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            12,
+            15
+          ],
+          "total": 27,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            null,
+            14,
+            15
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            19,
+            20,
+            13
+          ],
+          "total": 52,
+          "complete": true
+        }
+      ],
+      "rank": 42,
+      "id": "ryan-handel",
+      "ginzburgh": 2,
+      "powCount": 8
+    },
+    {
+      "source": "MATT YANNESSA",
+      "name": "Matt Yannessa",
+      "teamSource": "Glazerbeam",
+      "team": "Glazerbeam",
+      "games": 21,
+      "points": 337,
+      "average": 16.047619047619047,
+      "highGame": 23,
+      "highSeries": 60,
+      "highSeriesWeek": 1,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            18,
+            23,
+            19
+          ],
+          "total": 60,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            19,
+            8,
+            null
+          ],
+          "total": 27,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            11,
+            14,
+            null
+          ],
+          "total": 25,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            22,
+            null,
+            16
+          ],
+          "total": 38,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            14,
+            15,
+            15
+          ],
+          "total": 44,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            15,
+            null,
+            null
+          ],
+          "total": 15,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            13,
+            null,
+            null
+          ],
+          "total": 13,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            11,
+            null,
+            12
+          ],
+          "total": 23,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            23,
+            22,
+            9
+          ],
+          "total": 54,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            18,
+            null,
+            null
+          ],
+          "total": 18,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            20,
+            null,
+            null
+          ],
+          "total": 20,
+          "complete": false
+        }
+      ],
+      "rank": 43,
+      "id": "matt-yannessa",
+      "ginzburgh": 3,
+      "powCount": 2
+    },
+    {
+      "source": "PAUL KARSCH",
+      "name": "Paul Karsch",
+      "teamSource": "FUBAR",
+      "team": "FUBAR",
+      "games": 26,
+      "points": 416,
+      "average": 16,
+      "highGame": 23,
+      "highSeries": 55,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            15,
+            null,
+            13
+          ],
+          "total": 28,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            17,
+            19,
+            19
+          ],
+          "total": 55,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            14,
+            null,
+            16
+          ],
+          "total": 30,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            12,
+            15,
+            13
+          ],
+          "total": 40,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            12,
+            18,
+            15
+          ],
+          "total": 45,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            12,
+            null,
+            15
+          ],
+          "total": 27,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            18,
+            17,
+            17
+          ],
+          "total": 52,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            9,
+            13,
+            21
+          ],
+          "total": 43,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            22,
+            13,
+            19
+          ],
+          "total": 54,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            null,
+            19,
+            23
+          ],
+          "total": 42,
+          "complete": false
+        }
+      ],
+      "rank": 44,
+      "id": "paul-karsch",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "MATT POOLE",
+      "name": "Matt Poole",
+      "teamSource": "FUBAR",
+      "team": "FUBAR",
+      "games": 16,
+      "points": 255,
+      "average": 15.9375,
+      "highGame": 24,
+      "highSeries": 58,
+      "highSeriesWeek": 10,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            15,
+            13
+          ],
+          "total": 28,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            null,
+            null,
+            20
+          ],
+          "total": 20,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            16,
+            17,
+            12
+          ],
+          "total": 45,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            14,
+            12,
+            null
+          ],
+          "total": 26,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            null,
+            24,
+            18
+          ],
+          "total": 42,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            11,
+            12,
+            13
+          ],
+          "total": 36,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            21,
+            13,
+            24
+          ],
+          "total": 58,
+          "complete": true
+        }
+      ],
+      "rank": 45,
+      "id": "matt-poole",
+      "ginzburgh": 5,
+      "powCount": 2
+    },
+    {
+      "source": "STEVE KRAYNIK",
+      "name": "Steve Kraynik",
+      "teamSource": "OL' DIRTY BASTARDS",
+      "team": "Ol' Dirty Bastards",
+      "games": 20,
+      "points": 318,
+      "average": 15.9,
+      "highGame": 26,
+      "highSeries": 62,
+      "highSeriesWeek": 1,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            21,
+            21,
+            20
+          ],
+          "total": 62,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            26,
+            10,
+            14
+          ],
+          "total": 50,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            19,
+            17,
+            19
+          ],
+          "total": 55,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            null,
+            13,
+            16
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            15,
+            null,
+            17
+          ],
+          "total": 32,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            14,
+            null,
+            11
+          ],
+          "total": 25,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            10,
+            null,
+            10
+          ],
+          "total": 20,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            19,
+            16,
+            10
+          ],
+          "total": 45,
+          "complete": true
+        }
+      ],
+      "rank": 46,
+      "id": "steve-kraynik",
+      "ginzburgh": 2,
+      "powCount": 2
+    },
+    {
+      "source": "MIKE WARD",
+      "name": "Mike Ward",
+      "teamSource": "Faces",
+      "team": "Faces",
+      "games": 12,
+      "points": 190,
+      "average": 15.833333333333334,
+      "highGame": 25,
+      "highSeries": 61,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            20,
+            16,
+            25
+          ],
+          "total": 61,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            13,
+            8,
+            16
+          ],
+          "total": 37,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            null,
+            16,
+            null
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            15,
+            null,
+            14
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            null,
+            11
+          ],
+          "total": 11,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            12,
+            null,
+            24
+          ],
+          "total": 36,
+          "complete": false
+        }
+      ],
+      "rank": 47,
+      "id": "mike-ward",
+      "ginzburgh": 1,
+      "powCount": 5
+    },
+    {
+      "source": "JOHN LIGHTNER",
+      "name": "John Lightner",
+      "teamSource": "DAMAGE, INC.",
+      "team": "Damage, Inc.",
+      "games": 20,
+      "points": 306,
+      "average": 15.3,
+      "highGame": 22,
+      "highSeries": 54,
+      "highSeriesWeek": 7,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            11,
+            15,
+            19
+          ],
+          "total": 45,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            null,
+            22,
+            16
+          ],
+          "total": 38,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            null,
+            11,
+            13
+          ],
+          "total": 24,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            11,
+            14,
+            13
+          ],
+          "total": 38,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            9,
+            12
+          ],
+          "total": 21,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            13,
+            22,
+            19
+          ],
+          "total": 54,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            null,
+            19,
+            18
+          ],
+          "total": 37,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            22,
+            16,
+            11
+          ],
+          "total": 49,
+          "complete": true
+        }
+      ],
+      "rank": 48,
+      "id": "john-lightner",
+      "ginzburgh": 4,
+      "powCount": 6
+    },
+    {
+      "source": "VANCE THOMPSON",
+      "name": "Vance Thompson",
+      "teamSource": "Troopers",
+      "team": "Troopers",
+      "games": 26,
+      "points": 397,
+      "average": 15.26923076923077,
+      "highGame": 24,
+      "highSeries": 61,
+      "highSeriesWeek": 1,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            18,
+            24,
+            19
+          ],
+          "total": 61,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            13,
+            24,
+            18
+          ],
+          "total": 55,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            20,
+            10,
+            null
+          ],
+          "total": 30,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            21,
+            11,
+            13
+          ],
+          "total": 45,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            13,
+            null,
+            16
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            18,
+            14,
+            null
+          ],
+          "total": 32,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            7,
+            16,
+            13
+          ],
+          "total": 36,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            17,
+            9,
+            13
+          ],
+          "total": 39,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            7,
+            null,
+            9
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            19,
+            20,
+            15
+          ],
+          "total": 54,
+          "complete": true
+        }
+      ],
+      "rank": 49,
+      "id": "vance-thompson",
+      "ginzburgh": 1,
+      "powCount": 3
+    },
+    {
+      "source": "DAVE DUKERT",
+      "name": "Dave Dukert",
+      "teamSource": "FUBAR",
+      "team": "FUBAR",
+      "games": 19,
+      "points": 278,
+      "average": 14.631578947368421,
+      "highGame": 24,
+      "highSeries": 54,
+      "highSeriesWeek": 7,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            17,
+            10,
+            10
+          ],
+          "total": 37,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            10,
+            null,
+            null
+          ],
+          "total": 10,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            16,
+            16,
+            15
+          ],
+          "total": 47,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            8,
+            null,
+            null
+          ],
+          "total": 8,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            22,
+            19,
+            12
+          ],
+          "total": 53,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            12,
+            24,
+            18
+          ],
+          "total": 54,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            15,
+            8,
+            16
+          ],
+          "total": 39,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            20,
+            null,
+            10
+          ],
+          "total": 30,
+          "complete": false
+        }
+      ],
+      "rank": 50,
+      "id": "dave-dukert",
+      "ginzburgh": 8,
+      "powCount": 5
+    },
+    {
+      "source": "MARK TORONIEWSKI",
+      "name": "Mark Toroniewski",
+      "teamSource": "THE FUCK-UPS",
+      "team": "The Fuck-Ups",
+      "games": 24,
+      "points": 349,
+      "average": 14.541666666666666,
+      "highGame": 24,
+      "highSeries": 51,
+      "highSeriesWeek": 4,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            24,
+            11,
+            null
+          ],
+          "total": 35,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            9,
+            null,
+            18
+          ],
+          "total": 27,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            16,
+            9,
+            null
+          ],
+          "total": 25,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            18,
+            14,
+            19
+          ],
+          "total": 51,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            9,
+            9,
+            23
+          ],
+          "total": 41,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            16,
+            16,
+            12
+          ],
+          "total": 44,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            8,
+            15,
+            13
+          ],
+          "total": 36,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            19,
+            9,
+            20
+          ],
+          "total": 48,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            16,
+            14,
+            12
+          ],
+          "total": 42,
+          "complete": true
+        }
+      ],
+      "rank": 51,
+      "id": "mark-toroniewski",
+      "ginzburgh": 1,
+      "powCount": 1
+    },
+    {
+      "source": "KEVIN MALEY",
+      "name": "Kevin Maley",
+      "teamSource": "THE FUCK-UPS",
+      "team": "The Fuck-Ups",
+      "games": 26,
+      "points": 374,
+      "average": 14.384615384615385,
+      "highGame": 22,
+      "highSeries": 57,
+      "highSeriesWeek": 5,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            11,
+            null,
+            8
+          ],
+          "total": 19,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            13,
+            17,
+            16
+          ],
+          "total": 46,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            9,
+            null,
+            10
+          ],
+          "total": 19,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            17,
+            8,
+            10
+          ],
+          "total": 35,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            18,
+            18,
+            21
+          ],
+          "total": 57,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            12,
+            null,
+            22
+          ],
+          "total": 34,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            19,
+            14,
+            9
+          ],
+          "total": 42,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            13,
+            null,
+            22
+          ],
+          "total": 35,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            14,
+            17,
+            9
+          ],
+          "total": 40,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            18,
+            16,
+            13
+          ],
+          "total": 47,
+          "complete": true
+        }
+      ],
+      "rank": 52,
+      "id": "kevin-maley",
+      "ginzburgh": null,
+      "powCount": 1
+    },
+    {
+      "source": "CHIP McC.",
+      "name": "Chip McClenaghan",
+      "teamSource": "DAMAGE, INC.",
+      "team": "Damage, Inc.",
+      "games": 30,
+      "points": 431,
+      "average": 14.366666666666667,
+      "highGame": 26,
+      "highSeries": 48,
+      "highSeriesWeek": 1,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            15,
+            14,
+            19
+          ],
+          "total": 48,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            16,
+            13,
+            null
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            15,
+            13,
+            16
+          ],
+          "total": 44,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            9,
+            18,
+            21
+          ],
+          "total": 48,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            null,
+            17,
+            14
+          ],
+          "total": 31,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            11,
+            10,
+            10
+          ],
+          "total": 31,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            13,
+            12,
+            13
+          ],
+          "total": 38,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            null,
+            26,
+            18
+          ],
+          "total": 44,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            12,
+            11,
+            13
+          ],
+          "total": 36,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            10,
+            12,
+            18
+          ],
+          "total": 40,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            14,
+            14,
+            14
+          ],
+          "total": 42,
+          "complete": true
+        }
+      ],
+      "rank": 53,
+      "id": "chip-mcclenaghan",
+      "ginzburgh": 13,
+      "powCount": 6
+    },
+    {
+      "source": "MATT KRAYNIK",
+      "name": "Matt Kraynik",
+      "teamSource": "OL' DIRTY BASTARDS",
+      "team": "Ol' Dirty Bastards",
+      "games": 23,
+      "points": 325,
+      "average": 14.130434782608695,
+      "highGame": 27,
+      "highSeries": 61,
+      "highSeriesWeek": 11,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            11,
+            null
+          ],
+          "total": 11,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            17,
+            12,
+            10
+          ],
+          "total": 39,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            18,
+            13,
+            4
+          ],
+          "total": 35,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            12,
+            16,
+            null
+          ],
+          "total": 28,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            18,
+            12,
+            null
+          ],
+          "total": 30,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            14,
+            15,
+            null
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            8,
+            15,
+            14
+          ],
+          "total": 37,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            4,
+            null
+          ],
+          "total": 4,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            16,
+            16,
+            19
+          ],
+          "total": 51,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            27,
+            19,
+            15
+          ],
+          "total": 61,
+          "complete": true
+        }
+      ],
+      "rank": 54,
+      "id": "matt-kraynik",
+      "ginzburgh": null,
+      "powCount": 4
+    },
+    {
+      "source": "BRIAN ANSTOCK",
+      "name": "Brian Anstock",
+      "teamSource": "RED GROUPER",
+      "team": "Red Grouper",
+      "games": 18,
+      "points": 248,
+      "average": 13.777777777777779,
+      "highGame": 21,
+      "highSeries": 42,
+      "highSeriesWeek": 10,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            17,
+            8
+          ],
+          "total": 25,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            10,
+            6,
+            15
+          ],
+          "total": 31,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            null,
+            15,
+            null
+          ],
+          "total": 15,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            null,
+            8,
+            null
+          ],
+          "total": 8,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            null,
+            null,
+            17
+          ],
+          "total": 17,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            16,
+            null,
+            19
+          ],
+          "total": 35,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            null,
+            16,
+            19
+          ],
+          "total": 35,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            21,
+            12,
+            null
+          ],
+          "total": 33,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            16,
+            12,
+            14
+          ],
+          "total": 42,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            7,
+            null,
+            null
+          ],
+          "total": 7,
+          "complete": false
+        }
+      ],
+      "rank": 55,
+      "id": "brian-anstock",
+      "ginzburgh": 13,
+      "powCount": 8
+    },
+    {
+      "source": "COREY HOWER",
+      "name": "Corey Hower",
+      "teamSource": "ALL OUT OF ROSLYN",
+      "team": "All Out of Roslyn",
+      "games": 9,
+      "points": 122,
+      "average": 13.555555555555555,
+      "highGame": 19,
+      "highSeries": null,
+      "highSeriesWeek": null,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            null,
+            19,
+            11
+          ],
+          "total": 30,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            19,
+            9
+          ],
+          "total": 28,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            null,
+            16,
+            12
+          ],
+          "total": 28,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            null,
+            null,
+            12
+          ],
+          "total": 12,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            11,
+            13,
+            null
+          ],
+          "total": 24,
+          "complete": false
+        }
+      ],
+      "rank": 56,
+      "id": "corey-hower",
+      "ginzburgh": null,
+      "powCount": 1
+    },
+    {
+      "source": "DAN SLOTTERBACK",
+      "name": "Dan Slotterback",
+      "teamSource": "Giggity",
+      "team": "Giggity",
+      "games": 9,
+      "points": 120,
+      "average": 13.333333333333334,
+      "highGame": 15,
+      "highSeries": 42,
+      "highSeriesWeek": 4,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            12,
+            13,
+            14
+          ],
+          "total": 39,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            13,
+            12,
+            14
+          ],
+          "total": 39,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            13,
+            15,
+            14
+          ],
+          "total": 42,
+          "complete": true
+        }
+      ],
+      "rank": 57,
+      "id": "dan-slotterback",
+      "ginzburgh": 4,
+      "powCount": 4
+    },
+    {
+      "source": "DON FOCHT",
+      "name": "Don Focht",
+      "teamSource": "ALL OUT OF ROSLYN",
+      "team": "All Out of Roslyn",
+      "games": 26,
+      "points": 338,
+      "average": 13,
+      "highGame": 29,
+      "highSeries": 54,
+      "highSeriesWeek": 9,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            14,
+            10,
+            16
+          ],
+          "total": 40,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            11,
+            null,
+            null
+          ],
+          "total": 11,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            5,
+            15,
+            13
+          ],
+          "total": 33,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            15,
+            19,
+            11
+          ],
+          "total": 45,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            9,
+            13,
+            14
+          ],
+          "total": 36,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            16,
+            12,
+            null
+          ],
+          "total": 28,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            18,
+            6,
+            null
+          ],
+          "total": 24,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            7,
+            11,
+            null
+          ],
+          "total": 18,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            9,
+            29,
+            16
+          ],
+          "total": 54,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            11,
+            6,
+            null
+          ],
+          "total": 17,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            21,
+            11,
+            null
+          ],
+          "total": 32,
+          "complete": false
+        }
+      ],
+      "rank": 58,
+      "id": "don-focht",
+      "ginzburgh": 3,
+      "powCount": 13
+    },
+    {
+      "source": "JERRY THOMPSON",
+      "name": "Jerry Thompson",
+      "teamSource": "Troopers",
+      "team": "Troopers",
+      "games": 13,
+      "points": 169,
+      "average": 13,
+      "highGame": 25,
+      "highSeries": 38,
+      "highSeriesWeek": 9,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            15,
+            15,
+            null
+          ],
+          "total": 30,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            null,
+            10,
+            null
+          ],
+          "total": 10,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            7,
+            null,
+            25
+          ],
+          "total": 32,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            10,
+            14,
+            13
+          ],
+          "total": 37,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            17,
+            11,
+            10
+          ],
+          "total": 38,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            8,
+            14,
+            null
+          ],
+          "total": 22,
+          "complete": false
+        }
+      ],
+      "rank": 58,
+      "id": "jerry-thompson",
+      "ginzburgh": 5,
+      "powCount": 3
+    },
+    {
+      "source": "CHIP CROTHAMEL",
+      "name": "Chip Crothamel",
+      "teamSource": "Giggity",
+      "team": "Giggity",
+      "games": 16,
+      "points": 204,
+      "average": 12.75,
+      "highGame": 17,
+      "highSeries": 43,
+      "highSeriesWeek": 6,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            12,
+            14,
+            14
+          ],
+          "total": 40,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            8,
+            12,
+            11
+          ],
+          "total": 31,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            null,
+            14,
+            13
+          ],
+          "total": 27,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            10,
+            11,
+            14
+          ],
+          "total": 35,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            17,
+            15,
+            11
+          ],
+          "total": 43,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            11,
+            null,
+            17
+          ],
+          "total": 28,
+          "complete": false
+        }
+      ],
+      "rank": 60,
+      "id": "chip-crothamel",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "TOM KILKENNY, JR.",
+      "name": "Tom Kilkenny Jr.",
+      "teamSource": "BAD COMPANY",
+      "team": "Bad Company",
+      "games": 13,
+      "points": 165,
+      "average": 12.692307692307692,
+      "highGame": 18,
+      "highSeries": 37,
+      "highSeriesWeek": 8,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 3,
+          "scores": [
+            10,
+            9,
+            14
+          ],
+          "total": 33,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            13,
+            15,
+            9
+          ],
+          "total": 37,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            15,
+            18
+          ],
+          "total": 33,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            12,
+            9,
+            14
+          ],
+          "total": 35,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            18,
+            null,
+            9
+          ],
+          "total": 27,
+          "complete": false
+        }
+      ],
+      "rank": 61,
+      "id": "tom-kilkenny-jr",
+      "ginzburgh": null,
+      "powCount": 2
+    },
+    {
+      "source": "MIKE TOKARCZYK",
+      "name": "Mike Tokarczyk",
+      "teamSource": "FUBAR",
+      "team": "FUBAR",
+      "games": 10,
+      "points": 112,
+      "average": 11.2,
+      "highGame": 20,
+      "highSeries": 35,
+      "highSeriesWeek": 5,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            null,
+            6,
+            null
+          ],
+          "total": 6,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            14,
+            10,
+            null
+          ],
+          "total": 24,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            20,
+            8,
+            7
+          ],
+          "total": 35,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            13,
+            11,
+            null
+          ],
+          "total": 24,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            9,
+            14,
+            null
+          ],
+          "total": 23,
+          "complete": false
+        }
+      ],
+      "rank": 62,
+      "id": "mike-tokarczyk",
+      "ginzburgh": null,
+      "powCount": 7
+    },
+    {
+      "source": "CHEYENNE DOUGHERTY",
+      "name": "Cheyenne Dougherty",
+      "teamSource": "Troopers",
+      "team": "Troopers",
+      "games": 26,
+      "points": 280,
+      "average": 10.76923076923077,
+      "highGame": 20,
+      "highSeries": 41,
+      "highSeriesWeek": 7,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            17,
+            14,
+            9
+          ],
+          "total": 40,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            15,
+            6,
+            13
+          ],
+          "total": 34,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            9,
+            13,
+            8
+          ],
+          "total": 30,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            null,
+            17,
+            12
+          ],
+          "total": 29,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            6,
+            15,
+            14
+          ],
+          "total": 35,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            15,
+            5,
+            null
+          ],
+          "total": 20,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            14,
+            20,
+            7
+          ],
+          "total": 41,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            6,
+            6,
+            3
+          ],
+          "total": 15,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            9,
+            10
+          ],
+          "total": 19,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            null,
+            10,
+            7
+          ],
+          "total": 17,
+          "complete": false
+        }
+      ],
+      "rank": 63,
+      "id": "cheyenne-dougherty",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "STEVE GALLAGHER",
+      "name": "Steve Gallagher",
+      "teamSource": "Faces",
+      "team": "Faces",
+      "games": 3,
+      "points": 14,
+      "average": 10.64,
+      "highGame": 6,
+      "highSeries": null,
+      "highSeriesWeek": null,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            4,
+            null,
+            null
+          ],
+          "total": 4,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            null,
+            6
+          ],
+          "total": 6,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            null,
+            4,
+            null
+          ],
+          "total": 4,
+          "complete": false
+        }
+      ],
+      "rank": 64,
+      "id": "steve-gallagher",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "SEAN BENNETT",
+      "name": "Sean Bennett",
+      "teamSource": "Troopers",
+      "team": "Troopers",
+      "games": 23,
+      "points": 241,
+      "average": 10.478260869565217,
+      "highGame": 15,
+      "highSeries": 38,
+      "highSeriesWeek": 4,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            null,
+            7
+          ],
+          "total": 7,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            15,
+            8,
+            11
+          ],
+          "total": 34,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            null,
+            6,
+            11
+          ],
+          "total": 17,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            15,
+            12,
+            11
+          ],
+          "total": 38,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            10,
+            11,
+            14
+          ],
+          "total": 35,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            9,
+            null,
+            10
+          ],
+          "total": 19,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            9,
+            10,
+            8
+          ],
+          "total": 27,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            13,
+            null,
+            null
+          ],
+          "total": 13,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            null,
+            9,
+            9
+          ],
+          "total": 18,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            13,
+            10,
+            10
+          ],
+          "total": 33,
+          "complete": true
+        }
+      ],
+      "rank": 65,
+      "id": "sean-bennett",
+      "ginzburgh": 3,
+      "powCount": 3
+    },
+    {
+      "source": "JAY YOUNG",
+      "name": "Jay Young",
+      "teamSource": "Giggity",
+      "team": "Giggity",
+      "games": 21,
+      "points": 205,
+      "average": 9.761904761904763,
+      "highGame": 21,
+      "highSeries": 44,
+      "highSeriesWeek": 6,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            10,
+            10,
+            10
+          ],
+          "total": 30,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            8,
+            14,
+            15
+          ],
+          "total": 37,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            3,
+            8,
+            2
+          ],
+          "total": 13,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            8,
+            4,
+            7
+          ],
+          "total": 19,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            7,
+            8,
+            11
+          ],
+          "total": 26,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            8,
+            19,
+            17
+          ],
+          "total": 44,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            21,
+            10,
+            5
+          ],
+          "total": 36,
+          "complete": true
+        }
+      ],
+      "rank": 66,
+      "id": "jay-young",
+      "ginzburgh": 19,
+      "powCount": 13
+    },
+    {
+      "source": "TARA PARRISH",
+      "name": "Tara Parrish",
+      "teamSource": "ALL OUT OF ROSLYN",
+      "team": "All Out of Roslyn",
+      "games": 22,
+      "points": 198,
+      "average": 9,
+      "highGame": 16,
+      "highSeries": 34,
+      "highSeriesWeek": 1,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            13,
+            15,
+            6
+          ],
+          "total": 34,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            16,
+            9,
+            null
+          ],
+          "total": 25,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            5,
+            null,
+            null
+          ],
+          "total": 5,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            13,
+            8,
+            8
+          ],
+          "total": 29,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            9,
+            null,
+            null
+          ],
+          "total": 9,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            7,
+            null,
+            9
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            10,
+            9,
+            6
+          ],
+          "total": 25,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            8,
+            9,
+            null
+          ],
+          "total": 17,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            1,
+            null,
+            12
+          ],
+          "total": 13,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            9,
+            9,
+            7
+          ],
+          "total": 25,
+          "complete": true
+        }
+      ],
+      "rank": 67,
+      "id": "tara-parrish",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "MIKE RATKA",
+      "name": "Mike Ratka",
+      "teamSource": "Troopers",
+      "team": "Troopers",
+      "games": 18,
+      "points": 162,
+      "average": 9,
+      "highGame": 19,
+      "highSeries": 44,
+      "highSeriesWeek": 11,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            2,
+            null
+          ],
+          "total": 2,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            11,
+            8,
+            9
+          ],
+          "total": 28,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            2,
+            null,
+            2
+          ],
+          "total": 4,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            7,
+            11,
+            6
+          ],
+          "total": 24,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            11,
+            9,
+            12
+          ],
+          "total": 32,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            7,
+            10,
+            11
+          ],
+          "total": 28,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            11,
+            19,
+            14
+          ],
+          "total": 44,
+          "complete": true
+        }
+      ],
+      "rank": 67,
+      "id": "mike-ratka",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "NICK BENNETT",
+      "name": "Nick Bennett",
+      "teamSource": "Troopers",
+      "team": "Troopers",
+      "games": 17,
+      "points": 151,
+      "average": 8.882352941176471,
+      "highGame": 14,
+      "highSeries": 35,
+      "highSeriesWeek": 9,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            6,
+            null,
+            10
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            9,
+            null,
+            12
+          ],
+          "total": 21,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            7,
+            7,
+            null
+          ],
+          "total": 14,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            11,
+            7,
+            10
+          ],
+          "total": 28,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            5,
+            11
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            null,
+            9,
+            7
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            14,
+            9,
+            12
+          ],
+          "total": 35,
+          "complete": true
+        },
+        {
+          "week": 10,
+          "scores": [
+            5,
+            null,
+            null
+          ],
+          "total": 5,
+          "complete": false
+        }
+      ],
+      "rank": 69,
+      "id": "nick-bennett",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "LORI JAMES",
+      "name": "Lori James",
+      "teamSource": "ALL OUT OF ROSLYN",
+      "team": "All Out of Roslyn",
+      "games": 21,
+      "points": 168,
+      "average": 8,
+      "highGame": 16,
+      "highSeries": 28,
+      "highSeriesWeek": 1,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            12,
+            5,
+            11
+          ],
+          "total": 28,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            null,
+            11,
+            1
+          ],
+          "total": 12,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            null,
+            12,
+            2
+          ],
+          "total": 14,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            8,
+            3,
+            3
+          ],
+          "total": 14,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            null,
+            11
+          ],
+          "total": 11,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            7,
+            null,
+            null
+          ],
+          "total": 7,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            4,
+            6,
+            10
+          ],
+          "total": 20,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            null,
+            7,
+            16
+          ],
+          "total": 23,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            null,
+            7,
+            11
+          ],
+          "total": 18,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            null,
+            12,
+            9
+          ],
+          "total": 21,
+          "complete": false
+        }
+      ],
+      "rank": 70,
+      "id": "lori-james",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "BOB HARKER",
+      "name": "Bob Harker",
+      "teamSource": "THE FUCK-UPS",
+      "team": "The Fuck-Ups",
+      "games": 11,
+      "points": 76,
+      "average": 6.909090909090909,
+      "highGame": 14,
+      "highSeries": 9,
+      "highSeriesWeek": 10,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            null,
+            11,
+            10
+          ],
+          "total": 21,
+          "complete": false
+        },
+        {
+          "week": 2,
+          "scores": [
+            null,
+            2,
+            null
+          ],
+          "total": 2,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            null,
+            14,
+            9
+          ],
+          "total": 23,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            null,
+            4,
+            null
+          ],
+          "total": 4,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            null,
+            12,
+            5
+          ],
+          "total": 17,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            3,
+            5,
+            1
+          ],
+          "total": 9,
+          "complete": true
+        }
+      ],
+      "rank": 71,
+      "id": "bob-harker",
+      "ginzburgh": null,
+      "powCount": 2
+    },
+    {
+      "source": "DONNA BENNETT",
+      "name": "Donna Bennett",
+      "teamSource": "ALL OUT OF ROSLYN",
+      "team": "All Out of Roslyn",
+      "games": 26,
+      "points": 176,
+      "average": 6.769230769230769,
+      "highGame": 13,
+      "highSeries": 29,
+      "highSeriesWeek": 6,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            5,
+            6,
+            5
+          ],
+          "total": 16,
+          "complete": true
+        },
+        {
+          "week": 2,
+          "scores": [
+            8,
+            null,
+            8
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 3,
+          "scores": [
+            5,
+            10,
+            4
+          ],
+          "total": 19,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            1,
+            5,
+            5
+          ],
+          "total": 11,
+          "complete": true
+        },
+        {
+          "week": 6,
+          "scores": [
+            11,
+            8,
+            10
+          ],
+          "total": 29,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            null,
+            8,
+            2
+          ],
+          "total": 10,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            7,
+            8,
+            13
+          ],
+          "total": 28,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            4,
+            null,
+            8
+          ],
+          "total": 12,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            null,
+            10,
+            9
+          ],
+          "total": 19,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            7,
+            6,
+            3
+          ],
+          "total": 16,
+          "complete": true
+        }
+      ],
+      "rank": 72,
+      "id": "donna-bennett",
+      "ginzburgh": null,
+      "powCount": 4
+    },
+    {
+      "source": "TIFFANY FOX",
+      "name": "Tiffany Fox",
+      "teamSource": "BAD COMPANY",
+      "team": "Bad Company",
+      "games": 10,
+      "points": 60,
+      "average": 6,
+      "highGame": 9,
+      "highSeries": null,
+      "highSeriesWeek": null,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            3,
+            null,
+            5
+          ],
+          "total": 8,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            null,
+            3,
+            null
+          ],
+          "total": 3,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            null,
+            3,
+            null
+          ],
+          "total": 3,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            8,
+            8,
+            null
+          ],
+          "total": 16,
+          "complete": false
+        },
+        {
+          "week": 9,
+          "scores": [
+            6,
+            null,
+            7
+          ],
+          "total": 13,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            8,
+            9,
+            null
+          ],
+          "total": 17,
+          "complete": false
+        }
+      ],
+      "rank": 73,
+      "id": "tiffany-fox",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "CONNELL HENNESSEY",
+      "name": "Connell Hennessey",
+      "teamSource": "FUBAR",
+      "team": "FUBAR",
+      "games": 13,
+      "points": 61,
+      "average": 4.6923076923076925,
+      "highGame": 13,
+      "highSeries": 15,
+      "highSeriesWeek": 8,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 6,
+          "scores": [
+            null,
+            9,
+            null
+          ],
+          "total": 9,
+          "complete": false
+        },
+        {
+          "week": 7,
+          "scores": [
+            1,
+            0,
+            0
+          ],
+          "total": 1,
+          "complete": true
+        },
+        {
+          "week": 8,
+          "scores": [
+            2,
+            8,
+            5
+          ],
+          "total": 15,
+          "complete": true
+        },
+        {
+          "week": 9,
+          "scores": [
+            3,
+            null,
+            4
+          ],
+          "total": 7,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            6,
+            4,
+            null
+          ],
+          "total": 10,
+          "complete": false
+        },
+        {
+          "week": 11,
+          "scores": [
+            null,
+            13,
+            6
+          ],
+          "total": 19,
+          "complete": false
+        }
+      ],
+      "rank": 74,
+      "id": "connell-hennessey",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "LYNN VALENTINE",
+      "name": "Lynn Valentine",
+      "teamSource": "Giggity",
+      "team": "Giggity",
+      "games": 9,
+      "points": 33,
+      "average": 3.6666666666666665,
+      "highGame": 9,
+      "highSeries": 12,
+      "highSeriesWeek": 2,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 2,
+          "scores": [
+            2,
+            9,
+            1
+          ],
+          "total": 12,
+          "complete": true
+        },
+        {
+          "week": 4,
+          "scores": [
+            null,
+            7,
+            2
+          ],
+          "total": 9,
+          "complete": false
+        },
+        {
+          "week": 5,
+          "scores": [
+            1,
+            3,
+            5
+          ],
+          "total": 9,
+          "complete": true
+        },
+        {
+          "week": 7,
+          "scores": [
+            null,
+            3,
+            null
+          ],
+          "total": 3,
+          "complete": false
+        }
+      ],
+      "rank": 75,
+      "id": "lynn-valentine",
+      "ginzburgh": null,
+      "powCount": null
+    },
+    {
+      "source": "JOHN KLEIS",
+      "name": "John Kleis",
+      "teamSource": "DAMAGE, INC.",
+      "team": "Damage, Inc.",
+      "games": 17,
+      "points": 56,
+      "average": 3.2941176470588234,
+      "highGame": 9,
+      "highSeries": 12,
+      "highSeriesWeek": 4,
+      "highSeriesDate": "",
+      "thirtyCount": 0,
+      "thirty": [],
+      "weeks": [
+        {
+          "week": 1,
+          "scores": [
+            0,
+            2,
+            4
+          ],
+          "total": 6,
+          "complete": true
+        },
+        {
+          "week": 3,
+          "scores": [
+            6,
+            null,
+            null
+          ],
+          "total": 6,
+          "complete": false
+        },
+        {
+          "week": 4,
+          "scores": [
+            2,
+            1,
+            9
+          ],
+          "total": 12,
+          "complete": true
+        },
+        {
+          "week": 5,
+          "scores": [
+            8,
+            1,
+            null
+          ],
+          "total": 9,
+          "complete": false
+        },
+        {
+          "week": 6,
+          "scores": [
+            2,
+            null,
+            null
+          ],
+          "total": 2,
+          "complete": false
+        },
+        {
+          "week": 8,
+          "scores": [
+            7,
+            null,
+            null
+          ],
+          "total": 7,
+          "complete": false
+        },
+        {
+          "week": 10,
+          "scores": [
+            1,
+            0,
+            6
+          ],
+          "total": 7,
+          "complete": true
+        },
+        {
+          "week": 11,
+          "scores": [
+            1,
+            3,
+            3
+          ],
+          "total": 7,
+          "complete": true
+        }
+      ],
+      "rank": 76,
+      "id": "john-kleis",
+      "ginzburgh": null,
+      "powCount": null
+    }
+  ],
+  "h2h": [
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "Bastards",
+      "team": "Damage, Inc.",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "FUBAR",
+      "team": "Damage, Inc.",
+      "opponent": "FUBAR",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "Fuck-Ups",
+      "team": "Damage, Inc.",
+      "opponent": "The Fuck-Ups",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "Damage, Inc.",
+      "opponent": "All Out of Roslyn",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "Giggity",
+      "team": "Damage, Inc.",
+      "opponent": "Giggity",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "Faces",
+      "team": "Damage, Inc.",
+      "opponent": "Faces",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "Glazer",
+      "team": "Damage, Inc.",
+      "opponent": "Glazerbeam",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "Redrum",
+      "team": "Damage, Inc.",
+      "opponent": "Redrum",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "Bad Co.",
+      "team": "Damage, Inc.",
+      "opponent": "Bad Company",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "Red Grouper",
+      "team": "Damage, Inc.",
+      "opponent": "Red Grouper",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "DAMAGE",
+      "opponentSource": "Troop",
+      "team": "Damage, Inc.",
+      "opponent": "Troopers",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "DAMAGE",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "Damage, Inc.",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "FUBAR",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "FUBAR",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "Fuck-Ups",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "The Fuck-Ups",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "All Out of Roslyn",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "Giggity",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "Giggity",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "Faces",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "Faces",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "Glazer",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "Glazerbeam",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "Redrum",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "Redrum",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "Bad Co.",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "Bad Company",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "Red Grouper",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "Red Grouper",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Bastards",
+      "opponentSource": "Troop",
+      "team": "Ol' Dirty Bastards",
+      "opponent": "Troopers",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "DAMAGE",
+      "team": "FUBAR",
+      "opponent": "Damage, Inc.",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "Bastards",
+      "team": "FUBAR",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "Fuck-Ups",
+      "team": "FUBAR",
+      "opponent": "The Fuck-Ups",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "FUBAR",
+      "opponent": "All Out of Roslyn",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "Giggity",
+      "team": "FUBAR",
+      "opponent": "Giggity",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "Faces",
+      "team": "FUBAR",
+      "opponent": "Faces",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "Glazer",
+      "team": "FUBAR",
+      "opponent": "Glazerbeam",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "Redrum",
+      "team": "FUBAR",
+      "opponent": "Redrum",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "Bad Co.",
+      "team": "FUBAR",
+      "opponent": "Bad Company",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "Red Grouper",
+      "team": "FUBAR",
+      "opponent": "Red Grouper",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "FUBAR",
+      "opponentSource": "Troop",
+      "team": "FUBAR",
+      "opponent": "Troopers",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "DAMAGE",
+      "team": "The Fuck-Ups",
+      "opponent": "Damage, Inc.",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "Bastards",
+      "team": "The Fuck-Ups",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "FUBAR",
+      "team": "The Fuck-Ups",
+      "opponent": "FUBAR",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "The Fuck-Ups",
+      "opponent": "All Out of Roslyn",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "Giggity",
+      "team": "The Fuck-Ups",
+      "opponent": "Giggity",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "Faces",
+      "team": "The Fuck-Ups",
+      "opponent": "Faces",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "Glazer",
+      "team": "The Fuck-Ups",
+      "opponent": "Glazerbeam",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "Redrum",
+      "team": "The Fuck-Ups",
+      "opponent": "Redrum",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "Bad Co.",
+      "team": "The Fuck-Ups",
+      "opponent": "Bad Company",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "Red Grouper",
+      "team": "The Fuck-Ups",
+      "opponent": "Red Grouper",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Fuck-Ups",
+      "opponentSource": "Troop",
+      "team": "The Fuck-Ups",
+      "opponent": "Troopers",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "DAMAGE",
+      "team": "All Out of Roslyn",
+      "opponent": "Damage, Inc.",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "Bastards",
+      "team": "All Out of Roslyn",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "FUBAR",
+      "team": "All Out of Roslyn",
+      "opponent": "FUBAR",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "Fuck-Ups",
+      "team": "All Out of Roslyn",
+      "opponent": "The Fuck-Ups",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "Giggity",
+      "team": "All Out of Roslyn",
+      "opponent": "Giggity",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "Faces",
+      "team": "All Out of Roslyn",
+      "opponent": "Faces",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "Glazer",
+      "team": "All Out of Roslyn",
+      "opponent": "Glazerbeam",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "Redrum",
+      "team": "All Out of Roslyn",
+      "opponent": "Redrum",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "Bad Co.",
+      "team": "All Out of Roslyn",
+      "opponent": "Bad Company",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "Red Grouper",
+      "team": "All Out of Roslyn",
+      "opponent": "Red Grouper",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "All Out Of Roslyn",
+      "opponentSource": "Troop",
+      "team": "All Out of Roslyn",
+      "opponent": "Troopers",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "DAMAGE",
+      "team": "Giggity",
+      "opponent": "Damage, Inc.",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "Bastards",
+      "team": "Giggity",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "FUBAR",
+      "team": "Giggity",
+      "opponent": "FUBAR",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "Fuck-Ups",
+      "team": "Giggity",
+      "opponent": "The Fuck-Ups",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "Giggity",
+      "opponent": "All Out of Roslyn",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "Faces",
+      "team": "Giggity",
+      "opponent": "Faces",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "Glazer",
+      "team": "Giggity",
+      "opponent": "Glazerbeam",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "Redrum",
+      "team": "Giggity",
+      "opponent": "Redrum",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "Bad Co.",
+      "team": "Giggity",
+      "opponent": "Bad Company",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "Red Grouper",
+      "team": "Giggity",
+      "opponent": "Red Grouper",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Giggity",
+      "opponentSource": "Troop",
+      "team": "Giggity",
+      "opponent": "Troopers",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "DAMAGE",
+      "team": "Faces",
+      "opponent": "Damage, Inc.",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "Bastards",
+      "team": "Faces",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "FUBAR",
+      "team": "Faces",
+      "opponent": "FUBAR",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "Fuck-Ups",
+      "team": "Faces",
+      "opponent": "The Fuck-Ups",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "Faces",
+      "opponent": "All Out of Roslyn",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "Giggity",
+      "team": "Faces",
+      "opponent": "Giggity",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "Glazer",
+      "team": "Faces",
+      "opponent": "Glazerbeam",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "Redrum",
+      "team": "Faces",
+      "opponent": "Redrum",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "Bad Co.",
+      "team": "Faces",
+      "opponent": "Bad Company",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "Red Grouper",
+      "team": "Faces",
+      "opponent": "Red Grouper",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Faces",
+      "opponentSource": "Troop",
+      "team": "Faces",
+      "opponent": "Troopers",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "DAMAGE",
+      "team": "Glazerbeam",
+      "opponent": "Damage, Inc.",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "Bastards",
+      "team": "Glazerbeam",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "FUBAR",
+      "team": "Glazerbeam",
+      "opponent": "FUBAR",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "Fuck-Ups",
+      "team": "Glazerbeam",
+      "opponent": "The Fuck-Ups",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "Glazerbeam",
+      "opponent": "All Out of Roslyn",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "Giggity",
+      "team": "Glazerbeam",
+      "opponent": "Giggity",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "Faces",
+      "team": "Glazerbeam",
+      "opponent": "Faces",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "Redrum",
+      "team": "Glazerbeam",
+      "opponent": "Redrum",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "Bad Co.",
+      "team": "Glazerbeam",
+      "opponent": "Bad Company",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "Red Grouper",
+      "team": "Glazerbeam",
+      "opponent": "Red Grouper",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Glazer",
+      "opponentSource": "Troop",
+      "team": "Glazerbeam",
+      "opponent": "Troopers",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "DAMAGE",
+      "team": "Redrum",
+      "opponent": "Damage, Inc.",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "Bastards",
+      "team": "Redrum",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "FUBAR",
+      "team": "Redrum",
+      "opponent": "FUBAR",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "Fuck-Ups",
+      "team": "Redrum",
+      "opponent": "The Fuck-Ups",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "Redrum",
+      "opponent": "All Out of Roslyn",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "Giggity",
+      "team": "Redrum",
+      "opponent": "Giggity",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "Faces",
+      "team": "Redrum",
+      "opponent": "Faces",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "Glazer",
+      "team": "Redrum",
+      "opponent": "Glazerbeam",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "Bad Co.",
+      "team": "Redrum",
+      "opponent": "Bad Company",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "Red Grouper",
+      "team": "Redrum",
+      "opponent": "Red Grouper",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Redrum",
+      "opponentSource": "Troop",
+      "team": "Redrum",
+      "opponent": "Troopers",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "DAMAGE",
+      "team": "Bad Company",
+      "opponent": "Damage, Inc.",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "Bastards",
+      "team": "Bad Company",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "FUBAR",
+      "team": "Bad Company",
+      "opponent": "FUBAR",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "Fuck-Ups",
+      "team": "Bad Company",
+      "opponent": "The Fuck-Ups",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "Bad Company",
+      "opponent": "All Out of Roslyn",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "Giggity",
+      "team": "Bad Company",
+      "opponent": "Giggity",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "Faces",
+      "team": "Bad Company",
+      "opponent": "Faces",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "Glazer",
+      "team": "Bad Company",
+      "opponent": "Glazerbeam",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "Redrum",
+      "team": "Bad Company",
+      "opponent": "Redrum",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "Red Grouper",
+      "team": "Bad Company",
+      "opponent": "Red Grouper",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Bad Co.",
+      "opponentSource": "Troop",
+      "team": "Bad Company",
+      "opponent": "Troopers",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "DAMAGE",
+      "team": "Red Grouper",
+      "opponent": "Damage, Inc.",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "Bastards",
+      "team": "Red Grouper",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "FUBAR",
+      "team": "Red Grouper",
+      "opponent": "FUBAR",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "Fuck-Ups",
+      "team": "Red Grouper",
+      "opponent": "The Fuck-Ups",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "Red Grouper",
+      "opponent": "All Out of Roslyn",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "Giggity",
+      "team": "Red Grouper",
+      "opponent": "Giggity",
+      "w": 2,
+      "l": 2
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "Faces",
+      "team": "Red Grouper",
+      "opponent": "Faces",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "Glazer",
+      "team": "Red Grouper",
+      "opponent": "Glazerbeam",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "Redrum",
+      "team": "Red Grouper",
+      "opponent": "Redrum",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "Bad Co.",
+      "team": "Red Grouper",
+      "opponent": "Bad Company",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Red Grouper",
+      "opponentSource": "Troop",
+      "team": "Red Grouper",
+      "opponent": "Troopers",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "DAMAGE",
+      "team": "Troopers",
+      "opponent": "Damage, Inc.",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "Bastards",
+      "team": "Troopers",
+      "opponent": "Ol' Dirty Bastards",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "FUBAR",
+      "team": "Troopers",
+      "opponent": "FUBAR",
+      "w": 3,
+      "l": 1
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "Fuck-Ups",
+      "team": "Troopers",
+      "opponent": "The Fuck-Ups",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "All Out Of Roslyn",
+      "team": "Troopers",
+      "opponent": "All Out of Roslyn",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "Giggity",
+      "team": "Troopers",
+      "opponent": "Giggity",
+      "w": 4,
+      "l": 0
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "Faces",
+      "team": "Troopers",
+      "opponent": "Faces",
+      "w": 1,
+      "l": 3
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "Glazer",
+      "team": "Troopers",
+      "opponent": "Glazerbeam",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "Redrum",
+      "team": "Troopers",
+      "opponent": "Redrum",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "Bad Co.",
+      "team": "Troopers",
+      "opponent": "Bad Company",
+      "w": 0,
+      "l": 4
+    },
+    {
+      "teamSource": "Troop",
+      "opponentSource": "Red Grouper",
+      "team": "Troopers",
+      "opponent": "Red Grouper",
+      "w": 0,
+      "l": 4
+    }
+  ],
+  "schedule": {
+    "weeks": [
+      {
+        "number": 1,
+        "label": "Week No. 1 - June 10",
+        "when": "June 10, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "FuckUps",
+            "home": "All Out of Roslyn",
+            "away": "The Fuck-Ups"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Glazer",
+            "awaySource": "Bad Co.",
+            "home": "Glazerbeam",
+            "away": "Bad Company"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Bastards",
+            "awaySource": "Giggity",
+            "home": "Ol' Dirty Bastards",
+            "away": "Giggity"
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Damage",
+            "awaySource": "Redrum",
+            "home": "Damage, Inc.",
+            "away": "Redrum"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Troopers",
+            "awaySource": "Faces",
+            "home": "Troopers",
+            "away": "Faces"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Grouper",
+            "awaySource": "FUBAR",
+            "home": "Red Grouper",
+            "away": "FUBAR"
+          }
+        ]
+      },
+      {
+        "number": 2,
+        "label": "Week No. 2 - June 17",
+        "when": "June 17, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "Bastards",
+            "home": "All Out of Roslyn",
+            "away": "Ol' Dirty Bastards"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "FuckUps",
+            "awaySource": "Bad Co.",
+            "home": "The Fuck-Ups",
+            "away": "Bad Company"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Grouper",
+            "awaySource": "Giggity",
+            "home": "Red Grouper",
+            "away": "Giggity"
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Redrum",
+            "awaySource": "Troopers",
+            "home": "Redrum",
+            "away": "Troopers"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Faces",
+            "awaySource": "Glazer",
+            "home": "Faces",
+            "away": "Glazerbeam"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Damage",
+            "awaySource": "FUBAR",
+            "home": "Damage, Inc.",
+            "away": "FUBAR"
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "label": "Week No. 3 - June 24",
+        "when": "June 24, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Troopers",
+            "awaySource": "Glazer",
+            "home": "Troopers",
+            "away": "Glazerbeam"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Grouper",
+            "awaySource": "Damage",
+            "home": "Red Grouper",
+            "away": "Damage, Inc."
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Redrum",
+            "awaySource": "Bastards",
+            "home": "Redrum",
+            "away": "Ol' Dirty Bastards"
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Giggity",
+            "awaySource": "FuckUps",
+            "home": "Giggity",
+            "away": "The Fuck-Ups"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "FUBAR",
+            "awaySource": "Bad Co.",
+            "home": "FUBAR",
+            "away": "Bad Company"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "Faces",
+            "home": "All Out of Roslyn",
+            "away": "Faces"
+          }
+        ]
+      },
+      {
+        "number": 4,
+        "label": "Week No. 4 - July 01",
+        "when": "July 01, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Troopers",
+            "awaySource": "Bad Co.",
+            "home": "Troopers",
+            "away": "Bad Company"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Glazer",
+            "awaySource": "Bastards",
+            "home": "Glazerbeam",
+            "away": "Ol' Dirty Bastards"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "FuckUps",
+            "awaySource": "Damage",
+            "home": "The Fuck-Ups",
+            "away": "Damage, Inc."
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Redrum",
+            "awaySource": "Giggity",
+            "home": "Redrum",
+            "away": "Giggity"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "Grouper",
+            "home": "All Out of Roslyn",
+            "away": "Red Grouper"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "FUBAR",
+            "awaySource": "Faces",
+            "home": "FUBAR",
+            "away": "Faces"
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "label": "Week No. 5 - July 08",
+        "when": "July 08, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Grouper",
+            "awaySource": "Bad Co.",
+            "home": "Red Grouper",
+            "away": "Bad Company"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Troopers",
+            "awaySource": "FuckUps",
+            "home": "Troopers",
+            "away": "The Fuck-Ups"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Bastards",
+            "awaySource": "Damage",
+            "home": "Ol' Dirty Bastards",
+            "away": "Damage, Inc."
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "Glazer",
+            "home": "All Out of Roslyn",
+            "away": "Glazerbeam"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Giggity",
+            "awaySource": "FUBAR",
+            "home": "Giggity",
+            "away": "FUBAR"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Redrum",
+            "awaySource": "Faces",
+            "home": "Redrum",
+            "away": "Faces"
+          }
+        ]
+      },
+      {
+        "number": 6,
+        "label": "Week No. 6 - July 15",
+        "when": "July 15, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Troopers",
+            "awaySource": "Damage",
+            "home": "Troopers",
+            "away": "Damage, Inc."
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Redrum",
+            "awaySource": "Bad Co.",
+            "home": "Redrum",
+            "away": "Bad Company"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Glazer",
+            "awaySource": "FuckUps",
+            "home": "Glazerbeam",
+            "away": "The Fuck-Ups"
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Giggity",
+            "awaySource": "Faces",
+            "home": "Giggity",
+            "away": "Faces"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Grouper",
+            "awaySource": "Bastards",
+            "home": "Red Grouper",
+            "away": "Ol' Dirty Bastards"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "FUBAR",
+            "home": "All Out of Roslyn",
+            "away": "FUBAR"
+          }
+        ]
+      },
+      {
+        "number": 7,
+        "label": "Week No. 7 - July 22",
+        "when": "July 22, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Damage",
+            "awaySource": "Bad Co.",
+            "home": "Damage, Inc.",
+            "away": "Bad Company"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "Giggity",
+            "home": "All Out of Roslyn",
+            "away": "Giggity"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Bastards",
+            "awaySource": "Troopers",
+            "home": "Ol' Dirty Bastards",
+            "away": "Troopers"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Grouper",
+            "awaySource": "Redrum",
+            "home": "Red Grouper",
+            "away": "Redrum"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Glazer",
+            "awaySource": "FUBAR",
+            "home": "Glazerbeam",
+            "away": "FUBAR"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "FuckUps",
+            "awaySource": "Faces",
+            "home": "The Fuck-Ups",
+            "away": "Faces"
+          }
+        ]
+      },
+      {
+        "number": 8,
+        "label": "Week No. 8 - July 29",
+        "when": "July 29, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Glazer",
+            "awaySource": "Damage",
+            "home": "Glazerbeam",
+            "away": "Damage, Inc."
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Giggity",
+            "awaySource": "Bad Co.",
+            "home": "Giggity",
+            "away": "Bad Company"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "Redrum",
+            "home": "All Out of Roslyn",
+            "away": "Redrum"
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Troopers",
+            "awaySource": "Grouper",
+            "home": "Troopers",
+            "away": "Red Grouper"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "FuckUps",
+            "awaySource": "FUBAR",
+            "home": "The Fuck-Ups",
+            "away": "FUBAR"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Bastards",
+            "awaySource": "Faces",
+            "home": "Ol' Dirty Bastards",
+            "away": "Faces"
+          }
+        ]
+      },
+      {
+        "number": 9,
+        "label": "Week No. 9 - August 05",
+        "when": "August 05, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Grouper",
+            "awaySource": "FuckUps",
+            "home": "Red Grouper",
+            "away": "The Fuck-Ups"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Troopers",
+            "awaySource": "Giggity",
+            "home": "Troopers",
+            "away": "Giggity"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Glazer",
+            "awaySource": "Redrum",
+            "home": "Glazerbeam",
+            "away": "Redrum"
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "Bad Co.",
+            "home": "All Out of Roslyn",
+            "away": "Bad Company"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Damage",
+            "awaySource": "Faces",
+            "home": "Damage, Inc.",
+            "away": "Faces"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Bastards",
+            "awaySource": "FUBAR",
+            "home": "Ol' Dirty Bastards",
+            "away": "FUBAR"
+          }
+        ]
+      },
+      {
+        "number": 10,
+        "label": "Week No. 10 - August 12",
+        "when": "August 12, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "Troopers",
+            "home": "All Out of Roslyn",
+            "away": "Troopers"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Grouper",
+            "awaySource": "Glazer",
+            "home": "Red Grouper",
+            "away": "Glazerbeam"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Damage",
+            "awaySource": "Giggity",
+            "home": "Damage, Inc.",
+            "away": "Giggity"
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "FuckUps",
+            "awaySource": "Bastards",
+            "home": "The Fuck-Ups",
+            "away": "Ol' Dirty Bastards"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Redrum",
+            "awaySource": "FUBAR",
+            "home": "Redrum",
+            "away": "FUBAR"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Faces",
+            "awaySource": "Bad Co.",
+            "home": "Faces",
+            "away": "Bad Company"
+          }
+        ]
+      },
+      {
+        "number": 11,
+        "label": "Week No. 11 - August 19",
+        "when": "August 19, 2026",
+        "matches": [
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Glazer",
+            "awaySource": "Giggity",
+            "home": "Glazerbeam",
+            "away": "Giggity"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Bastards",
+            "awaySource": "Bad Co.",
+            "home": "Ol' Dirty Bastards",
+            "away": "Bad Company"
+          },
+          {
+            "time": "7:00 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "FuckUps",
+            "awaySource": "Redrum",
+            "home": "The Fuck-Ups",
+            "away": "Redrum"
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Roslyn",
+            "awaySource": "Damage",
+            "home": "All Out of Roslyn",
+            "away": "Damage, Inc."
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Troopers",
+            "awaySource": "FUBAR",
+            "home": "Troopers",
+            "away": "FUBAR"
+          },
+          {
+            "time": "9:15 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": null,
+            "awaySeed": null,
+            "homeSource": "Grouper",
+            "awaySource": "Faces",
+            "home": "Red Grouper",
+            "away": "Faces"
+          }
+        ]
+      }
+    ],
+    "playoffs": [
+      {
+        "label": "Qtr Finals - August 26",
+        "when": "August 26, 2026",
+        "notes": [
+          "BEST OF FIVE"
+        ],
+        "matches": [
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": 1,
+            "awaySeed": 8,
+            "homeSource": "Glazer",
+            "awaySource": "FUBAR",
+            "home": "Glazerbeam",
+            "away": "FUBAR"
+          },
+          {
+            "time": "7:30 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": 2,
+            "awaySeed": 7,
+            "homeSource": "Grouper",
+            "awaySource": "FuckUps",
+            "home": "Red Grouper",
+            "away": "The Fuck-Ups"
+          },
+          {
+            "time": "7:30 pm",
+            "score": "",
+            "board": 3,
+            "homeSeed": 3,
+            "awaySeed": 6,
+            "homeSource": "Redrum",
+            "awaySource": "ODB",
+            "home": "Redrum",
+            "away": "Ol' Dirty Bastards"
+          },
+          {
+            "time": "8:00 pm",
+            "score": "",
+            "board": 1,
+            "homeSeed": 4,
+            "awaySeed": 5,
+            "homeSource": "Faces",
+            "awaySource": "Damage",
+            "home": "Faces",
+            "away": "Damage, Inc."
+          }
+        ]
+      },
+      {
+        "label": "Semi-Finals - Sept 02",
+        "when": "Sept 02, 2026",
+        "notes": [
+          "BEST OF FIVE"
+        ],
+        "matches": [
+          {
+            "time": "7:30 pm",
+            "score": "",
+            "board": 2,
+            "homeSeed": 1,
+            "awaySeed": 5,
+            "homeSource": "Glazer",
+            "awaySource": "Damage",
+            "home": "Glazerbeam",
+            "away": "Damage, Inc."
+          },
+          {
+            "time": "7:30 pm",
+            "score": "",
+            "board": 4,
+            "homeSeed": 2,
+            "awaySeed": 3,
+            "homeSource": "Grouper",
+            "awaySource": "Redrum",
+            "home": "Red Grouper",
+            "away": "Redrum"
+          }
+        ]
+      },
+      {
+        "label": "Finals - Sept 09",
+        "when": "Sept 09, 2026",
+        "notes": [],
+        "matches": [
+          {
+            "time": "7:30 pm",
+            "score": "",
+            "board": null,
+            "homeSeed": 3,
+            "awaySeed": 5,
+            "homeSource": "Redrum",
+            "awaySource": "Damage",
+            "home": "Redrum",
+            "away": "Damage, Inc."
+          }
+        ]
+      },
+      {
+        "label": "Finals",
+        "when": "",
+        "notes": [],
+        "matches": [
+          {
+            "time": "",
+            "score": "4-1",
+            "board": null,
+            "homeSeed": 3,
+            "awaySeed": 5,
+            "homeSource": "Redrum",
+            "awaySource": "Damage",
+            "home": "Redrum",
+            "away": "Damage, Inc."
+          },
+          {
+            "time": "",
+            "score": "3-1",
+            "board": null,
+            "homeSeed": 1,
+            "awaySeed": 2,
+            "homeSource": "Glazer",
+            "awaySource": "Grouper",
+            "home": "Glazerbeam",
+            "away": "Red Grouper"
+          }
+        ]
+      }
+    ]
+  },
+  "pow": {
+    "awardNumber": 25,
+    "blurb": "THIS IS MATT KRAYNIK's FOURTH PLAYER OF THE WEEK AWARD. MATT WILL ALSO RECEIVE 25 FROM WEEK 11 EGGS.",
+    "summerEggs": 304,
+    "allTimeEggs": 18673,
+    "raffle": "ROSLYN & MIKE WARD",
+    "rows": [
+      {
+        "source": "matt kraynik",
+        "name": "Matt Kraynik",
+        "teamSource": "odb",
+        "team": "Ol' Dirty Bastards",
+        "average": 13.2,
+        "baseline": 39.599999999999994,
+        "g1": 27,
+        "g2": 19,
+        "g3": 15,
+        "series": 61,
+        "over": 21.400000000000006
+      },
+      {
+        "source": "mike ratka",
+        "name": "Mike Ratka",
+        "teamSource": "troopers",
+        "team": "Troopers",
+        "average": 7.87,
+        "baseline": 23.61,
+        "g1": 11,
+        "g2": 19,
+        "g3": 14,
+        "series": 44,
+        "over": 20.39
+      },
+      {
+        "source": "frank gallagher",
+        "name": "Frank Gallagher",
+        "teamSource": "faces",
+        "team": "Faces",
+        "average": 17.88,
+        "baseline": 53.64,
+        "g1": 30,
+        "g2": 19,
+        "g3": 24,
+        "series": 73,
+        "over": 19.36
+      },
+      {
+        "source": "tommy regan",
+        "name": "Tommy Regan",
+        "teamSource": "odb",
+        "team": "Ol' Dirty Bastards",
+        "average": 20.65,
+        "baseline": 61.949999999999996,
+        "g1": 27,
+        "g2": 27,
+        "g3": 27,
+        "series": 81,
+        "over": 19.050000000000004
+      },
+      {
+        "source": "dan feder",
+        "name": "Dan Feder",
+        "teamSource": "faces",
+        "team": "Faces",
+        "average": 16.31,
+        "baseline": 48.92999999999999,
+        "g1": 24,
+        "g2": 24,
+        "g3": 18,
+        "series": 66,
+        "over": 17.070000000000007
+      },
+      {
+        "source": "bill hetrick",
+        "name": "Bill Hetrick",
+        "teamSource": "redrum",
+        "team": "Redrum",
+        "average": 23.67,
+        "baseline": 71.01,
+        "g1": 34,
+        "g2": 31,
+        "g3": 22,
+        "series": 87,
+        "over": 15.989999999999995
+      },
+      {
+        "source": "john clauss",
+        "name": "John Clauss",
+        "teamSource": "red grouper",
+        "team": "Red Grouper",
+        "average": 23.05,
+        "baseline": 69.15,
+        "g1": 30,
+        "g2": 29,
+        "g3": 25,
+        "series": 84,
+        "over": 14.849999999999994
+      },
+      {
+        "source": "chris tarlo",
+        "name": "Chris Tarlo",
+        "teamSource": "redrum",
+        "team": "Redrum",
+        "average": 20.35,
+        "baseline": 61.050000000000004,
+        "g1": 19,
+        "g2": 22,
+        "g3": 34,
+        "series": 75,
+        "over": 13.949999999999996
+      },
+      {
+        "source": "dan white",
+        "name": "Dan White",
+        "teamSource": "red grouper",
+        "team": "Red Grouper",
+        "average": 26.74,
+        "baseline": 80.22,
+        "g1": 30,
+        "g2": 30,
+        "g3": 32,
+        "series": 92,
+        "over": 11.780000000000001
+      }
+    ],
+    "log": [
+      "Week No. 07: JP Ungerean (redrum) shot his first Ginzburgh on No. 9 | Miller Lite & Sambuca 1/859",
+      "Week No. 07: Jake Yannessa (glazerbeam) shot his tenth Ginzburgh on No. 2 | Corona & Crown 10/860",
+      "Week No. 07: Jake Yannessa (glazerbeam) shot his 11th Ginzburgh on No. 9 | Corona & Crown 11/861",
+      "Week No. 09: Tom Kilkenny (bad company) shot his 24th Ginzburgh on No. 4 | Lite & Jameson 24/862",
+      "Week No. 09: Todd Vitelli (ol' dirty bastards) shot his third Ginzburgh on No. 5 | Heineken 0 3/863",
+      "Week No. 10: Brian Anstock (red grouper) shot his 13th Ginzburgh on No. 5 | Lite & Kettle One 13/864",
+      "Week No. 11: George Kraynik (ol' dirty bastards) shot his fifth Ginzburgh on No. 14 | Lite & Fireball 5/865",
+      "Week No. 11: Mike Bruton (faces) shot his second Ginzburgh on No. 7 | Lite & Jameson 2/866"
+    ],
+    "allTime": {
+      "thirtyPlus": 3396,
+      "games": 114623,
+      "average": 16.910855587447546,
+      "points": 1938373
+    }
+  },
+  "honors": {
+    "ginzburgh": [
+      {
+        "source": "John Speidel",
+        "name": "John Speidel",
+        "count": 47
+      },
+      {
+        "source": "John Clauss",
+        "name": "John Clauss",
+        "count": 43
+      },
+      {
+        "source": "Greg Young",
+        "name": "Greg Young",
+        "count": 42
+      },
+      {
+        "source": "Harry Bratzler",
+        "name": "Harry Bratzler",
+        "count": 31
+      },
+      {
+        "source": "Mike Haley",
+        "name": "Mike Haley",
+        "count": 31
+      },
+      {
+        "source": "Steve Giandomenico",
+        "name": "Steve Giandomenico",
+        "count": 27
+      },
+      {
+        "source": "Anthony Quallet",
+        "name": "Anthony Quallet",
+        "count": 26
+      },
+      {
+        "source": "Tom Killkenny",
+        "name": "Tom Kilkenny",
+        "count": 24
+      },
+      {
+        "source": "Jay Young",
+        "name": "Jay Young",
+        "count": 19
+      },
+      {
+        "source": "Kevin Money",
+        "name": "Kevin Money",
+        "count": 18
+      },
+      {
+        "source": "Dan White",
+        "name": "Dan White",
+        "count": 17
+      },
+      {
+        "source": "John Urban",
+        "name": "John Urban",
+        "count": 17
+      },
+      {
+        "source": "Chris Cifaldi",
+        "name": "Chris Cifaldi",
+        "count": 14
+      },
+      {
+        "source": "Gary Hughes",
+        "name": "Gary Hughes",
+        "count": 14
+      },
+      {
+        "source": "Joe Thomas",
+        "name": "Joe Thomas",
+        "count": 14
+      },
+      {
+        "source": "Brian Anstock",
+        "name": "Brian Anstock",
+        "count": 13
+      },
+      {
+        "source": "Chip McC",
+        "name": "Chip McClenaghan",
+        "count": 13
+      },
+      {
+        "source": "Frank Gallagher",
+        "name": "Frank Gallagher",
+        "count": 12
+      },
+      {
+        "source": "Mike Magee",
+        "name": "Mike Magee",
+        "count": 12
+      },
+      {
+        "source": "Jake Yannessa",
+        "name": "Jake Yannessa",
+        "count": 11
+      },
+      {
+        "source": "Eddie McCauley",
+        "name": "Eddie McCauley",
+        "count": 10
+      },
+      {
+        "source": "Bill Hetrick",
+        "name": "Bill Hetrick",
+        "count": 9
+      },
+      {
+        "source": "Brian Rockett",
+        "name": "Brian Rockett",
+        "count": 9
+      },
+      {
+        "source": "Joey Clauss",
+        "name": "Joey Clauss",
+        "count": 9
+      },
+      {
+        "source": "Mike Broderick",
+        "name": "Mike Broderick",
+        "count": 9
+      },
+      {
+        "source": "Tommy Cabulis",
+        "name": "Tommy Cabulis",
+        "count": 9
+      },
+      {
+        "source": "Damian Hector",
+        "name": "Damian Hector",
+        "count": 8
+      },
+      {
+        "source": "Dave Dukert",
+        "name": "Dave Dukert",
+        "count": 8
+      },
+      {
+        "source": "Dennis Gardner",
+        "name": "Dennis Gardner",
+        "count": 8
+      },
+      {
+        "source": "Jarred Fox",
+        "name": "Jarred Fox",
+        "count": 8
+      },
+      {
+        "source": "Kevin Fitzgerald",
+        "name": "Kevin Fitzgerald",
+        "count": 8
+      },
+      {
+        "source": "Bruce Butler",
+        "name": "Bruce Butler",
+        "count": 7
+      },
+      {
+        "source": "John Haley",
+        "name": "John Haley",
+        "count": 7
+      },
+      {
+        "source": "Kenny Bloss",
+        "name": "Kenny Bloss",
+        "count": 7
+      },
+      {
+        "source": "Rich Maley",
+        "name": "Rich Maley",
+        "count": 7
+      },
+      {
+        "source": "Tom Kelly",
+        "name": "Tom Kelly",
+        "count": 7
+      },
+      {
+        "source": "Brad Hewish",
+        "name": "Brad Hewish",
+        "count": 6
+      },
+      {
+        "source": "Chris Tarlo",
+        "name": "Chris Tarlo",
+        "count": 6
+      },
+      {
+        "source": "Dave Grasso",
+        "name": "Dave Grasso",
+        "count": 6
+      },
+      {
+        "source": "James Kelly",
+        "name": "James Kelly",
+        "count": 6
+      },
+      {
+        "source": "Mike Oertel",
+        "name": "Mike Oertel",
+        "count": 6
+      },
+      {
+        "source": "Chris Young",
+        "name": "Chris Young",
+        "count": 5
+      },
+      {
+        "source": "Danny Clauss",
+        "name": "Danny Clauss",
+        "count": 5
+      },
+      {
+        "source": "Frank Yannessa",
+        "name": "Frank Yannessa",
+        "count": 5
+      },
+      {
+        "source": "George Kraynik",
+        "name": "George Kraynik",
+        "count": 5
+      },
+      {
+        "source": "Jerry Thompson",
+        "name": "Jerry Thompson",
+        "count": 5
+      },
+      {
+        "source": "John Wagner",
+        "name": "John Wagner",
+        "count": 5
+      },
+      {
+        "source": "Kevin Mellon",
+        "name": "Kevin Mellon",
+        "count": 5
+      },
+      {
+        "source": "Matt Poole",
+        "name": "Matt Poole",
+        "count": 5
+      },
+      {
+        "source": "Bernie Kephart",
+        "name": "Bernie Kephart",
+        "count": 4
+      },
+      {
+        "source": "Bill Gregorio",
+        "name": "Bill Gregorio",
+        "count": 4
+      },
+      {
+        "source": "Dan Slotterback",
+        "name": "Dan Slotterback",
+        "count": 4
+      },
+      {
+        "source": "Dave Luxton",
+        "name": "Dave Luxton",
+        "count": 4
+      },
+      {
+        "source": "Don Dougherty",
+        "name": "Don Dougherty",
+        "count": 4
+      },
+      {
+        "source": "Jack Howarth",
+        "name": "Jack Howarth",
+        "count": 4
+      },
+      {
+        "source": "Jim Kilkenny",
+        "name": "Jim Kilkenny",
+        "count": 4
+      },
+      {
+        "source": "John Lightner",
+        "name": "John Lightner",
+        "count": 4
+      },
+      {
+        "source": "Ken March",
+        "name": "Ken March",
+        "count": 4
+      },
+      {
+        "source": "Tom Freeman",
+        "name": "Tom Freeman",
+        "count": 4
+      },
+      {
+        "source": "Tommy Martin",
+        "name": "Tommy Martin",
+        "count": 4
+      },
+      {
+        "source": "Vinny Lapa",
+        "name": "Vinny Lapa",
+        "count": 4
+      },
+      {
+        "source": "Bill Shreiner",
+        "name": "Bill Shreiner",
+        "count": 3
+      },
+      {
+        "source": "Billy D'Amore",
+        "name": "Billy D'Amore",
+        "count": 3
+      },
+      {
+        "source": "Chris Halligan",
+        "name": "Chris Halligan",
+        "count": 3
+      },
+      {
+        "source": "Chris Kelly",
+        "name": "Chris Kelly",
+        "count": 3
+      },
+      {
+        "source": "Chris Paquette",
+        "name": "Chris Paquette",
+        "count": 3
+      },
+      {
+        "source": "Chuck Keller",
+        "name": "Chuck Keller",
+        "count": 3
+      },
+      {
+        "source": "Dan Flynn",
+        "name": "Dan Flynn",
+        "count": 3
+      },
+      {
+        "source": "Don Focht",
+        "name": "Don Focht",
+        "count": 3
+      },
+      {
+        "source": "Jerry Purcell",
+        "name": "Jerry Purcell",
+        "count": 3
+      },
+      {
+        "source": "John Rafa",
+        "name": "John Rafa",
+        "count": 3
+      },
+      {
+        "source": "Matt Yannessa",
+        "name": "Matt Yannessa",
+        "count": 3
+      },
+      {
+        "source": "Mike Conley",
+        "name": "Mike Conley",
+        "count": 3
+      },
+      {
+        "source": "Paddy McNicholl",
+        "name": "Paddy McNicholl",
+        "count": 3
+      },
+      {
+        "source": "Pat Forrester",
+        "name": "Pat Forrester",
+        "count": 3
+      },
+      {
+        "source": "Paul Yannessa",
+        "name": "Paul Yannessa",
+        "count": 3
+      },
+      {
+        "source": "Sean Bennett",
+        "name": "Sean Bennett",
+        "count": 3
+      },
+      {
+        "source": "Tim Teeter",
+        "name": "Tim Teeter",
+        "count": 3
+      },
+      {
+        "source": "Todd Vitelli",
+        "name": "Todd Vitelli",
+        "count": 3
+      },
+      {
+        "source": "Bob Hower",
+        "name": "Bob Hower",
+        "count": 2
+      },
+      {
+        "source": "Brian Dawson",
+        "name": "Brian Dawson",
+        "count": 2
+      },
+      {
+        "source": "Chuck Stehli",
+        "name": "Chuck Stehli",
+        "count": 2
+      },
+      {
+        "source": "Danny Cullen",
+        "name": "Danny Cullen",
+        "count": 2
+      },
+      {
+        "source": "Dave Kelley",
+        "name": "Dave Kelley",
+        "count": 2
+      },
+      {
+        "source": "Dave O'Neill",
+        "name": "Dave O'Neill",
+        "count": 2
+      },
+      {
+        "source": "Ian Jenkins",
+        "name": "Ian Jenkins",
+        "count": 2
+      },
+      {
+        "source": "Jay Fox",
+        "name": "Jay Fox",
+        "count": 2
+      },
+      {
+        "source": "Jim Cashley",
+        "name": "Jim Cashley",
+        "count": 2
+      },
+      {
+        "source": "Jim Knapp",
+        "name": "Jim Knapp",
+        "count": 2
+      },
+      {
+        "source": "John Lillo",
+        "name": "John Lillo",
+        "count": 2
+      },
+      {
+        "source": "Jon Martin",
+        "name": "Jon Martin",
+        "count": 2
+      },
+      {
+        "source": "Larry Evans",
+        "name": "Larry Evans",
+        "count": 2
+      },
+      {
+        "source": "Mary Orme",
+        "name": "Mary Orme",
+        "count": 2
+      },
+      {
+        "source": "Matt Kileen",
+        "name": "Matt Kileen",
+        "count": 2
+      },
+      {
+        "source": "Mike Bruton",
+        "name": "Mike Bruton",
+        "count": 2
+      },
+      {
+        "source": "Mike Wiley",
+        "name": "Mike Wiley",
+        "count": 2
+      },
+      {
+        "source": "Nick Evans",
+        "name": "Nick Evans",
+        "count": 2
+      },
+      {
+        "source": "Patrick Ryan",
+        "name": "Patrick Ryan",
+        "count": 2
+      },
+      {
+        "source": "Paul Pizzillo",
+        "name": "Paul Pizzillo",
+        "count": 2
+      },
+      {
+        "source": "Rich Conroy",
+        "name": "Rich Conroy",
+        "count": 2
+      },
+      {
+        "source": "Ron Grasso",
+        "name": "Ron Grasso",
+        "count": 2
+      },
+      {
+        "source": "Ryan Clauss",
+        "name": "Ryan Clauss",
+        "count": 2
+      },
+      {
+        "source": "Ryan Handel",
+        "name": "Ryan Handel",
+        "count": 2
+      },
+      {
+        "source": "Scott Quinn",
+        "name": "Scott Quinn",
+        "count": 2
+      },
+      {
+        "source": "Sean O'Brien",
+        "name": "Sean O'Brien",
+        "count": 2
+      },
+      {
+        "source": "Steve Kraynik",
+        "name": "Steve Kraynik",
+        "count": 2
+      },
+      {
+        "source": "Tim Bentley",
+        "name": "Tim Bentley",
+        "count": 2
+      },
+      {
+        "source": "Tommy Regan",
+        "name": "Tommy Regan",
+        "count": 2
+      },
+      {
+        "source": "Trevor Martin",
+        "name": "Trevor Martin",
+        "count": 2
+      },
+      {
+        "source": "Will Ferrino",
+        "name": "Will Ferrino",
+        "count": 2
+      },
+      {
+        "source": "Will Haasz",
+        "name": "Will Haasz",
+        "count": 2
+      },
+      {
+        "source": "Adam Schneck",
+        "name": "Adam Schneck",
+        "count": 1
+      },
+      {
+        "source": "Bill Clauss",
+        "name": "Bill Clauss",
+        "count": 1
+      },
+      {
+        "source": "Bob Schumacher",
+        "name": "Bob Schumacher",
+        "count": 1
+      },
+      {
+        "source": "Bobby Harris",
+        "name": "Bobby Harris",
+        "count": 1
+      },
+      {
+        "source": "Brett Martin",
+        "name": "Brett Martin",
+        "count": 1
+      },
+      {
+        "source": "Brian Cullen",
+        "name": "Brian Cullen",
+        "count": 1
+      },
+      {
+        "source": "Chip Diehl",
+        "name": "Chip Diehl",
+        "count": 1
+      },
+      {
+        "source": "Chris Horst",
+        "name": "Chris Horst",
+        "count": 1
+      },
+      {
+        "source": "Courtney James",
+        "name": "Courtney James",
+        "count": 1
+      },
+      {
+        "source": "Don McErlane",
+        "name": "Don McErlane",
+        "count": 1
+      },
+      {
+        "source": "Donna Carabba",
+        "name": "Donna Carabba",
+        "count": 1
+      },
+      {
+        "source": "Ed McCauley, Jr.",
+        "name": "Ed McCauley Jr.",
+        "count": 1
+      },
+      {
+        "source": "Eric Lacovara",
+        "name": "Eric Lacovara",
+        "count": 1
+      },
+      {
+        "source": "Fred Bucci",
+        "name": "Fred Bucci",
+        "count": 1
+      },
+      {
+        "source": "Glen Davis",
+        "name": "Glen Davis",
+        "count": 1
+      },
+      {
+        "source": "James Mitchell",
+        "name": "James Mitchell",
+        "count": 1
+      },
+      {
+        "source": "Jay Silver",
+        "name": "Jay Silver",
+        "count": 1
+      },
+      {
+        "source": "Jim Bohr",
+        "name": "Jim Bohr",
+        "count": 1
+      },
+      {
+        "source": "Jim Serrill",
+        "name": "Jim Serrill",
+        "count": 1
+      },
+      {
+        "source": "Jim Smith",
+        "name": "Jim Smith",
+        "count": 1
+      },
+      {
+        "source": "JJ Merrill",
+        "name": "Jj Merrill",
+        "count": 1
+      },
+      {
+        "source": "John Kiley III",
+        "name": "John Kiley III",
+        "count": 1
+      },
+      {
+        "source": "John McNamara",
+        "name": "John McNamara",
+        "count": 1
+      },
+      {
+        "source": "JP Ungerean",
+        "name": "JP Ungerean",
+        "count": 1
+      },
+      {
+        "source": "Justin Bauman",
+        "name": "Justin Bauman",
+        "count": 1
+      },
+      {
+        "source": "Justin Baxter",
+        "name": "Justin Baxter",
+        "count": 1
+      },
+      {
+        "source": "Justin Galante",
+        "name": "Justin Galante",
+        "count": 1
+      },
+      {
+        "source": "Kevin Doyle",
+        "name": "Kevin Doyle",
+        "count": 1
+      },
+      {
+        "source": "Kevin Zayas",
+        "name": "Kevin Zayas",
+        "count": 1
+      },
+      {
+        "source": "Len Galante",
+        "name": "Len Galante",
+        "count": 1
+      },
+      {
+        "source": "Mark Toroniewski",
+        "name": "Mark Toroniewski",
+        "count": 1
+      },
+      {
+        "source": "Mark Wehrman",
+        "name": "Mark Wehrman",
+        "count": 1
+      },
+      {
+        "source": "Mike Schofield",
+        "name": "Mike Schofield",
+        "count": 1
+      },
+      {
+        "source": "Mike Slusarski",
+        "name": "Mike Slusarski",
+        "count": 1
+      },
+      {
+        "source": "Mike Ward",
+        "name": "Mike Ward",
+        "count": 1
+      },
+      {
+        "source": "Nick Boccella",
+        "name": "Nick Boccella",
+        "count": 1
+      },
+      {
+        "source": "Nick Rhodes",
+        "name": "Nick Rhodes",
+        "count": 1
+      },
+      {
+        "source": "Pat Crowley",
+        "name": "Pat Crowley",
+        "count": 1
+      },
+      {
+        "source": "Paul McBride",
+        "name": "Paul McBride",
+        "count": 1
+      },
+      {
+        "source": "Pete Howarth",
+        "name": "Pete Howarth",
+        "count": 1
+      },
+      {
+        "source": "Rob Jorett",
+        "name": "Rob Jorett",
+        "count": 1
+      },
+      {
+        "source": "Scott Reed",
+        "name": "Scott Reed",
+        "count": 1
+      },
+      {
+        "source": "Sean Giossio",
+        "name": "Sean Giossio",
+        "count": 1
+      },
+      {
+        "source": "Sean Hunsicker",
+        "name": "Sean Hunsicker",
+        "count": 1
+      },
+      {
+        "source": "Shane Kraynik",
+        "name": "Shane Kraynik",
+        "count": 1
+      },
+      {
+        "source": "Shay Lynskey",
+        "name": "Shay Lynskey",
+        "count": 1
+      },
+      {
+        "source": "Skip Hartung",
+        "name": "Skip Hartung",
+        "count": 1
+      },
+      {
+        "source": "Steve McKenna",
+        "name": "Steve McKenna",
+        "count": 1
+      },
+      {
+        "source": "Ted Hellmann",
+        "name": "Ted Hellmann",
+        "count": 1
+      },
+      {
+        "source": "Timmy Clauss",
+        "name": "Timmy Clauss",
+        "count": 1
+      },
+      {
+        "source": "Tom McLaughlin",
+        "name": "Tom McLaughlin",
+        "count": 1
+      },
+      {
+        "source": "Uncle Joe",
+        "name": "Uncle Joe",
+        "count": 1
+      },
+      {
+        "source": "Vance Thompson",
+        "name": "Vance Thompson",
+        "count": 1
+      },
+      {
+        "source": "Vince Ciletti",
+        "name": "Vince Ciletti",
+        "count": 1
+      }
+    ],
+    "pow": [
+      {
+        "source": "Anthony Quallet",
+        "name": "Anthony Quallet",
+        "count": 16
+      },
+      {
+        "source": "Joe Thomas",
+        "name": "Joe Thomas",
+        "count": 14
+      },
+      {
+        "source": "Don Focht",
+        "name": "Don Focht",
+        "count": 13
+      },
+      {
+        "source": "Gary Hughes",
+        "name": "Gary Hughes",
+        "count": 13
+      },
+      {
+        "source": "Jay Young",
+        "name": "Jay Young",
+        "count": 13
+      },
+      {
+        "source": "Mike Haley",
+        "name": "Mike Haley",
+        "count": 13
+      },
+      {
+        "source": "Steve Giandomenico",
+        "name": "Steve Giandomenico",
+        "count": 12
+      },
+      {
+        "source": "Greg Young",
+        "name": "Greg Young",
+        "count": 11
+      },
+      {
+        "source": "Chris Cifaldi",
+        "name": "Chris Cifaldi",
+        "count": 10
+      },
+      {
+        "source": "Joey Clauss",
+        "name": "Joey Clauss",
+        "count": 10
+      },
+      {
+        "source": "Michael McC.",
+        "name": "Michael McC",
+        "count": 10
+      },
+      {
+        "source": "Dave O'Neill",
+        "name": "Dave O'Neill",
+        "count": 9
+      },
+      {
+        "source": "Jim Cashley",
+        "name": "Jim Cashley",
+        "count": 9
+      },
+      {
+        "source": "John Haley",
+        "name": "John Haley",
+        "count": 9
+      },
+      {
+        "source": "Brian Anstock",
+        "name": "Brian Anstock",
+        "count": 8
+      },
+      {
+        "source": "Brian Rockett",
+        "name": "Brian Rockett",
+        "count": 8
+      },
+      {
+        "source": "Eddie McCauley",
+        "name": "Eddie McCauley",
+        "count": 8
+      },
+      {
+        "source": "Kevin Money",
+        "name": "Kevin Money",
+        "count": 8
+      },
+      {
+        "source": "Mike Magee",
+        "name": "Mike Magee",
+        "count": 8
+      },
+      {
+        "source": "Ryan Handel",
+        "name": "Ryan Handel",
+        "count": 8
+      },
+      {
+        "source": "Bill Hetrick",
+        "name": "Bill Hetrick",
+        "count": 7
+      },
+      {
+        "source": "Frank Gallagher",
+        "name": "Frank Gallagher",
+        "count": 7
+      },
+      {
+        "source": "Jim Knapp",
+        "name": "Jim Knapp",
+        "count": 7
+      },
+      {
+        "source": "John Clauss",
+        "name": "John Clauss",
+        "count": 7
+      },
+      {
+        "source": "John Speidel",
+        "name": "John Speidel",
+        "count": 7
+      },
+      {
+        "source": "Kevin Mellon",
+        "name": "Kevin Mellon",
+        "count": 7
+      },
+      {
+        "source": "Mike Tokarczyk",
+        "name": "Mike Tokarczyk",
+        "count": 7
+      },
+      {
+        "source": "Tim Bentley",
+        "name": "Tim Bentley",
+        "count": 7
+      },
+      {
+        "source": "Bill Bahls",
+        "name": "Bill Bahls",
+        "count": 6
+      },
+      {
+        "source": "Chip McC",
+        "name": "Chip McClenaghan",
+        "count": 6
+      },
+      {
+        "source": "Dave Grasso",
+        "name": "Dave Grasso",
+        "count": 6
+      },
+      {
+        "source": "Dennis Gardner",
+        "name": "Dennis Gardner",
+        "count": 6
+      },
+      {
+        "source": "Jack Howarth",
+        "name": "Jack Howarth",
+        "count": 6
+      },
+      {
+        "source": "Jake Yannessa",
+        "name": "Jake Yannessa",
+        "count": 6
+      },
+      {
+        "source": "Jim Smith",
+        "name": "Jim Smith",
+        "count": 6
+      },
+      {
+        "source": "John Lightner",
+        "name": "John Lightner",
+        "count": 6
+      },
+      {
+        "source": "John Rafa",
+        "name": "John Rafa",
+        "count": 6
+      },
+      {
+        "source": "Jon Martin",
+        "name": "Jon Martin",
+        "count": 6
+      },
+      {
+        "source": "Kevin Fitzgerald",
+        "name": "Kevin Fitzgerald",
+        "count": 6
+      },
+      {
+        "source": "Brad Hewish",
+        "name": "Brad Hewish",
+        "count": 5
+      },
+      {
+        "source": "Chris Young",
+        "name": "Chris Young",
+        "count": 5
+      },
+      {
+        "source": "Dave Dukert",
+        "name": "Dave Dukert",
+        "count": 5
+      },
+      {
+        "source": "Dave Luxton",
+        "name": "Dave Luxton",
+        "count": 5
+      },
+      {
+        "source": "Harry Bratzler",
+        "name": "Harry Bratzler",
+        "count": 5
+      },
+      {
+        "source": "Larry Evans",
+        "name": "Larry Evans",
+        "count": 5
+      },
+      {
+        "source": "Matt Kileen",
+        "name": "Matt Kileen",
+        "count": 5
+      },
+      {
+        "source": "Mike Oertel",
+        "name": "Mike Oertel",
+        "count": 5
+      },
+      {
+        "source": "Mike Ward",
+        "name": "Mike Ward",
+        "count": 5
+      },
+      {
+        "source": "Tom Kelly",
+        "name": "Tom Kelly",
+        "count": 5
+      },
+      {
+        "source": "Bill Foley",
+        "name": "Bill Foley",
+        "count": 4
+      },
+      {
+        "source": "Bill Gregorio",
+        "name": "Bill Gregorio",
+        "count": 4
+      },
+      {
+        "source": "Brett Martin",
+        "name": "Brett Martin",
+        "count": 4
+      },
+      {
+        "source": "Chris Clayton",
+        "name": "Chris Clayton",
+        "count": 4
+      },
+      {
+        "source": "Chris Halligan",
+        "name": "Chris Halligan",
+        "count": 4
+      },
+      {
+        "source": "Chris Tarlo",
+        "name": "Chris Tarlo",
+        "count": 4
+      },
+      {
+        "source": "Dan Slotterback",
+        "name": "Dan Slotterback",
+        "count": 4
+      },
+      {
+        "source": "Dan White",
+        "name": "Dan White",
+        "count": 4
+      },
+      {
+        "source": "Denys Sundy",
+        "name": "Denys Sundy",
+        "count": 4
+      },
+      {
+        "source": "Donna Bennett",
+        "name": "Donna Bennett",
+        "count": 4
+      },
+      {
+        "source": "Glen Davis",
+        "name": "Glen Davis",
+        "count": 4
+      },
+      {
+        "source": "Ian Jenkins",
+        "name": "Ian Jenkins",
+        "count": 4
+      },
+      {
+        "source": "John Urban",
+        "name": "John Urban",
+        "count": 4
+      },
+      {
+        "source": "John Wagner",
+        "name": "John Wagner",
+        "count": 4
+      },
+      {
+        "source": "Kenny Bloss",
+        "name": "Kenny Bloss",
+        "count": 4
+      },
+      {
+        "source": "Marc Anthony",
+        "name": "Marc Anthony",
+        "count": 4
+      },
+      {
+        "source": "Matt Jacobson",
+        "name": "Matt Jacobson",
+        "count": 4
+      },
+      {
+        "source": "Matt Kraynik",
+        "name": "Matt Kraynik",
+        "count": 4
+      },
+      {
+        "source": "Mike Conley",
+        "name": "Mike Conley",
+        "count": 4
+      },
+      {
+        "source": "Paul Pizzillo",
+        "name": "Paul Pizzillo",
+        "count": 4
+      },
+      {
+        "source": "Rob Jorett",
+        "name": "Rob Jorett",
+        "count": 4
+      },
+      {
+        "source": "Sal Vacchiano",
+        "name": "Sal Vacchiano",
+        "count": 4
+      },
+      {
+        "source": "Tom Kilkenny",
+        "name": "Tom Kilkenny",
+        "count": 4
+      },
+      {
+        "source": "Uncle Joe",
+        "name": "Uncle Joe",
+        "count": 4
+      },
+      {
+        "source": "Will Ferrino",
+        "name": "Will Ferrino",
+        "count": 4
+      },
+      {
+        "source": "Bill Shreiner",
+        "name": "Bill Shreiner",
+        "count": 3
+      },
+      {
+        "source": "Billy D'Amore",
+        "name": "Billy D'Amore",
+        "count": 3
+      },
+      {
+        "source": "Bob Hower",
+        "name": "Bob Hower",
+        "count": 3
+      },
+      {
+        "source": "Bob Kaufmann",
+        "name": "Bob Kaufmann",
+        "count": 3
+      },
+      {
+        "source": "Bobby Harker (Jr.)",
+        "name": "Bobby Harker Jr.",
+        "count": 3
+      },
+      {
+        "source": "Brian Bigelow",
+        "name": "Brian Bigelow",
+        "count": 3
+      },
+      {
+        "source": "Bruce Butler",
+        "name": "Bruce Butler",
+        "count": 3
+      },
+      {
+        "source": "Chuck Stehli",
+        "name": "Chuck Stehli",
+        "count": 3
+      },
+      {
+        "source": "Damian Hector",
+        "name": "Damian Hector",
+        "count": 3
+      },
+      {
+        "source": "Dan Belfield",
+        "name": "Dan Belfield",
+        "count": 3
+      },
+      {
+        "source": "Danny Clauss",
+        "name": "Danny Clauss",
+        "count": 3
+      },
+      {
+        "source": "Eric Lacovara",
+        "name": "Eric Lacovara",
+        "count": 3
+      },
+      {
+        "source": "Frank Yannessa",
+        "name": "Frank Yannessa",
+        "count": 3
+      },
+      {
+        "source": "Gary Sullivan",
+        "name": "Gary Sullivan",
+        "count": 3
+      },
+      {
+        "source": "George Kraynik",
+        "name": "George Kraynik",
+        "count": 3
+      },
+      {
+        "source": "James Kelly",
+        "name": "James Kelly",
+        "count": 3
+      },
+      {
+        "source": "Jay Fox",
+        "name": "Jay Fox",
+        "count": 3
+      },
+      {
+        "source": "Jeff Howard",
+        "name": "Jeff Howard",
+        "count": 3
+      },
+      {
+        "source": "Jerry Thompson",
+        "name": "Jerry Thompson",
+        "count": 3
+      },
+      {
+        "source": "Marty Cruz",
+        "name": "Marty Cruz",
+        "count": 3
+      },
+      {
+        "source": "Pat McDermott",
+        "name": "Pat McDermott",
+        "count": 3
+      },
+      {
+        "source": "Patrick Ryan",
+        "name": "Patrick Ryan",
+        "count": 3
+      },
+      {
+        "source": "Paul Yannessa",
+        "name": "Paul Yannessa",
+        "count": 3
+      },
+      {
+        "source": "Rich Conroy",
+        "name": "Rich Conroy",
+        "count": 3
+      },
+      {
+        "source": "Ryan Hollingsworth",
+        "name": "Ryan Hollingsworth",
+        "count": 3
+      },
+      {
+        "source": "Scott Quinn",
+        "name": "Scott Quinn",
+        "count": 3
+      },
+      {
+        "source": "Sean Bennett",
+        "name": "Sean Bennett",
+        "count": 3
+      },
+      {
+        "source": "Sean O'Brien",
+        "name": "Sean O'Brien",
+        "count": 3
+      },
+      {
+        "source": "Stan Buber",
+        "name": "Stan Buber",
+        "count": 3
+      },
+      {
+        "source": "Tommy Cabulis",
+        "name": "Tommy Cabulis",
+        "count": 3
+      },
+      {
+        "source": "Vance Thompson",
+        "name": "Vance Thompson",
+        "count": 3
+      },
+      {
+        "source": "Vince Cilletti",
+        "name": "Vince Cilletti",
+        "count": 3
+      },
+      {
+        "source": "Vinny Lapa",
+        "name": "Vinny Lapa",
+        "count": 3
+      },
+      {
+        "source": "Will Haasz",
+        "name": "Will Haasz",
+        "count": 3
+      },
+      {
+        "source": "Abu Jackson",
+        "name": "Abu Jackson",
+        "count": 2
+      },
+      {
+        "source": "Adam Schneck",
+        "name": "Adam Schneck",
+        "count": 2
+      },
+      {
+        "source": "Adrienne Horan",
+        "name": "Adrienne Horan",
+        "count": 2
+      },
+      {
+        "source": "Bill Doyle",
+        "name": "Bill Doyle",
+        "count": 2
+      },
+      {
+        "source": "Bob Harker",
+        "name": "Bob Harker",
+        "count": 2
+      },
+      {
+        "source": "Bobby Harris",
+        "name": "Bobby Harris",
+        "count": 2
+      },
+      {
+        "source": "Brian Dawson",
+        "name": "Brian Dawson",
+        "count": 2
+      },
+      {
+        "source": "Chris Kelly",
+        "name": "Chris Kelly",
+        "count": 2
+      },
+      {
+        "source": "Chris Paquette",
+        "name": "Chris Paquette",
+        "count": 2
+      },
+      {
+        "source": "Chuck Keller",
+        "name": "Chuck Keller",
+        "count": 2
+      },
+      {
+        "source": "Dan Fisher",
+        "name": "Dan Fisher",
+        "count": 2
+      },
+      {
+        "source": "Dan Fota",
+        "name": "Dan Fota",
+        "count": 2
+      },
+      {
+        "source": "Dan Scarpello",
+        "name": "Dan Scarpello",
+        "count": 2
+      },
+      {
+        "source": "Dave Kelley",
+        "name": "Dave Kelley",
+        "count": 2
+      },
+      {
+        "source": "Don Dougherty",
+        "name": "Don Dougherty",
+        "count": 2
+      },
+      {
+        "source": "Ed Mower",
+        "name": "Ed Mower",
+        "count": 2
+      },
+      {
+        "source": "Harry Yorgey",
+        "name": "Harry Yorgey",
+        "count": 2
+      },
+      {
+        "source": "James Mitchell",
+        "name": "James Mitchell",
+        "count": 2
+      },
+      {
+        "source": "Jay Silver",
+        "name": "Jay Silver",
+        "count": 2
+      },
+      {
+        "source": "Jerry Purcell",
+        "name": "Jerry Purcell",
+        "count": 2
+      },
+      {
+        "source": "Jim Bottone",
+        "name": "Jim Bottone",
+        "count": 2
+      },
+      {
+        "source": "Jimmy Serrill",
+        "name": "Jimmy Serrill",
+        "count": 2
+      },
+      {
+        "source": "Joe Matje",
+        "name": "Joe Matje",
+        "count": 2
+      },
+      {
+        "source": "John Doyle",
+        "name": "John Doyle",
+        "count": 2
+      },
+      {
+        "source": "John Zeigler",
+        "name": "John Zeigler",
+        "count": 2
+      },
+      {
+        "source": "Ken March",
+        "name": "Ken March",
+        "count": 2
+      },
+      {
+        "source": "Marc Ottinger",
+        "name": "Marc Ottinger",
+        "count": 2
+      },
+      {
+        "source": "Mary Orme",
+        "name": "Mary Orme",
+        "count": 2
+      },
+      {
+        "source": "Matt Poole",
+        "name": "Matt Poole",
+        "count": 2
+      },
+      {
+        "source": "Matt Yannessa",
+        "name": "Matt Yannessa",
+        "count": 2
+      },
+      {
+        "source": "Mike Broderick",
+        "name": "Mike Broderick",
+        "count": 2
+      },
+      {
+        "source": "Mike Bruton",
+        "name": "Mike Bruton",
+        "count": 2
+      },
+      {
+        "source": "Mike McCann",
+        "name": "Mike McCann",
+        "count": 2
+      },
+      {
+        "source": "Mike Schofield",
+        "name": "Mike Schofield",
+        "count": 2
+      },
+      {
+        "source": "Paul McBride",
+        "name": "Paul McBride",
+        "count": 2
+      },
+      {
+        "source": "Phil Cameron",
+        "name": "Phil Cameron",
+        "count": 2
+      },
+      {
+        "source": "Ron Grasso",
+        "name": "Ron Grasso",
+        "count": 2
+      },
+      {
+        "source": "Scott Reed",
+        "name": "Scott Reed",
+        "count": 2
+      },
+      {
+        "source": "Shay Lynskey",
+        "name": "Shay Lynskey",
+        "count": 2
+      },
+      {
+        "source": "Stash Fota",
+        "name": "Stash Fota",
+        "count": 2
+      },
+      {
+        "source": "Steve Keumerle",
+        "name": "Steve Keumerle",
+        "count": 2
+      },
+      {
+        "source": "Steve Kraynik",
+        "name": "Steve Kraynik",
+        "count": 2
+      },
+      {
+        "source": "Sue Naglee",
+        "name": "Sue Naglee",
+        "count": 2
+      },
+      {
+        "source": "Ted Bruski",
+        "name": "Ted Bruski",
+        "count": 2
+      },
+      {
+        "source": "Tom Freeman",
+        "name": "Tom Freeman",
+        "count": 2
+      },
+      {
+        "source": "Tom Kilkenny, Jr.",
+        "name": "Tom Kilkenny Jr.",
+        "count": 2
+      },
+      {
+        "source": "Tommy Martin",
+        "name": "Tommy Martin",
+        "count": 2
+      },
+      {
+        "source": "Trevor Martin",
+        "name": "Trevor Martin",
+        "count": 2
+      },
+      {
+        "source": "Bernie Kephart",
+        "name": "Bernie Kephart",
+        "count": 1
+      },
+      {
+        "source": "Bill Clauss",
+        "name": "Bill Clauss",
+        "count": 1
+      },
+      {
+        "source": "Bill Hazard",
+        "name": "Bill Hazard",
+        "count": 1
+      },
+      {
+        "source": "Bill Niehoff",
+        "name": "Bill Niehoff",
+        "count": 1
+      },
+      {
+        "source": "Bill Schwanbeck",
+        "name": "Bill Schwanbeck",
+        "count": 1
+      },
+      {
+        "source": "Bob Haug",
+        "name": "Bob Haug",
+        "count": 1
+      },
+      {
+        "source": "Bob O'Brien",
+        "name": "Bob O'Brien",
+        "count": 1
+      },
+      {
+        "source": "Brian Cullen",
+        "name": "Brian Cullen",
+        "count": 1
+      },
+      {
+        "source": "Charlie McC.",
+        "name": "Charlie McC",
+        "count": 1
+      },
+      {
+        "source": "Cheyenne Niehoff",
+        "name": "Cheyenne Niehoff",
+        "count": 1
+      },
+      {
+        "source": "Chip Diehl",
+        "name": "Chip Diehl",
+        "count": 1
+      },
+      {
+        "source": "Chris Lentz",
+        "name": "Chris Lentz",
+        "count": 1
+      },
+      {
+        "source": "Corey Hower",
+        "name": "Corey Hower",
+        "count": 1
+      },
+      {
+        "source": "Courtney James",
+        "name": "Courtney James",
+        "count": 1
+      },
+      {
+        "source": "Dale Wagner",
+        "name": "Dale Wagner",
+        "count": 1
+      },
+      {
+        "source": "Dan Feder",
+        "name": "Dan Feder",
+        "count": 1
+      },
+      {
+        "source": "Dan Flynn",
+        "name": "Dan Flynn",
+        "count": 1
+      },
+      {
+        "source": "Dan Fussell",
+        "name": "Dan Fussell",
+        "count": 1
+      },
+      {
+        "source": "Dan Geiser",
+        "name": "Dan Geiser",
+        "count": 1
+      },
+      {
+        "source": "Dan Pavic",
+        "name": "Dan Pavic",
+        "count": 1
+      },
+      {
+        "source": "Dana LaRosa",
+        "name": "Dana Larosa",
+        "count": 1
+      },
+      {
+        "source": "Danny Cullen",
+        "name": "Danny Cullen",
+        "count": 1
+      },
+      {
+        "source": "Dave Oertel",
+        "name": "Dave Oertel",
+        "count": 1
+      },
+      {
+        "source": "Donna Carabba",
+        "name": "Donna Carabba",
+        "count": 1
+      },
+      {
+        "source": "Duncan Rohlfing",
+        "name": "Duncan Rohlfing",
+        "count": 1
+      },
+      {
+        "source": "Egon Voltmer",
+        "name": "Egon Voltmer",
+        "count": 1
+      },
+      {
+        "source": "Frank Grimes",
+        "name": "Frank Grimes",
+        "count": 1
+      },
+      {
+        "source": "Gabe Costanza",
+        "name": "Gabe Costanza",
+        "count": 1
+      },
+      {
+        "source": "Jamie O'Neill",
+        "name": "Jamie O'Neill",
+        "count": 1
+      },
+      {
+        "source": "Jim Cannon",
+        "name": "Jim Cannon",
+        "count": 1
+      },
+      {
+        "source": "Jim Gallagher",
+        "name": "Jim Gallagher",
+        "count": 1
+      },
+      {
+        "source": "Jim Kalinowski",
+        "name": "Jim Kalinowski",
+        "count": 1
+      },
+      {
+        "source": "Jim Kilkenny",
+        "name": "Jim Kilkenny",
+        "count": 1
+      },
+      {
+        "source": "Jim Mattock",
+        "name": "Jim Mattock",
+        "count": 1
+      },
+      {
+        "source": "JJ Merrill",
+        "name": "Jj Merrill",
+        "count": 1
+      },
+      {
+        "source": "Joe DeVencentis",
+        "name": "Joe Devencentis",
+        "count": 1
+      },
+      {
+        "source": "Joe Hignett",
+        "name": "Joe Hignett",
+        "count": 1
+      },
+      {
+        "source": "John Kiley III",
+        "name": "John Kiley III",
+        "count": 1
+      },
+      {
+        "source": "John Marlin",
+        "name": "John Marlin",
+        "count": 1
+      },
+      {
+        "source": "John McBride",
+        "name": "John McBride",
+        "count": 1
+      },
+      {
+        "source": "John Stoney",
+        "name": "John Stoney",
+        "count": 1
+      },
+      {
+        "source": "Jon Bennett",
+        "name": "Jon Bennett",
+        "count": 1
+      },
+      {
+        "source": "Jon Pavic",
+        "name": "Jon Pavic",
+        "count": 1
+      },
+      {
+        "source": "JP Ungerean",
+        "name": "JP Ungerean",
+        "count": 1
+      },
+      {
+        "source": "Justin McKinstry",
+        "name": "Justin McKinstry",
+        "count": 1
+      },
+      {
+        "source": "Kevin Doyle",
+        "name": "Kevin Doyle",
+        "count": 1
+      },
+      {
+        "source": "Kevin Griffith",
+        "name": "Kevin Griffith",
+        "count": 1
+      },
+      {
+        "source": "Kevin Maley",
+        "name": "Kevin Maley",
+        "count": 1
+      },
+      {
+        "source": "Kevin Micsion",
+        "name": "Kevin Micsion",
+        "count": 1
+      },
+      {
+        "source": "Kevin Zayas",
+        "name": "Kevin Zayas",
+        "count": 1
+      },
+      {
+        "source": "Luke Mahon",
+        "name": "Luke Mahon",
+        "count": 1
+      },
+      {
+        "source": "Mark Toroniewski",
+        "name": "Mark Toroniewski",
+        "count": 1
+      },
+      {
+        "source": "Mark Wehrman",
+        "name": "Mark Wehrman",
+        "count": 1
+      },
+      {
+        "source": "Mark Wiggins",
+        "name": "Mark Wiggins",
+        "count": 1
+      },
+      {
+        "source": "Matt Hatter",
+        "name": "Matt Hatter",
+        "count": 1
+      },
+      {
+        "source": "Mike Guilden",
+        "name": "Mike Guilden",
+        "count": 1
+      },
+      {
+        "source": "Nick Evans",
+        "name": "Nick Evans",
+        "count": 1
+      },
+      {
+        "source": "Paddy McNicholl",
+        "name": "Paddy McNicholl",
+        "count": 1
+      },
+      {
+        "source": "Paul Farrell",
+        "name": "Paul Farrell",
+        "count": 1
+      },
+      {
+        "source": "Pete Howarth",
+        "name": "Pete Howarth",
+        "count": 1
+      },
+      {
+        "source": "Phil Kees",
+        "name": "Phil Kees",
+        "count": 1
+      },
+      {
+        "source": "Rob Loeffler",
+        "name": "Rob Loeffler",
+        "count": 1
+      },
+      {
+        "source": "Rob Russel",
+        "name": "Rob Russel",
+        "count": 1
+      },
+      {
+        "source": "Sean McAllister",
+        "name": "Sean McAllister",
+        "count": 1
+      },
+      {
+        "source": "Skip Hartung",
+        "name": "Skip Hartung",
+        "count": 1
+      },
+      {
+        "source": "Steve McKenna",
+        "name": "Steve McKenna",
+        "count": 1
+      },
+      {
+        "source": "Steve Wheatley",
+        "name": "Steve Wheatley",
+        "count": 1
+      },
+      {
+        "source": "Tara Niehoff",
+        "name": "Tara Niehoff",
+        "count": 1
+      },
+      {
+        "source": "Ted Hellmann",
+        "name": "Ted Hellmann",
+        "count": 1
+      },
+      {
+        "source": "Terry Chorba",
+        "name": "Terry Chorba",
+        "count": 1
+      },
+      {
+        "source": "Tim Devine",
+        "name": "Tim Devine",
+        "count": 1
+      },
+      {
+        "source": "Tim Teeter",
+        "name": "Tim Teeter",
+        "count": 1
+      },
+      {
+        "source": "Todd Vitelli",
+        "name": "Todd Vitelli",
+        "count": 1
+      },
+      {
+        "source": "Tom Green",
+        "name": "Tom Green",
+        "count": 1
+      },
+      {
+        "source": "Tommy Regan",
+        "name": "Tommy Regan",
+        "count": 1
+      },
+      {
+        "source": "Zac Hulayev",
+        "name": "Zac Hulayev",
+        "count": 1
+      }
+    ]
+  },
+  "rules": [
+    "Rules for The Dart League at Roslyn VFW",
+    "Cork is shot before Game Nos. 1 & 3. The winner determines shooting order.",
+    "All cork shots must stick in the board or be re-shot, cork beats cork.",
+    "The shooting line is a toe line - not a heel line.",
+    "Do NOT touch your darts. If you cannot determine score ask for assist.",
+    "Darts must stick in the board until shooter leave the line.",
+    "Shooters can only warm up if they have not shot the previous game.",
+    "Roster Limit is eight shooters per team (max). Four shooters per game.",
+    "When shooting a blind. The highest, unused, average must be used ( value 80%).",
+    "Score Sheets cost $15 per week plus prior weeks eggs.",
+    "Must shoot all innings - No automatic eggs.",
+    "All eggs shot in innings 1 - 6 - 7 - 12 - 13 - 18 & OT will cost $1 each.",
+    "This will be collected the following week when paying for sheets.",
+    "It is important to start and finish your match within the designated time slot.",
+    "If there is a conflict, work it out with the other Capt. Be sure to make Chip aware of any potential changes before they are agreed to.",
+    "The last thing we want is a forfeit. No free wins…",
+    "Playoffs:",
+    "Each shooter must have ten games shot to be eligibke for the playoffs",
+    "Each shooter must be current on their league dues and VFW Membership",
+    "Cork is to be shot before each game. All cork rules apply.",
+    "VFW Membership in order to be eligible.",
+    "Board assignments are chosen in order of seeding.",
+    "--- If a time cannot be agreed to - start time in then 8pm.",
+    "If you need Captains contact info, let me know.",
+    "Prizes:",
+    "First, Second, and Third Place teams will receive a prize.",
+    "Season ending prizes will be awarded if placed and have >13 games shot",
+    "Additional prizes:",
+    "The funds collected from egg pot will go to the Player of the Week (POW).",
+    "The POW will also receive a $12 bar tab. ( equivalent to 4 domestic bottles)",
+    "Shoot a Ginzburgh and get one shot and one beer. Every 25th will be doubled.",
+    "Finally -",
+    "When adding a shooter that has a previous league average.",
+    "You must seek the shooters average beforehand or the shooter will not shoot until the following week.",
+    "EDITION 24A - JAN2024"
+  ],
+  "spread": [
+    {
+      "diff": 1,
+      "points": 0.8
+    },
+    {
+      "diff": 2,
+      "points": 1.6
+    },
+    {
+      "diff": 3,
+      "points": 2.4
+    },
+    {
+      "diff": 4,
+      "points": 3.2
+    },
+    {
+      "diff": 5,
+      "points": 4
+    },
+    {
+      "diff": 6,
+      "points": 4.8
+    },
+    {
+      "diff": 7,
+      "points": 5.6
+    },
+    {
+      "diff": 8,
+      "points": 6.4
+    },
+    {
+      "diff": 9,
+      "points": 7.2
+    },
+    {
+      "diff": 10,
+      "points": 8
+    },
+    {
+      "diff": 11,
+      "points": 8.8
+    },
+    {
+      "diff": 12,
+      "points": 9.6
+    },
+    {
+      "diff": 13,
+      "points": 10.4
+    },
+    {
+      "diff": 14,
+      "points": 11.2
+    },
+    {
+      "diff": 15,
+      "points": 12
+    },
+    {
+      "diff": 16,
+      "points": 12.8
+    },
+    {
+      "diff": 17,
+      "points": 13.6
+    },
+    {
+      "diff": 18,
+      "points": 14.4
+    },
+    {
+      "diff": 19,
+      "points": 15.2
+    },
+    {
+      "diff": 20,
+      "points": 16
+    },
+    {
+      "diff": 21,
+      "points": 16.8
+    },
+    {
+      "diff": 22,
+      "points": 17.6
+    },
+    {
+      "diff": 23,
+      "points": 18.4
+    },
+    {
+      "diff": 24,
+      "points": 19.2
+    },
+    {
+      "diff": 25,
+      "points": 20
+    },
+    {
+      "diff": 26,
+      "points": 20.8
+    },
+    {
+      "diff": 27,
+      "points": 21.6
+    },
+    {
+      "diff": 28,
+      "points": 22.4
+    },
+    {
+      "diff": 29,
+      "points": 23.2
+    },
+    {
+      "diff": 30,
+      "points": 24
+    },
+    {
+      "diff": 31,
+      "points": 24.8
+    },
+    {
+      "diff": 32,
+      "points": 25.6
+    },
+    {
+      "diff": 33,
+      "points": 26.4
+    },
+    {
+      "diff": 34,
+      "points": 27.2
+    },
+    {
+      "diff": 35,
+      "points": 28
+    },
+    {
+      "diff": 36,
+      "points": 28.8
+    },
+    {
+      "diff": 37,
+      "points": 29.6
+    },
+    {
+      "diff": 38,
+      "points": 30.4
+    },
+    {
+      "diff": 39,
+      "points": 31.2
+    },
+    {
+      "diff": 40,
+      "points": 32
+    },
+    {
+      "diff": 41,
+      "points": 32.8
+    },
+    {
+      "diff": 42,
+      "points": 33.6
+    },
+    {
+      "diff": 43,
+      "points": 34.4
+    },
+    {
+      "diff": 44,
+      "points": 35.2
+    },
+    {
+      "diff": 45,
+      "points": 36
+    },
+    {
+      "diff": 46,
+      "points": 36.8
+    },
+    {
+      "diff": 47,
+      "points": 37.6
+    },
+    {
+      "diff": 48,
+      "points": 38.4
+    },
+    {
+      "diff": 49,
+      "points": 39.2
+    },
+    {
+      "diff": 50,
+      "points": 40
+    },
+    {
+      "diff": 51,
+      "points": 40.8
+    },
+    {
+      "diff": 52,
+      "points": 41.6
+    },
+    {
+      "diff": 53,
+      "points": 42.4
+    },
+    {
+      "diff": 54,
+      "points": 43.2
+    },
+    {
+      "diff": 55,
+      "points": 44
+    },
+    {
+      "diff": 56,
+      "points": 44.8
+    },
+    {
+      "diff": 57,
+      "points": 45.6
+    },
+    {
+      "diff": 58,
+      "points": 46.4
+    },
+    {
+      "diff": 59,
+      "points": 47.2
+    },
+    {
+      "diff": 60,
+      "points": 48
+    }
+  ]
+};

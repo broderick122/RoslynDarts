@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1c4a38">
+<title>Update scores · Roslyn VFW Darts</title>
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="css/site.css?v=1.0.0">
+</head>
+<body data-page="update">
+<a class="skip" href="#content">Skip to content</a>
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span><span>Roslyn VFW Darts</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="standings.html" data-nav="standings">Standings</a>
+      <a href="players.html" data-nav="players">Players</a>
+      <a href="teams.html" data-nav="teams">Teams</a>
+      <a href="schedule.html" data-nav="schedule">Schedule</a>
+      <a href="awards.html" data-nav="awards">Awards</a>
+      <a href="rules.html" data-nav="rules">Rules</a>
+    </nav>
+    <form class="finder" role="search">
+      <label><span class="sr">Find a player</span><input type="search" placeholder="Find a player" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"></label>
+      <div class="finder-results" role="listbox" hidden></div>
+    </form>
+  </div>
+</header>
+<main id="content" class="wrap">
+  <p class="kicker">For Chip</p>
+  <h1>Update the scores</h1>
+  <p class="lede">Keep using the same Excel file. Choose it here, check the preview, and publish. The site reads the scores in this browser and saves only those scores. It does not upload the spreadsheet, and it never reads the Capt. tab.</p>
+  <ol class="steps">
+    <li class="panel" id="drop">
+      <h2>1. Save a GitHub token on this phone</h2>
+      <p>On GitHub, open Settings, then Developer settings, then Fine-grained tokens. Create a token that can access only the RoslynDarts repository, with Contents set to Read and write. Paste it here once. It stays in this browser and is not part of the website.</p>
+      <form id="token-form" class="token-row">
+        <label>GitHub token
+          <input id="token" class="text-input" type="password" autocomplete="off" spellcheck="false">
+        </label>
+        <button class="primary" type="submit">Save token on this browser</button>
+      </form>
+      <button class="ghost" id="forget" type="button">Forget the saved token</button>
+      <div id="token-status" class="banner warn" hidden></div>
+    </li>
+    <li class="panel">
+      <h2>2. Choose the workbook</h2>
+      <p>Use the .xlsx you update during the season. Save it in Excel first so the calculated averages are stored in the file.</p>
+      <label class="filebtn">Choose the Excel file
+        <input id="file" type="file" accept=".xlsx,.xlsm,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+      </label>
+      <div id="file-status" hidden></div>
+    </li>
+    <li class="panel">
+      <h2>3. Publish</h2>
+      <div id="preview" hidden></div>
+      <button class="primary" id="publish" type="button" disabled>Update the website</button>
+      <button class="ghost" id="download" type="button" hidden>Download the sanitized scores instead</button>
+      <div id="publish-status" hidden></div>
+      <p class="meta-line">Publishing writes data/league.json and data/league.js on the main branch of broderick122/RoslynDarts. That is the branch GitHub Pages serves.</p>
+    </li>
+  </ol>
+</main>
+<footer class="foot">
+  <p>Roslyn VFW Post 3498 · 1140 Easton Rd, Abington, PA 19001 · Wednesday nights</p>
+  <p>Summer league site <span data-version></span> · <span data-updated>Updated from the workbook</span></p>
+  <p><a href="index.html">Back to the league</a></p>
+</footer>
+<script src="js/config.js?v=1.0.0"></script>
+<script src="js/names.js?v=1.0.0"></script>
+<script src="vendor/xlsx.full.min.js?v=1.0.0"></script>
+<script src="js/parse-workbook.js?v=1.0.0"></script>
+<script src="js/app.js?v=1.0.0"></script>
+<script src="js/update.js?v=1.0.0"></script>
+</body>
+</html>

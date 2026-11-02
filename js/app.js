@@ -1,0 +1,710 @@
+(function () {
+  'use strict';
+
+  var names = window.RoslynNames;
+  var config = window.SITE_CONFIG || { version: '1.0.0' };
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  function esc(value) {
+    return String(value == null ? '' : value).replace(/[&<>"']/g, function (ch) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch];
+    });
+  }
+
+  function fmtAvg(n) {
+    if (typeof n !== 'number' || !isFinite(n)) return '—';
+    return (Math.round((n + Number.EPSILON) * 100) / 100).toFixed(2);
+  }
+
+  function fmtInt(n) {
+    if (typeof n !== 'number' || !isFinite(n)) return '—';
+    return Math.round(n).toLocaleString('en-US');
+  }
+
+  function fmtPct(n) {
+    if (typeof n !== 'number' || !isFinite(n)) return '—';
+    return n.toFixed(3).replace(/^0/, '');
+  }
+
+  function fmtUpdated(iso) {
+    var d = new Date(iso);
+    if (isNaN(d.getTime())) return '';
+    return d.toLocaleDateString('en-US', {
+      month: 'long', day: 'numeric', year: 'numeric', timeZone: 'America/New_York'
+    });
+  }
+
+  function prettySheetDate(value) {
+    var match = String(value || '').match(/^(\d{2})\.(\d{2})\.(\d{2})$/);
+    if (!match) return value || '';
+    var month = MONTHS[Number(match[1]) - 1];
+    if (!month) return value;
+    return month + ' ' + Number(match[2]) + ', ' + (2000 + Number(match[3]));
+  }
+
+  function readableCaps(value) {
+    var s = String(value || '');
+    var letters = s.replace(/[^A-Za-z]/g, '');
+    var uppers = s.replace(/[^A-Z]/g, '');
+    if (!letters || uppers.length / letters.length < 0.8) return s;
+    return s.toLowerCase().replace(/(^|[\s(])([a-z])/g, function (_m, lead, ch) {
+      return lead + ch.toUpperCase();
+    });
+  }
+
+  function stripSeed(raw) {
+    return String(raw || '').replace(/^\[\d+\]\s*/, '').replace(/^\d+\.\s*/, '').trim();
+  }
+
+  function teamName(source, fallback, aliases) {
+    var next = names.canonicalTeam(stripSeed(source || fallback || ''), aliases);
+    return next || fallback || '';
+  }
+
+  function playerName(source, fallback, aliases) {
+    var next = names.canonicalPlayer(source || fallback || '', aliases);
+    return next || fallback || source || '';
+  }
+
+  function loadScript(src) {
+    return new Promise(function (resolve, reject) {
+      var script = document.createElement('script');
+      script.src = src;
+      script.onload = function () { resolve(); };
+      script.onerror = function () { reject(new Error('Could not load ' + src)); };
+      document.head.appendChild(script);
+    });
+  }
+
+  async function loadAll() {
+    if (location.protocol !== 'file:') {
+      try {
+        var stamp = Date.now();
+        var leagueRes = await fetch('data/league.json?t=' + stamp, { cache: 'no-store' });
+        var aliasRes = await fetch('data/aliases.json?t=' + stamp, { cache: 'no-store' });
+        if (leagueRes.ok && aliasRes.ok) {
+          return { league: await leagueRes.json(), aliases: await aliasRes.json() };
+        }
+      } catch (err) { /* opening the file locally uses the script copies */ }
+    }
+    if (!window.LEAGUE_ALIASES) await loadScript('data/aliases.js');
+    if (!window.LEAGUE_DATA) await loadScript('data/league.js');
+    if (!window.LEAGUE_DATA || !window.LEAGUE_ALIASES) throw new Error('The league file is missing.');
+    return { league: window.LEAGUE_DATA, aliases: window.LEAGUE_ALIASES };
+  }
+
+  function hydrate(league, aliases) {
+    var data = JSON.parse(JSON.stringify(league));
+    data.teams.forEach(function (t) {
+      t.name = teamName(t.source, t.name, aliases);
+      t.slug = names.slugify(t.name);
+      t.roster.forEach(function (p) { p.name = playerName(p.source, p.name, aliases); });
+    });
+    data.standings.forEach(function (t) {
+      t.name = teamName(t.source, t.name, aliases);
+      t.slug = names.slugify(t.name);
+    });
+    data.players.forEach(function (p) {
+      p.name = playerName(p.source, p.name, aliases);
+      p.team = teamName(p.teamSource, p.team, aliases);
+      p.id = names.slugify(p.name);
+    });
+    var counts = {};
+    data.players.forEach(function (p) { counts[p.id] = (counts[p.id] || 0) + 1; });
+    data.players.forEach(function (p) {
+      if (counts[p.id] > 1) p.id = names.slugify(p.name + ' ' + p.team);
+    });
+    data.h2h.forEach(function (row) {
+      row.team = teamName(row.teamSource, row.team, aliases);
+      row.opponent = teamName(row.opponentSource, row.opponent, aliases);
+    });
+    function fixMatch(match) {
+      match.home = teamName(match.homeSource, match.home, aliases);
+      match.away = teamName(match.awaySource, match.away, aliases);
+    }
+    data.schedule.weeks.forEach(function (week) { week.matches.forEach(fixMatch); });
+    data.schedule.playoffs.forEach(function (round) { round.matches.forEach(fixMatch); });
+    data.pow.rows.forEach(function (row) {
+      row.name = playerName(row.source, row.name, aliases);
+      row.team = teamName(row.teamSource, row.team, aliases);
+    });
+    data.honors.ginzburgh.forEach(function (row) { row.name = playerName(row.source, row.name, aliases); });
+    data.honors.pow.forEach(function (row) { row.name = playerName(row.source, row.name, aliases); });
+    data.playerById = {};
+    data.players.forEach(function (p) { data.playerById[p.id] = p; });
+    data.teamBySlug = {};
+    data.teamByName = {};
+    data.teams.forEach(function (t) {
+      data.teamBySlug[t.slug] = t;
+      data.teamByName[t.name] = t;
+    });
+    return data;
+  }
+
+  function playerHref(id) { return 'player.html?p=' + encodeURIComponent(id); }
+  function teamHref(slug) { return 'team.html?t=' + encodeURIComponent(slug); }
+
+  function teamSlug(data, name) {
+    var team = data.teamByName[name];
+    return team ? team.slug : names.slugify(name);
+  }
+
+  function highlight(text, query) {
+    var hay = String(text);
+    var i = hay.toLowerCase().indexOf(query.toLowerCase());
+    if (i < 0 || !query) return esc(hay);
+    return esc(hay.slice(0, i)) + '<mark>' + esc(hay.slice(i, i + query.length)) + '</mark>' + esc(hay.slice(i + query.length));
+  }
+
+  function rankPlayers(players, query) {
+    var q = query.toLowerCase();
+    return players.map(function (p) {
+      var n = p.name.toLowerCase();
+      var score = 9;
+      if (n.indexOf(q) === 0) score = 0;
+      else if (n.split(/\s+/).some(function (word) { return word.indexOf(q) === 0; })) score = 1;
+      else if (n.indexOf(q) !== -1) score = 2;
+      else if (p.team.toLowerCase().indexOf(q) !== -1) score = 3;
+      return { p: p, score: score };
+    }).filter(function (row) { return row.score < 9; }).sort(function (a, b) {
+      return a.score - b.score || (b.p.average || 0) - (a.p.average || 0) || a.p.name.localeCompare(b.p.name);
+    }).map(function (row) { return row.p; });
+  }
+
+  function mountSearch(form, players) {
+    var input = form.querySelector('input');
+    var list = form.querySelector('.finder-results');
+    if (!input || !list || input.dataset.ready) return;
+    input.dataset.ready = '1';
+    var active = -1;
+    var hits = [];
+
+    function go(id) { location.href = playerHref(id); }
+
+    function render() {
+      var q = input.value.trim();
+      hits = q ? rankPlayers(players, q).slice(0, 8) : [];
+      active = Math.min(active, hits.length - 1);
+      list.innerHTML = '';
+      if (!q) { list.hidden = true; return; }
+      list.hidden = false;
+      if (!hits.length) {
+        list.innerHTML = '<p class="empty">No shooter matches that.</p>';
+        return;
+      }
+      hits.forEach(function (p, i) {
+        var link = document.createElement('a');
+        link.href = playerHref(p.id);
+        link.className = 'hit' + (i === active ? ' is-active' : '');
+        link.setAttribute('role', 'option');
+        link.innerHTML = '<span>' + highlight(p.name, q) + '</span><span class="hit-team">' + esc(p.team) + ' · ' + fmtAvg(p.average) + '</span>';
+        list.appendChild(link);
+      });
+    }
+
+    input.addEventListener('input', function () { active = -1; render(); });
+    input.addEventListener('keydown', function (event) {
+      if (event.key === 'ArrowDown') {
+        event.preventDefault();
+        active = Math.min(hits.length - 1, active + 1);
+        render();
+      } else if (event.key === 'ArrowUp') {
+        event.preventDefault();
+        active = Math.max(0, active - 1);
+        render();
+      } else if (event.key === 'Enter') {
+        var pick = active >= 0 ? hits[active] : hits[0];
+        if (pick) { event.preventDefault(); go(pick.id); }
+      } else if (event.key === 'Escape') {
+        list.hidden = true;
+      }
+    });
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var pick = active >= 0 ? hits[active] : hits[0];
+      if (pick) go(pick.id);
+    });
+    document.addEventListener('click', function (event) {
+      if (!form.contains(event.target)) list.hidden = true;
+    });
+  }
+
+  function fillChrome(data) {
+    document.querySelectorAll('[data-nav]').forEach(function (link) {
+      if (link.dataset.nav === document.body.dataset.page) link.setAttribute('aria-current', 'page');
+    });
+    document.querySelectorAll('[data-version]').forEach(function (el) {
+      el.textContent = 'v' + config.version;
+    });
+    document.querySelectorAll('[data-updated]').forEach(function (el) {
+      el.textContent = 'Updated ' + fmtUpdated(data.meta.updated);
+    });
+    document.querySelectorAll('.finder').forEach(function (form) { mountSearch(form, data.players); });
+  }
+
+  function showError(message) {
+    var content = document.getElementById('content');
+    if (content && document.body.dataset.page !== 'update') {
+      content.innerHTML = '<p class="banner bad">' + esc(message) + '</p>';
+    }
+  }
+
+  function record(team) { return team.w + '–' + team.l; }
+
+  function seedName(seed, name) {
+    return seed ? '#' + seed + ' ' + name : name;
+  }
+
+  function opponentFor(data, team, week) {
+    var block = data.schedule.weeks.find(function (item) { return item.number === week; });
+    if (!block) return '';
+    var match = block.matches.find(function (item) { return item.home === team || item.away === team; });
+    if (!match) return '';
+    return match.home === team ? match.away : match.home;
+  }
+
+  function weekWhen(data, week) {
+    var block = data.schedule.weeks.find(function (item) { return item.number === week; });
+    return block ? block.when : '';
+  }
+
+  function pills(scores) {
+    return '<div class="pills">' + scores.map(function (score) {
+      if (score === 'F') return '<span class="pill forfeit">F</span>';
+      if (typeof score !== 'number') return '<span class="pill empty">–</span>';
+      return '<span class="pill' + (score >= 30 ? ' hot' : '') + '">' + score + '</span>';
+    }).join('') + '</div>';
+  }
+
+  function renderHome(data) {
+    var leader = data.standings[0];
+    var top = data.players[0];
+    var series = data.players.slice().filter(function (p) { return p.highSeries != null; })
+      .sort(function (a, b) { return b.highSeries - a.highSeries; })[0];
+    var high = data.players.slice().filter(function (p) { return p.highGame != null; })
+      .sort(function (a, b) { return b.highGame - a.highGame; })[0];
+    var pow = data.pow.rows[0];
+    var status = data.meta.seasonStatus ? ' · ' + data.meta.seasonStatus : '';
+    var html = '';
+    html += '<section class="hero">';
+    html += '<p class="kicker">' + esc(data.meta.venueName) + ' · ' + esc(data.meta.night) + ' nights</p>';
+    html += '<h1>Roslyn VFW American Darts</h1>';
+    html += '<p class="lede">' + esc(data.meta.season) + status + ' · ' + data.meta.teamCount + ' teams · ' + data.meta.playerCount + ' shooters</p>';
+    html += '<p class="address">1140 Easton Rd, Abington, PA 19001</p>';
+    html += '</section>';
+    html += '<form class="finder hero-finder" role="search">';
+    html += '<label><span>Find a player</span><input type="search" placeholder="Try Bratzler, Yannessa, Kilkenny" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"></label>';
+    html += '<div class="finder-results" role="listbox" hidden></div></form>';
+    html += '<div class="snap-grid section">';
+    if (leader) html += '<a class="snap" href="standings.html"><span>First place</span><strong>' + esc(leader.name) + '</strong><span>' + record(leader) + '</span></a>';
+    if (top) html += '<a class="snap" href="' + playerHref(top.id) + '"><span>Top average</span><strong>' + fmtAvg(top.average) + '</strong><span>' + esc(top.name) + '</span></a>';
+    if (series) html += '<a class="snap" href="' + playerHref(series.id) + '"><span>High series</span><strong>' + series.highSeries + '</strong><span>' + esc(series.name) + '</span></a>';
+    if (high) html += '<a class="snap" href="' + playerHref(high.id) + '"><span>High game</span><strong>' + high.highGame + '</strong><span>' + esc(high.name) + '</span></a>';
+    html += '</div>';
+    if (pow) {
+      html += '<a class="panel" href="awards.html" style="display:block;text-decoration:none;color:inherit">';
+      html += '<p class="kicker">Player of the Week</p><h2>' + esc(pow.name) + '</h2>';
+      html += '<p class="meta-line">' + esc(pow.team) + ' · ' + fmtAvg(pow.over) + ' points over average</p></a>';
+    }
+    html += '<div class="link-grid section">';
+    [['standings.html', 'Standings', 'Records and the playoff line'],
+      ['players.html', 'Players', 'Averages, series, and 30s'],
+      ['teams.html', 'Teams', 'Rosters and team averages'],
+      ['schedule.html', 'Schedule', 'Weeks, times, and boards'],
+      ['awards.html', 'Awards', 'Player of the Week and Ginzburghs'],
+      ['rules.html', 'Rules', 'House rules and the spread chart']
+    ].forEach(function (item) {
+      html += '<a class="link-card" href="' + item[0] + '"><strong>' + item[1] + '</strong><span>' + item[2] + '</span></a>';
+    });
+    html += '</div>';
+    html += '<p class="note">Each match is worth 4 points: one for each game and one for the higher team total. The top 8 teams make the playoffs.</p>';
+    if (data.leagueAverage && data.leagueAverage.average) {
+      html += '<p class="meta-line">League average ' + fmtAvg(data.leagueAverage.average) + ' over ' + fmtInt(data.leagueAverage.games) + ' games.</p>';
+    }
+    return html;
+  }
+
+  function renderStandings(data) {
+    var anyTies = data.standings.some(function (t) { return t.t > 0; });
+    var html = '<p class="kicker">' + esc(data.meta.season) + '</p><h1>Standings</h1>';
+    html += '<p class="lede">Order is the order on the standings sheet. Games-behind notes are shown as written.</p>';
+    var sawOut = false;
+    data.standings.forEach(function (team) {
+      if (!team.playoffs && !sawOut) {
+        sawOut = true;
+        html += '<div class="cutoff">Playoff line · top 8 go on</div>';
+      }
+      html += '<a class="team-card ' + (team.playoffs ? 'playoff' : 'out') + '" href="' + teamHref(team.slug) + '">';
+      html += '<div class="card-top"><h2><span class="rank">' + team.rank + '</span>' + esc(team.name) + '</h2><span class="record">' + record(team) + '</span></div>';
+      var bits = [fmtPct(team.pct), 'PF ' + fmtInt(team.pf), 'PA ' + fmtInt(team.pa)];
+      if (anyTies) bits.unshift(team.t + ' ties');
+      if (team.gb) bits.push('GB ' + team.gb);
+      html += '<p class="meta-line">' + bits.map(esc).join(' · ') + '</p></a>';
+    });
+    html += '<section class="section"><h2>Head to head</h2>';
+    html += '<label>Team<select id="h2h-team">' + data.standings.map(function (t) {
+      return '<option value="' + esc(t.name) + '">' + esc(t.name) + '</option>';
+    }).join('') + '</select></label><div id="h2h-list"></div></section>';
+    return html;
+  }
+
+  function bindStandings(data) {
+    var select = document.getElementById('h2h-team');
+    var list = document.getElementById('h2h-list');
+    if (!select || !list) return;
+    function draw() {
+      var rows = data.h2h.filter(function (row) { return row.team === select.value; });
+      rows.sort(function (a, b) { return b.w - a.w || a.opponent.localeCompare(b.opponent); });
+      if (!rows.length) {
+        list.innerHTML = '<p class="meta-line">No head-to-head records for that team.</p>';
+        return;
+      }
+      list.innerHTML = rows.map(function (row) {
+        return '<a class="team-card" href="' + teamHref(teamSlug(data, row.opponent)) + '"><div class="card-top"><h3>vs ' + esc(row.opponent) + '</h3><span class="record">' + row.w + '–' + row.l + '</span></div></a>';
+      }).join('');
+    }
+    select.addEventListener('change', draw);
+    draw();
+  }
+
+  function leaderList(title, rows) {
+    return '<section class="lb"><h2>' + esc(title) + '</h2><ol>' + rows.join('') + '</ol></section>';
+  }
+
+  function renderPlayers(data) {
+    var bySeries = data.players.filter(function (p) { return p.highSeries != null; })
+      .sort(function (a, b) { return b.highSeries - a.highSeries; }).slice(0, 5);
+    var byGame = data.players.filter(function (p) { return p.highGame != null; })
+      .sort(function (a, b) { return b.highGame - a.highGame; }).slice(0, 5);
+    var byThirty = data.players.filter(function (p) { return p.thirtyCount > 0; })
+      .sort(function (a, b) { return b.thirtyCount - a.thirtyCount; }).slice(0, 5);
+    var html = '<p class="kicker">Shooters</p><h1>Averages</h1>';
+    html += '<div class="lb-grid section">';
+    html += leaderList('Top average', data.players.slice(0, 5).map(function (p) {
+      return '<li><a href="' + playerHref(p.id) + '">' + esc(p.name) + '</a> ' + fmtAvg(p.average) + '</li>';
+    }));
+    html += leaderList('High series', bySeries.map(function (p) {
+      var when = p.highSeriesDate ? ' · ' + esc(prettySheetDate(p.highSeriesDate)) : '';
+      return '<li><a href="' + playerHref(p.id) + '">' + esc(p.name) + '</a> ' + p.highSeries + when + '</li>';
+    }));
+    html += leaderList('High game', byGame.map(function (p) {
+      return '<li><a href="' + playerHref(p.id) + '">' + esc(p.name) + '</a> ' + p.highGame + '</li>';
+    }));
+    html += leaderList('Most 30+ games', byThirty.map(function (p) {
+      return '<li><a href="' + playerHref(p.id) + '">' + esc(p.name) + '</a> ' + p.thirtyCount + '</li>';
+    }));
+    html += '</div>';
+    html += '<div class="tools"><label>Team<select id="team-filter"><option value="">All teams</option>' + data.teams.map(function (t) {
+      return '<option value="' + esc(t.name) + '">' + esc(t.name) + '</option>';
+    }).join('') + '</select></label>';
+    html += '<label>Sort<select id="sort-by"><option value="average">Average</option><option value="points">Points</option><option value="games">Games</option><option value="high">High game</option><option value="thirty">30+ games</option><option value="name">Name</option></select></label></div>';
+    html += '<div id="roster"></div>';
+    return html;
+  }
+
+  function bindPlayers(data) {
+    var teamFilter = document.getElementById('team-filter');
+    var sortBy = document.getElementById('sort-by');
+    var roster = document.getElementById('roster');
+    if (!roster) return;
+    function draw() {
+      var list = data.players.filter(function (p) { return !teamFilter.value || p.team === teamFilter.value; });
+      var key = sortBy.value;
+      list.sort(function (a, b) {
+        if (key === 'name') return a.name.localeCompare(b.name);
+        if (key === 'points') return b.points - a.points || a.name.localeCompare(b.name);
+        if (key === 'games') return b.games - a.games || a.name.localeCompare(b.name);
+        if (key === 'high') return (b.highGame || -1) - (a.highGame || -1) || a.name.localeCompare(b.name);
+        if (key === 'thirty') return (b.thirtyCount || 0) - (a.thirtyCount || 0) || a.name.localeCompare(b.name);
+        return (b.average || 0) - (a.average || 0) || a.name.localeCompare(b.name);
+      });
+      if (!list.length) {
+        roster.innerHTML = '<p class="meta-line">Nobody on that team has games yet.</p>';
+        return;
+      }
+      roster.innerHTML = list.map(function (p) {
+        return '<a class="shooter" href="' + playerHref(p.id) + '"><div class="shooter-top"><h2>' + esc(p.name) + '</h2><span class="avg">' + fmtAvg(p.average) + '</span></div><p class="meta-line">' + esc(p.team) + ' · ' + p.games + ' games · ' + fmtInt(p.points) + ' pts · rank ' + p.rank + '</p><p class="meta-line">High game ' + (p.highGame == null ? '—' : p.highGame) + ' · Series ' + (p.highSeries == null ? '—' : p.highSeries) + ' · 30+ ' + (p.thirtyCount || 0) + '</p></a>';
+      }).join('');
+    }
+    teamFilter.addEventListener('change', draw);
+    sortBy.addEventListener('change', draw);
+    draw();
+  }
+
+  function renderTeams(data) {
+    var html = '<p class="kicker">Rosters</p><h1>Teams</h1>';
+    data.teams.forEach(function (team) {
+      html += '<a class="team-card ' + (team.playoffs ? 'playoff' : 'out') + '" href="' + teamHref(team.slug) + '">';
+      html += '<div class="card-top"><h2>' + esc(team.name) + '</h2><span class="record">' + record(team) + '</span></div>';
+      html += '<p class="meta-line">' + (team.playoffs ? 'Playoff team' : 'Outside the top 8') + ' · team average ' + fmtAvg(team.teamAverage) + '</p></a>';
+    });
+    return html;
+  }
+
+  function renderTeam(data) {
+    var params = new URLSearchParams(location.search);
+    var team = data.teamBySlug[params.get('t') || ''];
+    if (!team) return renderTeams(data);
+    var roster = team.roster.slice().sort(function (a, b) { return (b.average || 0) - (a.average || 0); });
+    var html = '<p class="kicker">' + (team.playoffs ? 'Playoff team' : 'Outside the top 8') + ' · rank ' + team.rank + '</p>';
+    html += '<h1>' + esc(team.name) + '</h1>';
+    html += '<p class="record">' + record(team) + '</p>';
+    var bits = [fmtPct(team.pct), 'PF ' + fmtInt(team.pf), 'PA ' + fmtInt(team.pa), 'team average ' + fmtAvg(team.teamAverage)];
+    if (team.gb) bits.push('GB ' + team.gb);
+    html += '<p class="meta-line">' + bits.map(esc).join(' · ') + '</p>';
+    html += '<div class="stat-grid section"><div class="stat"><span>Shooter games</span><strong>' + fmtInt(team.teamGames) + '</strong></div><div class="stat"><span>Shooter points</span><strong>' + fmtInt(team.teamPoints) + '</strong></div></div>';
+    html += '<h2>Roster</h2>';
+    roster.forEach(function (p) {
+      var full = data.players.find(function (item) { return item.name === p.name && item.team === team.name; });
+      var href = full ? playerHref(full.id) : 'players.html';
+      html += '<a class="shooter" href="' + href + '"><div class="shooter-top"><h3>' + esc(p.name) + '</h3><span class="avg">' + fmtAvg(p.average) + '</span></div><p class="meta-line">' + p.games + ' games · ' + fmtInt(p.points) + ' pts</p></a>';
+    });
+    var rows = data.h2h.filter(function (row) { return row.team === team.name; });
+    if (rows.length) {
+      html += '<h2 class="section">Head to head</h2>';
+      rows.sort(function (a, b) { return b.w - a.w; });
+      rows.forEach(function (row) {
+        html += '<p class="meta-line">vs <a href="' + teamHref(teamSlug(data, row.opponent)) + '">' + esc(row.opponent) + '</a> ' + row.w + '–' + row.l + '</p>';
+      });
+    }
+    if (team.weekly && team.weekly.length) {
+      html += '<h2 class="section">Points by week</h2>';
+      team.weekly.forEach(function (week) {
+        html += '<p class="meta-line">Week ' + week.week + ' · ' + week.pf + ' for, ' + week.pa + ' against</p>';
+      });
+    }
+    var matches = [];
+    data.schedule.weeks.forEach(function (week) {
+      week.matches.forEach(function (match) {
+        if (match.home === team.name || match.away === team.name) {
+          var foe = match.home === team.name ? match.away : match.home;
+          matches.push({ week: week, foe: foe, match: match });
+        }
+      });
+    });
+    if (matches.length) {
+      html += '<h2 class="section">Schedule</h2>';
+      matches.forEach(function (item) {
+        html += '<p class="meta-line">Week ' + item.week.number + ' · ' + esc(item.match.time || '') + (item.match.board ? ' · Board ' + item.match.board : '') + ' · vs <a href="' + teamHref(teamSlug(data, item.foe)) + '">' + esc(item.foe) + '</a></p>';
+      });
+    }
+    return html;
+  }
+
+  function renderSchedule(data) {
+    var html = '<p class="kicker">' + esc(data.meta.season) + '</p><h1>Schedule</h1>';
+    if (data.meta.scheduleEdition) html += '<p class="meta-line">' + esc(data.meta.scheduleEdition) + '</p>';
+    data.schedule.weeks.forEach(function (week) {
+      html += '<section class="section"><h2>Week ' + week.number + '</h2><p class="meta-line">' + esc(week.when) + '</p>';
+      week.matches.forEach(function (match) {
+        html += '<article class="match"><p class="meta-line">' + esc(match.time || 'Time TBD') + (match.board ? ' · Board ' + match.board : '') + '</p>';
+        html += '<p class="versus"><a href="' + teamHref(teamSlug(data, match.home)) + '">' + esc(seedName(match.homeSeed, match.home)) + '</a><span>vs</span><a href="' + teamHref(teamSlug(data, match.away)) + '">' + esc(seedName(match.awaySeed, match.away)) + '</a></p></article>';
+      });
+      html += '</section>';
+    });
+    if (data.schedule.playoffs.length) {
+      html += '<h2>Playoffs</h2>';
+      data.schedule.playoffs.forEach(function (round) {
+        var scored = round.matches.length && round.matches.every(function (m) { return m.score; });
+        var title = scored && round.label === 'Finals' ? 'Posted results' : round.label;
+        html += '<section class="section"><h3>' + esc(title) + '</h3>';
+        if (round.when) html += '<p class="meta-line">' + esc(round.when) + '</p>';
+        round.notes.forEach(function (note) { html += '<p class="meta-line">' + esc(note) + '</p>'; });
+        round.matches.forEach(function (match) {
+          html += '<article class="match">';
+          if (match.score) html += '<p class="score-flag">' + esc(match.score) + '</p>';
+          else html += '<p class="meta-line">' + esc(match.time || '') + (match.board ? ' · Board ' + match.board : '') + '</p>';
+          html += '<p class="versus"><a href="' + teamHref(teamSlug(data, match.home)) + '">' + esc(seedName(match.homeSeed, match.home)) + '</a><span>vs</span><a href="' + teamHref(teamSlug(data, match.away)) + '">' + esc(seedName(match.awaySeed, match.away)) + '</a></p></article>';
+        });
+        html += '</section>';
+      });
+    }
+    return html;
+  }
+
+  function honorList(title, rows, limit) {
+    var html = '<section class="section"><h2>' + esc(title) + '</h2>';
+    html += '<label>Filter<input class="text-input honor-filter" type="search" placeholder="Filter ' + esc(title) + '" data-list="' + esc(title) + '"></label>';
+    html += '<div class="honor-body" data-honor="' + esc(title) + '"></div></section>';
+    return { html: html, rows: rows, title: title, limit: limit };
+  }
+
+  function renderAwards(data) {
+    var winner = data.pow.rows[0];
+    var html = '<p class="kicker">Awards</p><h1>Player of the Week</h1>';
+    if (data.pow.awardNumber) html += '<p class="lede">Award no. ' + data.pow.awardNumber + '</p>';
+    if (winner) {
+      var player = data.players.find(function (p) { return p.name === winner.name; });
+      html += '<article class="panel"><h2>' + (player ? '<a href="' + playerHref(player.id) + '">' + esc(winner.name) + '</a>' : esc(winner.name)) + '</h2>';
+      html += '<p class="meta-line">' + esc(winner.team) + '</p>';
+      html += '<p>Games ' + [winner.g1, winner.g2, winner.g3].map(function (n) { return n == null ? '—' : n; }).join(', ') + ' · series ' + (winner.series == null ? '—' : winner.series) + ' · average ' + fmtAvg(winner.average) + ' · over average ' + fmtAvg(winner.over) + '</p></article>';
+    }
+    if (data.pow.blurb) html += '<p>' + esc(readableCaps(data.pow.blurb)) + '</p>';
+    var eggBits = [];
+    if (data.pow.summerEggs != null) eggBits.push('Summer egg total ' + fmtInt(data.pow.summerEggs));
+    if (data.pow.allTimeEggs != null) eggBits.push('All-time POW egg total ' + fmtInt(data.pow.allTimeEggs));
+    if (eggBits.length) html += '<p class="meta-line">' + eggBits.join(' · ') + '</p>';
+    if (data.pow.raffle) html += '<p class="meta-line">Raffle: ' + esc(readableCaps(data.pow.raffle)) + '</p>';
+    if (data.pow.rows.length > 1) {
+      html += '<h2 class="section">This week\'s board</h2>';
+      data.pow.rows.forEach(function (row, index) {
+        var player = data.players.find(function (p) { return p.name === row.name; });
+        var label = player ? '<a href="' + playerHref(player.id) + '">' + esc(row.name) + '</a>' : esc(row.name);
+        html += '<p class="meta-line">' + (index + 1) + '. ' + label + ' · ' + esc(row.team) + ' · ' + fmtAvg(row.over) + ' over average</p>';
+      });
+    }
+    html += '<p class="note">Player of the Week is the shooter whose three-game total beats three times their average by the most. That is the POW column in the workbook.</p>';
+    if (data.pow.log.length) {
+      html += '<h2 class="section">Ginzburghs this season</h2>';
+      data.pow.log.forEach(function (line) { html += '<p>' + esc(line) + '</p>'; });
+    }
+    var all = data.pow.allTime || {};
+    if (all.games) {
+      html += '<h2 class="section">All-time league totals</h2><p class="meta-line">';
+      html += fmtInt(all.thirtyPlus) + ' games of 30 or more · ' + fmtInt(all.games) + ' games · average ' + fmtAvg(all.average) + ' · ' + fmtInt(all.points) + ' points</p>';
+    }
+    var ginz = honorList('All-time Ginzburghs', data.honors.ginzburgh, 25);
+    var pows = honorList('All-time Player of the Week', data.honors.pow, 25);
+    html += ginz.html + pows.html;
+    return { html: html, lists: [ginz, pows] };
+  }
+
+  function bindHonors(lists) {
+    lists.forEach(function (list) {
+      var body = document.querySelector('[data-honor="' + list.title.replace(/"/g, '') + '"]');
+      var input = document.querySelector('.honor-filter[data-list="' + list.title.replace(/"/g, '') + '"]');
+      if (!body) return;
+      function draw() {
+        var q = input && input.value ? input.value.trim().toLowerCase() : '';
+        var rows = list.rows.filter(function (row) { return !q || row.name.toLowerCase().indexOf(q) !== -1; });
+        var shown = q ? rows : rows.slice(0, list.limit);
+        body.innerHTML = shown.map(function (row) {
+          return '<p class="meta-line">' + esc(row.name) + ' · ' + row.count + '</p>';
+        }).join('') + (!q && rows.length > list.limit ? '<p class="meta-line">Showing ' + list.limit + ' of ' + rows.length + '. Type to search the rest.</p>' : '');
+      }
+      if (input) input.addEventListener('input', draw);
+      draw();
+    });
+  }
+
+  function renderRules(data) {
+    var html = '<p class="kicker">House rules</p><h1>Rules</h1>';
+    html += '<div class="panel"><p>Each match is worth 4 points: one point for each of the three games, plus one point for the higher team total. The top 8 teams make the playoffs.</p></div>';
+    html += '<div class="prose">';
+    data.rules.forEach(function (line) { html += '<p>' + esc(line) + '</p>'; });
+    html += '</div>';
+    if (data.spread.length) {
+      html += '<h2 class="section">Point spread chart</h2>';
+      html += '<p class="meta-line">From the SPREAD tab. The points column is the difference times 0.8.</p>';
+      html += '<div class="spread">';
+      data.spread.forEach(function (row) {
+        html += '<div><span>' + row.diff + '</span><span>' + row.points.toFixed(1) + '</span></div>';
+      });
+      html += '</div>';
+    }
+    return html;
+  }
+
+  function renderPlayer(data) {
+    var params = new URLSearchParams(location.search);
+    var player = data.playerById[params.get('p') || ''];
+    if (!player) {
+      return '<h1>Find a shooter</h1><p>Use the search box and pick a name. That opens everything the workbook has for them.</p>';
+    }
+    var team = data.teamByName[player.team];
+    var html = '<p class="kicker">Rank ' + player.rank + '</p><h1>' + esc(player.name) + '</h1>';
+    html += '<p class="lede"><a href="' + teamHref(team ? team.slug : names.slugify(player.team)) + '">' + esc(player.team) + '</a></p>';
+    html += '<div class="stat-grid section">';
+    html += '<div class="stat"><span>Average</span><strong>' + fmtAvg(player.average) + '</strong></div>';
+    html += '<div class="stat"><span>Games</span><strong>' + fmtInt(player.games) + '</strong></div>';
+    html += '<div class="stat"><span>Points</span><strong>' + fmtInt(player.points) + '</strong></div>';
+    html += '<div class="stat"><span>Rank</span><strong>' + player.rank + '</strong></div>';
+    html += '<div class="stat"><span>High game</span><strong>' + (player.highGame == null ? '—' : player.highGame) + '</strong></div>';
+    html += '<div class="stat"><span>High series</span><strong>' + (player.highSeries == null ? '—' : player.highSeries) + '</strong></div>';
+    html += '</div>';
+    if (player.highSeries != null) {
+      var bits = [];
+      if (player.highSeriesWeek) bits.push('Week ' + player.highSeriesWeek);
+      if (player.highSeriesDate) bits.push(prettySheetDate(player.highSeriesDate));
+      if (bits.length) html += '<p class="meta-line">High series ' + bits.map(esc).join(' · ') + '</p>';
+    }
+    html += '<h2 class="section">30+ games · ' + (player.thirtyCount || 0) + '</h2>';
+    if (player.thirty && player.thirty.length) {
+      html += player.thirty.map(function (row) {
+        return '<p class="meta-line"><span class="pill hot">' + row.score + '</span> ' + (row.times > 1 ? '× ' + row.times : '') + '</p>';
+      }).join('');
+    } else {
+      html += '<p class="meta-line">No 30+ game is listed for this shooter.</p>';
+    }
+    html += '<h2 class="section">Game by game</h2>';
+    if (!player.weeks.length) html += '<p class="meta-line">No game scores are on the grid for this shooter.</p>';
+    player.weeks.forEach(function (week) {
+      var foe = opponentFor(data, player.team, week.week);
+      var when = weekWhen(data, week.week);
+      html += '<article class="week-block"><h3>Week ' + week.week + (when ? ' · ' + esc(when) : '') + '</h3>';
+      if (foe) html += '<p class="meta-line">vs <a href="' + teamHref(teamSlug(data, foe)) + '">' + esc(foe) + '</a></p>';
+      html += pills(week.scores);
+      if (week.complete) html += '<p class="meta-line">Series ' + week.total + (week.total === player.highSeries ? ' · season high' : '') + '</p>';
+      else if (week.total != null) html += '<p class="meta-line">Points ' + week.total + '</p>';
+      html += '</article>';
+    });
+    html += '<h2 class="section">All-time in this workbook</h2>';
+    if (player.ginzburgh == null && player.powCount == null) {
+      html += '<p class="meta-line">No all-time Ginzburgh or Player of the Week count is listed for this name.</p>';
+    } else {
+      if (player.ginzburgh != null) html += '<p>Ginzburghs: ' + player.ginzburgh + '</p>';
+      if (player.powCount != null) html += '<p>Player of the Week awards: ' + player.powCount + '</p>';
+    }
+    var key = names.normKey(player.name);
+    var mentions = (data.pow.log || []).filter(function (line) {
+      return names.normKey(line).indexOf(key) !== -1;
+    });
+    if (mentions.length) {
+      html += '<h2 class="section">Season notes</h2>';
+      mentions.forEach(function (line) { html += '<p>' + esc(line) + '</p>'; });
+    }
+    var thisWeek = data.pow.rows.find(function (row) { return row.name === player.name; });
+    if (thisWeek) {
+      html += '<p class="meta-line">Latest Player of the Week board: ' + fmtAvg(thisWeek.over) + ' over average' + (data.pow.rows[0] && data.pow.rows[0].name === player.name ? ' · winner' : '') + '.</p>';
+    }
+    html += '<p class="note">Scores, series, and 30+ games come from the workbook. It does not track nine-marks or other per-inning marks, so those are not shown.</p>';
+    return html;
+  }
+
+  var pages = {
+    home: function (data) { return renderHome(data); },
+    standings: function (data) { return renderStandings(data); },
+    players: function (data) { return renderPlayers(data); },
+    teams: function (data) { return renderTeams(data); },
+    team: function (data) { return renderTeam(data); },
+    schedule: function (data) { return renderSchedule(data); },
+    awards: function (data) { return renderAwards(data); },
+    rules: function (data) { return renderRules(data); },
+    player: function (data) { return renderPlayer(data); }
+  };
+
+  async function boot() {
+    var page = document.body.dataset.page || 'home';
+    try {
+      var loaded = await loadAll();
+      var data = hydrate(loaded.league, loaded.aliases);
+      fillChrome(data);
+      if (page === 'update') return;
+      var content = document.getElementById('content');
+      var view = pages[page] ? pages[page](data) : renderHome(data);
+      if (page === 'awards') {
+        content.innerHTML = view.html;
+        bindHonors(view.lists);
+      } else {
+        content.innerHTML = view;
+      }
+      fillChrome(data);
+      if (page === 'standings') bindStandings(data);
+      if (page === 'players') bindPlayers(data);
+    } catch (err) {
+      showError('The scores could not be loaded. If you just opened the file from a folder, the data scripts need to sit next to this page.');
+    }
+  }
+
+  boot();
+})();

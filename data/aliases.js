@@ -1,0 +1,52 @@
+window.LEAGUE_ALIASES = {
+  "teams": {
+    "glazer": "Glazerbeam",
+    "glazerbeam": "Glazerbeam",
+    "glazerbeams": "Glazerbeam",
+    "fuck ups": "The Fuck-Ups",
+    "fuckups": "The Fuck-Ups",
+    "the fuck ups": "The Fuck-Ups",
+    "fuck": "The Fuck-Ups",
+    "bad co": "Bad Company",
+    "bad company": "Bad Company",
+    "grouper": "Red Grouper",
+    "red grouper": "Red Grouper",
+    "odb": "Ol' Dirty Bastards",
+    "bastards": "Ol' Dirty Bastards",
+    "ol' dirty bastards": "Ol' Dirty Bastards",
+    "ol dirty bastards": "Ol' Dirty Bastards",
+    "dirty bastards": "Ol' Dirty Bastards",
+    "roslyn": "All Out of Roslyn",
+    "all out of roslyn": "All Out of Roslyn",
+    "troop": "Troopers",
+    "trooper": "Troopers",
+    "troopers": "Troopers",
+    "redrum": "Redrum",
+    "red rum": "Redrum",
+    "faces": "Faces",
+    "f a c e s": "Faces",
+    "damage": "Damage, Inc.",
+    "damage inc": "Damage, Inc.",
+    "fubar": "FUBAR",
+    "giggity": "Giggity"
+  },
+  "players": {
+    "chip mcc": "Chip McClenaghan",
+    "chip mcclenaghan": "Chip McClenaghan",
+    "chip mcclenahan": "Chip McClenaghan"
+  },
+  "replace": [
+    [
+      "killkenny",
+      "kilkenny"
+    ],
+    [
+      "quallett",
+      "qualet"
+    ],
+    [
+      "qualett",
+      "qualet"
+    ]
+  ]
+};

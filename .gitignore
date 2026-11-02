@@ -1,0 +1,7 @@
+node_modules/
+*.xlsx
+*.xlsm
+*.xlsb
+*.xls
+*.ods
+.DS_Store
