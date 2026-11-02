@@ -389,6 +389,53 @@ button.ghost, a.ghost {
 
 :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 
+.cmp-row { margin: 1rem 0; }
+.cmp-row h2 { font-size: 1.15rem; }
+.cmp-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem;
+}
+.cmp-pair > div {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.75rem 0.7rem;
+  min-width: 0;
+}
+.cmp-team {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+  overflow-wrap: anywhere;
+  margin-bottom: 0.2rem;
+}
+.cmp-pair strong {
+  display: block;
+  font-family: Palatino, "Palatino Linotype", Georgia, serif;
+  font-size: 1.45rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.cmp-ol {
+  list-style: none;
+  margin: 0.2rem 0 0;
+  padding: 0;
+}
+.cmp-ol a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 48px;
+  text-decoration: none;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.cmp-ol span {
+  color: var(--muted);
+  font-weight: 500;
+}
+
 @media (min-width: 720px) {
   .lb-grid { grid-template-columns: 1fr 1fr; }
   .tools { grid-template-columns: 1fr 1fr; }

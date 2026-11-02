@@ -2,7 +2,7 @@
   'use strict';
 
   var names = window.RoslynNames;
-  var config = window.SITE_CONFIG || { version: '1.0.0' };
+  var config = window.SITE_CONFIG || { version: '1.1.0' };
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
   function esc(value) {
@@ -143,6 +143,12 @@
 
   function playerHref(id) { return 'player.html?p=' + encodeURIComponent(id); }
   function teamHref(slug) { return 'team.html?t=' + encodeURIComponent(slug); }
+  function compareHref(aSlug, bSlug) {
+    var url = 'compare.html';
+    if (aSlug) url += '?a=' + encodeURIComponent(aSlug);
+    if (bSlug) url += (aSlug ? '&' : '?') + 'b=' + encodeURIComponent(bSlug);
+    return url;
+  }
 
   function teamSlug(data, name) {
     var team = data.teamByName[name];
@@ -310,6 +316,7 @@
     [['standings.html', 'Standings', 'Records and the playoff line'],
       ['players.html', 'Players', 'Averages, series, and 30s'],
       ['teams.html', 'Teams', 'Rosters and team averages'],
+      ['compare.html', 'Compare', 'Two teams, side by side'],
       ['schedule.html', 'Schedule', 'Weeks, times, and boards'],
       ['awards.html', 'Awards', 'Player of the Week and Ginzburghs'],
       ['rules.html', 'Rules', 'House rules and the spread chart']
@@ -328,6 +335,7 @@
     var anyTies = data.standings.some(function (t) { return t.t > 0; });
     var html = '<p class="kicker">' + esc(data.meta.season) + '</p><h1>Standings</h1>';
     html += '<p class="lede">Order is the order on the standings sheet. Games-behind notes are shown as written.</p>';
+    html += '<a class="link-card section" href="compare.html"><strong>Compare teams</strong><span>Records, shooters, and the week they played</span></a>';
     var sawOut = false;
     data.standings.forEach(function (team) {
       if (!team.playoffs && !sawOut) {
@@ -433,6 +441,7 @@
 
   function renderTeams(data) {
     var html = '<p class="kicker">Rosters</p><h1>Teams</h1>';
+    html += '<a class="link-card section" href="compare.html"><strong>Compare teams</strong><span>Put two lineups next to each other</span></a>';
     data.teams.forEach(function (team) {
       html += '<a class="team-card ' + (team.playoffs ? 'playoff' : 'out') + '" href="' + teamHref(team.slug) + '">';
       html += '<div class="card-top"><h2>' + esc(team.name) + '</h2><span class="record">' + record(team) + '</span></div>';
@@ -449,6 +458,7 @@
     var html = '<p class="kicker">' + (team.playoffs ? 'Playoff team' : 'Outside the top 8') + ' · rank ' + team.rank + '</p>';
     html += '<h1>' + esc(team.name) + '</h1>';
     html += '<p class="record">' + record(team) + '</p>';
+    html += '<p><a href="' + compareHref(team.slug) + '">Compare this team</a></p>';
     var bits = [fmtPct(team.pct), 'PF ' + fmtInt(team.pf), 'PA ' + fmtInt(team.pa), 'team average ' + fmtAvg(team.teamAverage)];
     if (team.gb) bits.push('GB ' + team.gb);
     html += '<p class="meta-line">' + bits.map(esc).join(' · ') + '</p>';
@@ -671,6 +681,221 @@
     return html;
   }
 
+  function teamOptions(data, selected) {
+    return data.teams.map(function (team) {
+      return '<option value="' + esc(team.slug) + '"' + (team.slug === selected ? ' selected' : '') + '>' + esc(team.name) + '</option>';
+    }).join('');
+  }
+
+  function rosterPlayers(data, team) {
+    return data.players.filter(function (player) { return player.team === team.name; });
+  }
+
+  function bestMarks(players, field) {
+    var best = null;
+    players.forEach(function (player) {
+      var value = player[field];
+      if (typeof value !== 'number') return;
+      if (best === null || value > best) best = value;
+    });
+    if (best === null) return [];
+    return players.filter(function (player) { return player[field] === best; });
+  }
+
+  function weekPoints(team, weekNumber) {
+    if (!team.weekly) return null;
+    for (var i = 0; i < team.weekly.length; i++) {
+      if (team.weekly[i].week === weekNumber) return team.weekly[i];
+    }
+    return null;
+  }
+
+  function meetings(data, a, b) {
+    var found = [];
+    data.schedule.weeks.forEach(function (week) {
+      week.matches.forEach(function (match) {
+        var paired = (match.home === a.name && match.away === b.name) || (match.home === b.name && match.away === a.name);
+        if (paired) found.push({ kind: 'week', week: week, match: match });
+      });
+    });
+    data.schedule.playoffs.forEach(function (round) {
+      round.matches.forEach(function (match) {
+        var paired = (match.home === a.name && match.away === b.name) || (match.home === b.name && match.away === a.name);
+        if (paired) found.push({ kind: 'playoff', round: round, match: match });
+      });
+    });
+    return found;
+  }
+
+  function cmpStat(label, left, right) {
+    return '<section class="cmp-row"><h2>' + esc(label) + '</h2><div class="cmp-pair"><div>' + left + '</div><div>' + right + '</div></div></section>';
+  }
+
+  function cmpValue(team, value) {
+    return '<span class="cmp-team">' + esc(team.name) + '</span><strong>' + value + '</strong>';
+  }
+
+  function recordWlt(team) {
+    var ties = typeof team.t === 'number' ? team.t : 0;
+    return team.w + '–' + team.l + '–' + ties;
+  }
+
+  function renderCompare(data) {
+    var params = new URLSearchParams(location.search);
+    var aSlug = params.get('a') || (data.teams[0] && data.teams[0].slug) || '';
+    var bSlug = params.get('b') || (data.teams[1] && data.teams[1].slug) || '';
+    if (aSlug === bSlug) {
+      var other = data.teams.filter(function (team) { return team.slug !== aSlug; })[0];
+      if (other) bSlug = other.slug;
+    }
+    var html = '<p class="kicker">Side by side</p><h1>Team vs team</h1>';
+    html += '<p class="lede">Pick two teams. The numbers are the ones stored in the workbook.</p>';
+    html += '<div class="tools">';
+    html += '<label>First team<select id="cmp-a">' + teamOptions(data, aSlug) + '</select></label>';
+    html += '<label>Second team<select id="cmp-b">' + teamOptions(data, bSlug) + '</select></label>';
+    html += '</div>';
+    html += '<button type="button" class="ghost" id="cmp-swap">Swap teams</button>';
+    html += '<div id="cmp-body"></div>';
+    return html;
+  }
+
+  function compareBody(data, a, b) {
+    if (!a || !b) return '<p class="banner warn">Choose two teams.</p>';
+    if (a.slug === b.slug) return '<p class="banner warn">Pick two different teams.</p>';
+    var html = '';
+    html += cmpStat('Record', cmpValue(a, esc(recordWlt(a))), cmpValue(b, esc(recordWlt(b))));
+    html += cmpStat('Win pct', cmpValue(a, esc(fmtPct(a.pct))), cmpValue(b, esc(fmtPct(b.pct))));
+    html += cmpStat('Standings rank', cmpValue(a, String(a.rank)), cmpValue(b, String(b.rank)));
+    html += cmpStat('Points for', cmpValue(a, esc(fmtInt(a.pf))), cmpValue(b, esc(fmtInt(b.pf))));
+    html += cmpStat('Points against', cmpValue(a, esc(fmtInt(a.pa))), cmpValue(b, esc(fmtInt(b.pa))));
+    html += cmpStat('Team average', cmpValue(a, esc(fmtAvg(a.teamAverage))), cmpValue(b, esc(fmtAvg(b.teamAverage))));
+
+    var h2h = data.h2h.find(function (row) { return row.team === a.name && row.opponent === b.name; });
+    var h2hBack = data.h2h.find(function (row) { return row.team === b.name && row.opponent === a.name; });
+    html += '<section class="cmp-row"><h2>Head to head</h2>';
+    if (!h2h && !h2hBack) {
+      html += '<p class="meta-line">The H2H sheet has no record between these teams.</p></section>';
+    } else {
+      html += '<div class="panel">';
+      if (h2h) html += '<p class="record">' + esc(a.name) + ' ' + h2h.w + '–' + h2h.l + '</p>';
+      if (h2hBack) html += '<p class="meta-line">' + esc(b.name) + ' ' + h2hBack.w + '–' + h2hBack.l + ' on the same grid.</p>';
+      html += '<p class="meta-line">Wins and losses from the H2H sheet. That grid does not list ties.</p>';
+      html += '</div></section>';
+    }
+
+    function shooterList(team) {
+      var list = rosterPlayers(data, team).slice().sort(function (x, y) {
+        return (y.average || 0) - (x.average || 0) || y.points - x.points || x.name.localeCompare(y.name);
+      }).slice(0, 5);
+      if (!list.length) return '<p class="meta-line">No shooters with games.</p>';
+      return '<ol class="cmp-ol">' + list.map(function (player) {
+        return '<li><a href="' + playerHref(player.id) + '">' + esc(player.name) + '</a><span>' + fmtAvg(player.average) + '</span></li>';
+      }).join('') + '</ol>';
+    }
+    html += '<section class="cmp-row"><h2>Top shooters by average</h2><div class="cmp-pair"><div><span class="cmp-team">' + esc(a.name) + '</span>' + shooterList(a) + '</div><div><span class="cmp-team">' + esc(b.name) + '</span>' + shooterList(b) + '</div></div></section>';
+
+    function markBlock(team, field, empty) {
+      var leaders = bestMarks(rosterPlayers(data, team), field);
+      if (!leaders.length) return '<span class="cmp-team">' + esc(team.name) + '</span><strong>—</strong><p class="meta-line">' + esc(empty) + '</p>';
+      var value = leaders[0][field];
+      var who = leaders.map(function (player) {
+        return '<a href="' + playerHref(player.id) + '">' + esc(player.name) + '</a>';
+      }).join(', ');
+      return '<span class="cmp-team">' + esc(team.name) + '</span><strong>' + value + '</strong><p class="meta-line">' + who + '</p>';
+    }
+    html += cmpStat('High game', markBlock(a, 'highGame', 'No high game on the score grid.'), markBlock(b, 'highGame', 'No high game on the score grid.'));
+    html += cmpStat('High series', markBlock(a, 'highSeries', 'No three-game series on the score grid.'), markBlock(b, 'highSeries', 'No three-game series on the score grid.'));
+
+    function thirtyBlock(team) {
+      var players = rosterPlayers(data, team);
+      var total = players.reduce(function (sum, player) { return sum + (player.thirtyCount || 0); }, 0);
+      var leader = null;
+      players.forEach(function (player) {
+        if (!leader || (player.thirtyCount || 0) > (leader.thirtyCount || 0)) leader = player;
+      });
+      var line = '<span class="cmp-team">' + esc(team.name) + '</span><strong>' + total + '</strong>';
+      if (leader && leader.thirtyCount > 0) {
+        line += '<p class="meta-line"><a href="' + playerHref(leader.id) + '">' + esc(leader.name) + '</a> ' + leader.thirtyCount + '</p>';
+      } else {
+        line += '<p class="meta-line">None listed in 30Detail.</p>';
+      }
+      return line;
+    }
+    html += '<section class="cmp-row"><h2>30+ games</h2><div class="cmp-pair"><div>' + thirtyBlock(a) + '</div><div>' + thirtyBlock(b) + '</div></div>';
+    html += '<p class="meta-line">Counts are the 30+ games listed for each shooter, including multiples such as ×2.</p></section>';
+
+    var played = meetings(data, a, b);
+    html += '<section class="cmp-row"><h2>Week by week</h2>';
+    if (!played.length) {
+      html += '<p class="meta-line">The schedule does not list a match between these teams.</p>';
+    }
+    played.forEach(function (item) {
+      var match = item.match;
+      html += '<article class="match">';
+      if (item.kind === 'week') {
+        html += '<h3>Week ' + item.week.number + (item.week.when ? ' · ' + esc(item.week.when) : '') + '</h3>';
+      } else {
+        html += '<h3>' + esc(item.round.label || 'Playoffs') + (item.round.when ? ' · ' + esc(item.round.when) : '') + '</h3>';
+      }
+      var whenBits = [];
+      if (match.time) whenBits.push(match.time);
+      if (match.board) whenBits.push('Board ' + match.board);
+      if (whenBits.length) html += '<p class="meta-line">' + esc(whenBits.join(' · ')) + '</p>';
+      html += '<p>' + esc(seedName(match.homeSeed, match.home)) + ' vs ' + esc(seedName(match.awaySeed, match.away)) + '</p>';
+      if (match.score) html += '<p class="score-flag">Posted score ' + esc(match.score) + '</p>';
+      if (item.kind === 'week') {
+        var leftPts = weekPoints(a, item.week.number);
+        var rightPts = weekPoints(b, item.week.number);
+        if (leftPts || rightPts) {
+          if (leftPts) html += '<p class="meta-line">' + esc(a.name) + ' ' + leftPts.pf + ' for, ' + leftPts.pa + ' against</p>';
+          if (rightPts) html += '<p class="meta-line">' + esc(b.name) + ' ' + rightPts.pf + ' for, ' + rightPts.pa + ' against</p>';
+          html += '<p class="meta-line">Those are the week’s points from the PF-PA sheet, not the 4-point match score.</p>';
+        } else {
+          html += '<p class="meta-line">No weekly points are stored for this match.</p>';
+        }
+      }
+      html += '</article>';
+    });
+    html += '</section>';
+    return html;
+  }
+
+  function bindCompare(data) {
+    var selectA = document.getElementById('cmp-a');
+    var selectB = document.getElementById('cmp-b');
+    var body = document.getElementById('cmp-body');
+    var swap = document.getElementById('cmp-swap');
+    if (!selectA || !selectB || !body) return;
+
+    function draw(fromHistory) {
+      var a = data.teamBySlug[selectA.value];
+      var b = data.teamBySlug[selectB.value];
+      body.innerHTML = compareBody(data, a, b);
+      if (!fromHistory) {
+        var url = compareHref(selectA.value, selectB.value);
+        history.replaceState(null, '', url);
+      }
+    }
+
+    selectA.addEventListener('change', function () { draw(false); });
+    selectB.addEventListener('change', function () { draw(false); });
+    if (swap) {
+      swap.addEventListener('click', function () {
+        var hold = selectA.value;
+        selectA.value = selectB.value;
+        selectB.value = hold;
+        draw(false);
+      });
+    }
+    window.addEventListener('popstate', function () {
+      var params = new URLSearchParams(location.search);
+      if (params.get('a') && data.teamBySlug[params.get('a')]) selectA.value = params.get('a');
+      if (params.get('b') && data.teamBySlug[params.get('b')]) selectB.value = params.get('b');
+      draw(true);
+    });
+    draw(true);
+  }
+
   var pages = {
     home: function (data) { return renderHome(data); },
     standings: function (data) { return renderStandings(data); },
@@ -680,7 +905,8 @@
     schedule: function (data) { return renderSchedule(data); },
     awards: function (data) { return renderAwards(data); },
     rules: function (data) { return renderRules(data); },
-    player: function (data) { return renderPlayer(data); }
+    player: function (data) { return renderPlayer(data); },
+    compare: function (data) { return renderCompare(data); }
   };
 
   async function boot() {
@@ -701,6 +927,7 @@
       fillChrome(data);
       if (page === 'standings') bindStandings(data);
       if (page === 'players') bindPlayers(data);
+      if (page === 'compare') bindCompare(data);
     } catch (err) {
       showError('The scores could not be loaded. If you just opened the file from a folder, the data scripts need to sit next to this page.');
     }
