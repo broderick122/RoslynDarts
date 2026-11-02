@@ -67,7 +67,7 @@ Home, standings (with the line after 8th and head-to-head), players (sort, team 
 
 Compare (`compare.html`) puts two teams side by side: record, win percentage, rank, points for and against, team average, the H2H record, top shooters, high game, high series, 30+ counts, and the week they played if the schedule and PF-PA sheet have it. It does not turn weekly points into a 4-point match score, because the workbook does not store that week by week.
 
-Shooter search is on every page and is the main box on the home page. A shooter page shows this season's games, points, average, rank, high game, high series, and 30+ games. The Lifetime section shows only all-time figures the workbook keeps for that shooter: Ginzburghs (nine-dart hits) and Player of the Week awards. It does not show a lifetime games total, lifetime points, lifetime average, or lifetime 30+ count, because those are not stored per shooter. The news tab's all-time games, average, points, and 30+ games are league totals, so they stay on the awards page.
+Shooter search is on every page and is the main box on the home page. A shooter page shows this season's games, points, average, rank, high game, high series, and 30+ games. Each 30+ score from the score grid includes the week, date, opponent, and game number when the schedule has them. 30Detail itself only lists the score. The Lifetime section shows only all-time figures the workbook keeps for that shooter: Ginzburghs (nine-dart hits) and Player of the Week awards. It does not show a lifetime games total, lifetime points, lifetime average, or lifetime 30+ count, because those are not stored per shooter. The news tab's all-time games, average, points, and 30+ games are league totals, so they stay on the awards page.
 
 The Ginzburghs page lists every shooter on the all-time sheet, highest count first. A season count appears only when the news log records a Ginzburgh. A name links to a player page when that shooter is on this season's roster.
 
@@ -79,6 +79,6 @@ Each match is 4 points: three games plus the team total. The top 8 teams make th
 
 ## Version
 
-The footer shows the site version from `js/config.js` (currently 1.2.0). Styles and scripts are loaded with `?v=1.2.0` so a changed design is not stuck in a phone cache. League data is fetched with a fresh query on each visit, so a published workbook update shows up without bumping that version.
+The footer shows the site version from `js/config.js` (currently 1.3.0). Styles and scripts are loaded with `?v=1.3.0` so a changed design is not stuck in a phone cache. League data is fetched with a fresh query on each visit, so a published workbook update shows up without bumping that version.
 
 SheetJS (`vendor/xlsx.full.min.js`, Apache-2.0) reads the workbook on the Update page only.
