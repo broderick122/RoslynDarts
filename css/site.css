@@ -417,6 +417,16 @@ button.ghost, a.ghost {
   font-weight: 700;
 }
 .pill.hot { background: var(--pill-hot-bg); color: var(--pill-hot-ink); border-color: var(--gold); }
+.thirty-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.55rem 0;
+  min-width: 0;
+}
+.thirty-row .pill { flex: none; }
+.thirty-row > div { min-width: 0; }
+.thirty-row .meta-line { margin: 0; overflow-wrap: anywhere; }
 .pill.forfeit { background: var(--forfeit-bg); color: var(--forfeit-ink); }
 .pill.empty { color: var(--muted); }
 
