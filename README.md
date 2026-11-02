@@ -63,7 +63,9 @@ The Update page runs the same scan on the parsed scores and refuses to publish i
 
 ## What the pages show
 
-Home, standings (with the line after 8th and head-to-head), players (sort, team filter, and leaderboards), teams, schedule, awards, rules, a shooter page, and the update page.
+Home, standings (with the line after 8th and head-to-head), players (sort, team filter, and leaderboards), teams, team vs team compare, schedule, awards, rules, a shooter page, and the update page.
+
+Compare (`compare.html`) puts two teams side by side: record, win percentage, rank, points for and against, team average, the H2H record, top shooters, high game, high series, 30+ counts, and the week they played if the schedule and PF-PA sheet have it. It does not turn weekly points into a 4-point match score, because the workbook does not store that week by week.
 
 Shooter search is on every page and is the main box on the home page. A shooter page shows team, games, points, average, rank, high game, high series, each 30+ game from 30Detail, week-by-week scores from Avg GRID, Player of the Week, and Ginzburgh counts when the workbook has them.
 
@@ -73,6 +75,6 @@ Each match is 4 points: three games plus the team total. The top 8 teams make th
 
 ## Version
 
-The footer shows the site version from `js/config.js` (currently 1.0.0). Styles and scripts are loaded with `?v=1.0.0` so a changed design is not stuck in a phone cache. League data is fetched with a fresh query on each visit, so a published workbook update shows up without bumping that version.
+The footer shows the site version from `js/config.js` (currently 1.1.0). Styles and scripts are loaded with `?v=1.1.0` so a changed design is not stuck in a phone cache. League data is fetched with a fresh query on each visit, so a published workbook update shows up without bumping that version.
 
 SheetJS (`vendor/xlsx.full.min.js`, Apache-2.0) reads the workbook on the Update page only.
