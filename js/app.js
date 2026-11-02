@@ -2,7 +2,7 @@
   'use strict';
 
   var names = window.RoslynNames;
-  var config = window.SITE_CONFIG || { version: '1.2.0' };
+  var config = window.SITE_CONFIG || { version: '1.3.0' };
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
   function esc(value) {
@@ -627,6 +627,56 @@
     return html;
   }
 
+  function thirtyGames(data, player) {
+    var rows = [];
+    (player.weeks || []).forEach(function (week) {
+      (week.scores || []).forEach(function (score, index) {
+        if (typeof score !== 'number' || score < 30) return;
+        rows.push({
+          score: score,
+          week: week.week,
+          game: index + 1,
+          opponent: opponentFor(data, player.team, week.week) || '',
+          date: weekWhen(data, week.week) || ''
+        });
+      });
+    });
+    rows.sort(function (a, b) {
+      return b.score - a.score || a.week - b.week || a.game - b.game;
+    });
+    return rows;
+  }
+
+  function thirtySection(data, player) {
+    var detailed = thirtyGames(data, player);
+    if (detailed.length) {
+      var html = '<h2 class="section">30+ games · ' + detailed.length + '</h2>';
+      if (player.thirtyCount && player.thirtyCount !== detailed.length) {
+        html += '<p class="meta-line">30Detail lists ' + player.thirtyCount + '. The score grid has ' + detailed.length + ' games of 30 or more, shown here with the week and game.</p>';
+      }
+      html += detailed.map(function (row) {
+        var when = [];
+        if (row.week) when.push('Week ' + row.week);
+        if (row.date) when.push(esc(row.date));
+        var where = 'Game ' + row.game;
+        if (row.opponent) {
+          where += ' · vs <a href="' + teamHref(teamSlug(data, row.opponent)) + '">' + esc(row.opponent) + '</a>';
+        }
+        return '<div class="thirty-row"><span class="pill hot">' + row.score + '</span><div><p class="meta-line">' + when.join(' · ') + '</p><p class="meta-line">' + where + '</p></div></div>';
+      }).join('');
+      return html;
+    }
+    if (player.thirty && player.thirty.length) {
+      var fallback = '<h2 class="section">30+ games · ' + (player.thirtyCount || 0) + '</h2>';
+      fallback += '<p class="meta-line">30Detail lists the scores. It does not record the week, date, opponent, or game.</p>';
+      fallback += player.thirty.map(function (row) {
+        return '<p class="meta-line"><span class="pill hot">' + row.score + '</span> ' + (row.times > 1 ? '× ' + row.times : '') + '</p>';
+      }).join('');
+      return fallback;
+    }
+    return '<h2 class="section">30+ games</h2><p class="meta-line">No 30+ game is listed for this shooter.</p>';
+  }
+
   function renderPlayer(data) {
     var params = new URLSearchParams(location.search);
     var player = data.playerById[params.get('p') || ''];
@@ -653,14 +703,7 @@
     if (player.seasonGinzburghs) {
       html += '<p class="meta-line">Ginzburghs (9-dart hits) logged this season: ' + player.seasonGinzburghs + '</p>';
     }
-    html += '<h2 class="section">30+ games · ' + (player.thirtyCount || 0) + '</h2>';
-    if (player.thirty && player.thirty.length) {
-      html += player.thirty.map(function (row) {
-        return '<p class="meta-line"><span class="pill hot">' + row.score + '</span> ' + (row.times > 1 ? '× ' + row.times : '') + '</p>';
-      }).join('');
-    } else {
-      html += '<p class="meta-line">No 30+ game is listed for this shooter.</p>';
-    }
+    html += thirtySection(data, player);
     html += '<h2 class="section">Game by game</h2>';
     if (!player.weeks.length) html += '<p class="meta-line">No game scores are on the grid for this shooter.</p>';
     player.weeks.forEach(function (week) {
