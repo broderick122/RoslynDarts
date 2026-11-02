@@ -5,7 +5,7 @@ window.LEAGUE_DATA = {
     "season": "Summer 2026",
     "seasonStatus": "Finals",
     "scheduleEdition": "EDITION 1.1 - JUNE 06, 2026",
-    "updated": "2026-11-02T14:16:49.683Z",
+    "updated": "2026-11-02T15:12:17.060Z",
     "venueName": "Roslyn VFW Post 3498",
     "night": "Wednesday",
     "teamCount": 12,
@@ -1736,7 +1736,8 @@ window.LEAGUE_DATA = {
       "rank": 1,
       "id": "harry-bratzler",
       "ginzburgh": 31,
-      "powCount": 5
+      "powCount": 5,
+      "seasonGinzburghs": 0
     },
     {
       "source": "DAN WHITE",
@@ -1860,7 +1861,8 @@ window.LEAGUE_DATA = {
       "rank": 2,
       "id": "dan-white",
       "ginzburgh": 17,
-      "powCount": 4
+      "powCount": 4,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JAKE YANNESSA",
@@ -2016,7 +2018,8 @@ window.LEAGUE_DATA = {
       "rank": 3,
       "id": "jake-yannessa",
       "ginzburgh": 11,
-      "powCount": 6
+      "powCount": 6,
+      "seasonGinzburghs": 2
     },
     {
       "source": "TOM KILKENNY",
@@ -2164,7 +2167,8 @@ window.LEAGUE_DATA = {
       "rank": 4,
       "id": "tom-kilkenny",
       "ginzburgh": 24,
-      "powCount": 4
+      "powCount": 4,
+      "seasonGinzburghs": 1
     },
     {
       "source": "BILL HETRICK",
@@ -2266,7 +2270,8 @@ window.LEAGUE_DATA = {
       "rank": 5,
       "id": "bill-hetrick",
       "ginzburgh": 9,
-      "powCount": 7
+      "powCount": 7,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JARRED FOX",
@@ -2380,7 +2385,8 @@ window.LEAGUE_DATA = {
       "rank": 6,
       "id": "jarred-fox",
       "ginzburgh": 8,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JOHN CLAUSS",
@@ -2506,7 +2512,8 @@ window.LEAGUE_DATA = {
       "rank": 7,
       "id": "john-clauss",
       "ginzburgh": 43,
-      "powCount": 7
+      "powCount": 7,
+      "seasonGinzburghs": 0
     },
     {
       "source": "KEVIN MONEY",
@@ -2592,7 +2599,8 @@ window.LEAGUE_DATA = {
       "rank": 8,
       "id": "kevin-money",
       "ginzburgh": 18,
-      "powCount": 8
+      "powCount": 8,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JP UNGEREAN",
@@ -2736,7 +2744,8 @@ window.LEAGUE_DATA = {
       "rank": 9,
       "id": "jp-ungerean",
       "ginzburgh": 1,
-      "powCount": 1
+      "powCount": 1,
+      "seasonGinzburghs": 1
     },
     {
       "source": "HARRY YORGEY",
@@ -2852,7 +2861,8 @@ window.LEAGUE_DATA = {
       "rank": 10,
       "id": "harry-yorgey",
       "ginzburgh": null,
-      "powCount": 2
+      "powCount": 2,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JOHN SPEIDEL",
@@ -2918,7 +2928,8 @@ window.LEAGUE_DATA = {
       "rank": 11,
       "id": "john-speidel",
       "ginzburgh": 47,
-      "powCount": 7
+      "powCount": 7,
+      "seasonGinzburghs": 0
     },
     {
       "source": "RICH MALEY",
@@ -3044,7 +3055,8 @@ window.LEAGUE_DATA = {
       "rank": 12,
       "id": "rich-maley",
       "ginzburgh": 7,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "EDDIE McCAULEY",
@@ -3140,7 +3152,8 @@ window.LEAGUE_DATA = {
       "rank": 13,
       "id": "eddie-mccauley",
       "ginzburgh": 10,
-      "powCount": 8
+      "powCount": 8,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JOEY CLAUSS",
@@ -3211,7 +3224,8 @@ window.LEAGUE_DATA = {
       "rank": 14,
       "id": "joey-clauss",
       "ginzburgh": 9,
-      "powCount": 10
+      "powCount": 10,
+      "seasonGinzburghs": 0
     },
     {
       "source": "CHRIS CIFALDI",
@@ -3282,7 +3296,8 @@ window.LEAGUE_DATA = {
       "rank": 15,
       "id": "chris-cifaldi",
       "ginzburgh": 14,
-      "powCount": 10
+      "powCount": 10,
+      "seasonGinzburghs": 0
     },
     {
       "source": "GREG YOUNG",
@@ -3388,7 +3403,8 @@ window.LEAGUE_DATA = {
       "rank": 16,
       "id": "greg-young",
       "ginzburgh": 42,
-      "powCount": 11
+      "powCount": 11,
+      "seasonGinzburghs": 0
     },
     {
       "source": "TOMMY CABULIS",
@@ -3519,7 +3535,8 @@ window.LEAGUE_DATA = {
       "rank": 17,
       "id": "tommy-cabulis",
       "ginzburgh": 9,
-      "powCount": 3
+      "powCount": 3,
+      "seasonGinzburghs": 0
     },
     {
       "source": "TODD VITELLI",
@@ -3650,7 +3667,8 @@ window.LEAGUE_DATA = {
       "rank": 18,
       "id": "todd-vitelli",
       "ginzburgh": 3,
-      "powCount": 1
+      "powCount": 1,
+      "seasonGinzburghs": 1
     },
     {
       "source": "DANNY CLAUSS",
@@ -3756,7 +3774,8 @@ window.LEAGUE_DATA = {
       "rank": 19,
       "id": "danny-clauss",
       "ginzburgh": 5,
-      "powCount": 3
+      "powCount": 3,
+      "seasonGinzburghs": 0
     },
     {
       "source": "BRIAN ROCKETT",
@@ -3867,7 +3886,8 @@ window.LEAGUE_DATA = {
       "rank": 20,
       "id": "brian-rockett",
       "ginzburgh": 9,
-      "powCount": 8
+      "powCount": 8,
+      "seasonGinzburghs": 0
     },
     {
       "source": "BRUCE BUTLER",
@@ -3973,7 +3993,8 @@ window.LEAGUE_DATA = {
       "rank": 20,
       "id": "bruce-butler",
       "ginzburgh": 7,
-      "powCount": 3
+      "powCount": 3,
+      "seasonGinzburghs": 0
     },
     {
       "source": "PAUL YANNESSA",
@@ -4113,7 +4134,8 @@ window.LEAGUE_DATA = {
       "rank": 20,
       "id": "paul-yannessa",
       "ginzburgh": 3,
-      "powCount": 3
+      "powCount": 3,
+      "seasonGinzburghs": 0
     },
     {
       "source": "TOMMY REGAN",
@@ -4234,7 +4256,8 @@ window.LEAGUE_DATA = {
       "rank": 23,
       "id": "tommy-regan",
       "ginzburgh": 2,
-      "powCount": 1
+      "powCount": 1,
+      "seasonGinzburghs": 0
     },
     {
       "source": "CHRIS TARLO",
@@ -4374,7 +4397,8 @@ window.LEAGUE_DATA = {
       "rank": 24,
       "id": "chris-tarlo",
       "ginzburgh": 6,
-      "powCount": 4
+      "powCount": 4,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JOE THOMAS",
@@ -4494,7 +4518,8 @@ window.LEAGUE_DATA = {
       "rank": 25,
       "id": "joe-thomas",
       "ginzburgh": 14,
-      "powCount": 14
+      "powCount": 14,
+      "seasonGinzburghs": 0
     },
     {
       "source": "PAT FORRESTER",
@@ -4630,7 +4655,8 @@ window.LEAGUE_DATA = {
       "rank": 26,
       "id": "pat-forrester",
       "ginzburgh": 3,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "SEAN O'BRIEN",
@@ -4721,7 +4747,8 @@ window.LEAGUE_DATA = {
       "rank": 27,
       "id": "sean-obrien",
       "ginzburgh": 2,
-      "powCount": 3
+      "powCount": 3,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JOHN WAGNER",
@@ -4842,7 +4869,8 @@ window.LEAGUE_DATA = {
       "rank": 28,
       "id": "john-wagner",
       "ginzburgh": 5,
-      "powCount": 4
+      "powCount": 4,
+      "seasonGinzburghs": 0
     },
     {
       "source": "SHAGGY VAN HORN",
@@ -4928,7 +4956,8 @@ window.LEAGUE_DATA = {
       "rank": 29,
       "id": "shaggy-van-horn",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "MIKE BRUTON",
@@ -5009,7 +5038,8 @@ window.LEAGUE_DATA = {
       "rank": 30,
       "id": "mike-bruton",
       "ginzburgh": 2,
-      "powCount": 2
+      "powCount": 2,
+      "seasonGinzburghs": 1
     },
     {
       "source": "IAN JENKINS",
@@ -5110,7 +5140,8 @@ window.LEAGUE_DATA = {
       "rank": 31,
       "id": "ian-jenkins",
       "ginzburgh": 2,
-      "powCount": 4
+      "powCount": 4,
+      "seasonGinzburghs": 0
     },
     {
       "source": "GEORGE KRAYNIK",
@@ -5231,7 +5262,8 @@ window.LEAGUE_DATA = {
       "rank": 32,
       "id": "george-kraynik",
       "ginzburgh": 5,
-      "powCount": 3
+      "powCount": 3,
+      "seasonGinzburghs": 1
     },
     {
       "source": "FRANK GALLAGHER",
@@ -5347,7 +5379,8 @@ window.LEAGUE_DATA = {
       "rank": 33,
       "id": "frank-gallagher",
       "ginzburgh": 12,
-      "powCount": 7
+      "powCount": 7,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JIM KILKENNY",
@@ -5448,7 +5481,8 @@ window.LEAGUE_DATA = {
       "rank": 34,
       "id": "jim-kilkenny",
       "ginzburgh": 4,
-      "powCount": 1
+      "powCount": 1,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JOHN RAFA",
@@ -5569,7 +5603,8 @@ window.LEAGUE_DATA = {
       "rank": 35,
       "id": "john-rafa",
       "ginzburgh": 3,
-      "powCount": 6
+      "powCount": 6,
+      "seasonGinzburghs": 0
     },
     {
       "source": "CHRIS YOUNG",
@@ -5670,7 +5705,8 @@ window.LEAGUE_DATA = {
       "rank": 36,
       "id": "chris-young",
       "ginzburgh": 5,
-      "powCount": 5
+      "powCount": 5,
+      "seasonGinzburghs": 0
     },
     {
       "source": "FRANK YANNESSA",
@@ -5701,7 +5737,8 @@ window.LEAGUE_DATA = {
       "rank": 37,
       "id": "frank-yannessa",
       "ginzburgh": 5,
-      "powCount": 3
+      "powCount": 3,
+      "seasonGinzburghs": 0
     },
     {
       "source": "DAN FEDER",
@@ -5792,7 +5829,8 @@ window.LEAGUE_DATA = {
       "rank": 38,
       "id": "dan-feder",
       "ginzburgh": null,
-      "powCount": 1
+      "powCount": 1,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JERRY PURCELL",
@@ -5903,7 +5941,8 @@ window.LEAGUE_DATA = {
       "rank": 39,
       "id": "jerry-purcell",
       "ginzburgh": 3,
-      "powCount": 2
+      "powCount": 2,
+      "seasonGinzburghs": 0
     },
     {
       "source": "CHIP DIEHL",
@@ -5974,7 +6013,8 @@ window.LEAGUE_DATA = {
       "rank": 40,
       "id": "chip-diehl",
       "ginzburgh": 1,
-      "powCount": 1
+      "powCount": 1,
+      "seasonGinzburghs": 0
     },
     {
       "source": "SEAN HUNSICKER",
@@ -6065,7 +6105,8 @@ window.LEAGUE_DATA = {
       "rank": 41,
       "id": "sean-hunsicker",
       "ginzburgh": 1,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "RYAN HANDEL",
@@ -6176,7 +6217,8 @@ window.LEAGUE_DATA = {
       "rank": 42,
       "id": "ryan-handel",
       "ginzburgh": 2,
-      "powCount": 8
+      "powCount": 8,
+      "seasonGinzburghs": 0
     },
     {
       "source": "MATT YANNESSA",
@@ -6307,7 +6349,8 @@ window.LEAGUE_DATA = {
       "rank": 43,
       "id": "matt-yannessa",
       "ginzburgh": 3,
-      "powCount": 2
+      "powCount": 2,
+      "seasonGinzburghs": 0
     },
     {
       "source": "PAUL KARSCH",
@@ -6428,7 +6471,8 @@ window.LEAGUE_DATA = {
       "rank": 44,
       "id": "paul-karsch",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "MATT POOLE",
@@ -6519,7 +6563,8 @@ window.LEAGUE_DATA = {
       "rank": 45,
       "id": "matt-poole",
       "ginzburgh": 5,
-      "powCount": 2
+      "powCount": 2,
+      "seasonGinzburghs": 0
     },
     {
       "source": "STEVE KRAYNIK",
@@ -6620,7 +6665,8 @@ window.LEAGUE_DATA = {
       "rank": 46,
       "id": "steve-kraynik",
       "ginzburgh": 2,
-      "powCount": 2
+      "powCount": 2,
+      "seasonGinzburghs": 0
     },
     {
       "source": "MIKE WARD",
@@ -6701,7 +6747,8 @@ window.LEAGUE_DATA = {
       "rank": 47,
       "id": "mike-ward",
       "ginzburgh": 1,
-      "powCount": 5
+      "powCount": 5,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JOHN LIGHTNER",
@@ -6802,7 +6849,8 @@ window.LEAGUE_DATA = {
       "rank": 48,
       "id": "john-lightner",
       "ginzburgh": 4,
-      "powCount": 6
+      "powCount": 6,
+      "seasonGinzburghs": 0
     },
     {
       "source": "VANCE THOMPSON",
@@ -6923,7 +6971,8 @@ window.LEAGUE_DATA = {
       "rank": 49,
       "id": "vance-thompson",
       "ginzburgh": 1,
-      "powCount": 3
+      "powCount": 3,
+      "seasonGinzburghs": 0
     },
     {
       "source": "DAVE DUKERT",
@@ -7024,7 +7073,8 @@ window.LEAGUE_DATA = {
       "rank": 50,
       "id": "dave-dukert",
       "ginzburgh": 8,
-      "powCount": 5
+      "powCount": 5,
+      "seasonGinzburghs": 0
     },
     {
       "source": "MARK TORONIEWSKI",
@@ -7135,7 +7185,8 @@ window.LEAGUE_DATA = {
       "rank": 51,
       "id": "mark-toroniewski",
       "ginzburgh": 1,
-      "powCount": 1
+      "powCount": 1,
+      "seasonGinzburghs": 0
     },
     {
       "source": "KEVIN MALEY",
@@ -7256,7 +7307,8 @@ window.LEAGUE_DATA = {
       "rank": 52,
       "id": "kevin-maley",
       "ginzburgh": null,
-      "powCount": 1
+      "powCount": 1,
+      "seasonGinzburghs": 0
     },
     {
       "source": "CHIP McC.",
@@ -7387,7 +7439,8 @@ window.LEAGUE_DATA = {
       "rank": 53,
       "id": "chip-mcclenaghan",
       "ginzburgh": 13,
-      "powCount": 6
+      "powCount": 6,
+      "seasonGinzburghs": 0
     },
     {
       "source": "MATT KRAYNIK",
@@ -7508,7 +7561,8 @@ window.LEAGUE_DATA = {
       "rank": 54,
       "id": "matt-kraynik",
       "ginzburgh": null,
-      "powCount": 4
+      "powCount": 4,
+      "seasonGinzburghs": 0
     },
     {
       "source": "BRIAN ANSTOCK",
@@ -7629,7 +7683,8 @@ window.LEAGUE_DATA = {
       "rank": 55,
       "id": "brian-anstock",
       "ginzburgh": 13,
-      "powCount": 8
+      "powCount": 8,
+      "seasonGinzburghs": 1
     },
     {
       "source": "COREY HOWER",
@@ -7700,7 +7755,8 @@ window.LEAGUE_DATA = {
       "rank": 56,
       "id": "corey-hower",
       "ginzburgh": null,
-      "powCount": 1
+      "powCount": 1,
+      "seasonGinzburghs": 0
     },
     {
       "source": "DAN SLOTTERBACK",
@@ -7751,7 +7807,8 @@ window.LEAGUE_DATA = {
       "rank": 57,
       "id": "dan-slotterback",
       "ginzburgh": 4,
-      "powCount": 4
+      "powCount": 4,
+      "seasonGinzburghs": 0
     },
     {
       "source": "DON FOCHT",
@@ -7882,7 +7939,8 @@ window.LEAGUE_DATA = {
       "rank": 58,
       "id": "don-focht",
       "ginzburgh": 3,
-      "powCount": 13
+      "powCount": 13,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JERRY THOMPSON",
@@ -7963,7 +8021,8 @@ window.LEAGUE_DATA = {
       "rank": 58,
       "id": "jerry-thompson",
       "ginzburgh": 5,
-      "powCount": 3
+      "powCount": 3,
+      "seasonGinzburghs": 0
     },
     {
       "source": "CHIP CROTHAMEL",
@@ -8044,7 +8103,8 @@ window.LEAGUE_DATA = {
       "rank": 60,
       "id": "chip-crothamel",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "TOM KILKENNY, JR.",
@@ -8115,7 +8175,8 @@ window.LEAGUE_DATA = {
       "rank": 61,
       "id": "tom-kilkenny-jr",
       "ginzburgh": null,
-      "powCount": 2
+      "powCount": 2,
+      "seasonGinzburghs": 0
     },
     {
       "source": "MIKE TOKARCZYK",
@@ -8186,7 +8247,8 @@ window.LEAGUE_DATA = {
       "rank": 62,
       "id": "mike-tokarczyk",
       "ginzburgh": null,
-      "powCount": 7
+      "powCount": 7,
+      "seasonGinzburghs": 0
     },
     {
       "source": "CHEYENNE DOUGHERTY",
@@ -8307,7 +8369,8 @@ window.LEAGUE_DATA = {
       "rank": 63,
       "id": "cheyenne-dougherty",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "STEVE GALLAGHER",
@@ -8358,7 +8421,8 @@ window.LEAGUE_DATA = {
       "rank": 64,
       "id": "steve-gallagher",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "SEAN BENNETT",
@@ -8479,7 +8543,8 @@ window.LEAGUE_DATA = {
       "rank": 65,
       "id": "sean-bennett",
       "ginzburgh": 3,
-      "powCount": 3
+      "powCount": 3,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JAY YOUNG",
@@ -8570,7 +8635,8 @@ window.LEAGUE_DATA = {
       "rank": 66,
       "id": "jay-young",
       "ginzburgh": 19,
-      "powCount": 13
+      "powCount": 13,
+      "seasonGinzburghs": 0
     },
     {
       "source": "TARA PARRISH",
@@ -8691,7 +8757,8 @@ window.LEAGUE_DATA = {
       "rank": 67,
       "id": "tara-parrish",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "MIKE RATKA",
@@ -8782,7 +8849,8 @@ window.LEAGUE_DATA = {
       "rank": 67,
       "id": "mike-ratka",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "NICK BENNETT",
@@ -8883,7 +8951,8 @@ window.LEAGUE_DATA = {
       "rank": 69,
       "id": "nick-bennett",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "LORI JAMES",
@@ -9004,7 +9073,8 @@ window.LEAGUE_DATA = {
       "rank": 70,
       "id": "lori-james",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "BOB HARKER",
@@ -9085,7 +9155,8 @@ window.LEAGUE_DATA = {
       "rank": 71,
       "id": "bob-harker",
       "ginzburgh": null,
-      "powCount": 2
+      "powCount": 2,
+      "seasonGinzburghs": 0
     },
     {
       "source": "DONNA BENNETT",
@@ -9206,7 +9277,8 @@ window.LEAGUE_DATA = {
       "rank": 72,
       "id": "donna-bennett",
       "ginzburgh": null,
-      "powCount": 4
+      "powCount": 4,
+      "seasonGinzburghs": 0
     },
     {
       "source": "TIFFANY FOX",
@@ -9287,7 +9359,8 @@ window.LEAGUE_DATA = {
       "rank": 73,
       "id": "tiffany-fox",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "CONNELL HENNESSEY",
@@ -9368,7 +9441,8 @@ window.LEAGUE_DATA = {
       "rank": 74,
       "id": "connell-hennessey",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "LYNN VALENTINE",
@@ -9429,7 +9503,8 @@ window.LEAGUE_DATA = {
       "rank": 75,
       "id": "lynn-valentine",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     },
     {
       "source": "JOHN KLEIS",
@@ -9530,7 +9605,8 @@ window.LEAGUE_DATA = {
       "rank": 76,
       "id": "john-kleis",
       "ginzburgh": null,
-      "powCount": null
+      "powCount": null,
+      "seasonGinzburghs": 0
     }
   ],
   "h2h": [
@@ -11678,827 +11754,992 @@ window.LEAGUE_DATA = {
       {
         "source": "John Speidel",
         "name": "John Speidel",
-        "count": 47
+        "count": 47,
+        "season": 0
       },
       {
         "source": "John Clauss",
         "name": "John Clauss",
-        "count": 43
+        "count": 43,
+        "season": 0
       },
       {
         "source": "Greg Young",
         "name": "Greg Young",
-        "count": 42
+        "count": 42,
+        "season": 0
       },
       {
         "source": "Harry Bratzler",
         "name": "Harry Bratzler",
-        "count": 31
+        "count": 31,
+        "season": 0
       },
       {
         "source": "Mike Haley",
         "name": "Mike Haley",
-        "count": 31
+        "count": 31,
+        "season": 0
       },
       {
         "source": "Steve Giandomenico",
         "name": "Steve Giandomenico",
-        "count": 27
+        "count": 27,
+        "season": 0
       },
       {
         "source": "Anthony Quallet",
         "name": "Anthony Quallet",
-        "count": 26
+        "count": 26,
+        "season": 0
       },
       {
         "source": "Tom Killkenny",
         "name": "Tom Kilkenny",
-        "count": 24
+        "count": 24,
+        "season": 1
       },
       {
         "source": "Jay Young",
         "name": "Jay Young",
-        "count": 19
+        "count": 19,
+        "season": 0
       },
       {
         "source": "Kevin Money",
         "name": "Kevin Money",
-        "count": 18
+        "count": 18,
+        "season": 0
       },
       {
         "source": "Dan White",
         "name": "Dan White",
-        "count": 17
+        "count": 17,
+        "season": 0
       },
       {
         "source": "John Urban",
         "name": "John Urban",
-        "count": 17
+        "count": 17,
+        "season": 0
       },
       {
         "source": "Chris Cifaldi",
         "name": "Chris Cifaldi",
-        "count": 14
+        "count": 14,
+        "season": 0
       },
       {
         "source": "Gary Hughes",
         "name": "Gary Hughes",
-        "count": 14
+        "count": 14,
+        "season": 0
       },
       {
         "source": "Joe Thomas",
         "name": "Joe Thomas",
-        "count": 14
+        "count": 14,
+        "season": 0
       },
       {
         "source": "Brian Anstock",
         "name": "Brian Anstock",
-        "count": 13
+        "count": 13,
+        "season": 1
       },
       {
         "source": "Chip McC",
         "name": "Chip McClenaghan",
-        "count": 13
+        "count": 13,
+        "season": 0
       },
       {
         "source": "Frank Gallagher",
         "name": "Frank Gallagher",
-        "count": 12
+        "count": 12,
+        "season": 0
       },
       {
         "source": "Mike Magee",
         "name": "Mike Magee",
-        "count": 12
+        "count": 12,
+        "season": 0
       },
       {
         "source": "Jake Yannessa",
         "name": "Jake Yannessa",
-        "count": 11
+        "count": 11,
+        "season": 2
       },
       {
         "source": "Eddie McCauley",
         "name": "Eddie McCauley",
-        "count": 10
+        "count": 10,
+        "season": 0
       },
       {
         "source": "Bill Hetrick",
         "name": "Bill Hetrick",
-        "count": 9
+        "count": 9,
+        "season": 0
       },
       {
         "source": "Brian Rockett",
         "name": "Brian Rockett",
-        "count": 9
+        "count": 9,
+        "season": 0
       },
       {
         "source": "Joey Clauss",
         "name": "Joey Clauss",
-        "count": 9
+        "count": 9,
+        "season": 0
       },
       {
         "source": "Mike Broderick",
         "name": "Mike Broderick",
-        "count": 9
+        "count": 9,
+        "season": 0
       },
       {
         "source": "Tommy Cabulis",
         "name": "Tommy Cabulis",
-        "count": 9
+        "count": 9,
+        "season": 0
       },
       {
         "source": "Damian Hector",
         "name": "Damian Hector",
-        "count": 8
+        "count": 8,
+        "season": 0
       },
       {
         "source": "Dave Dukert",
         "name": "Dave Dukert",
-        "count": 8
+        "count": 8,
+        "season": 0
       },
       {
         "source": "Dennis Gardner",
         "name": "Dennis Gardner",
-        "count": 8
+        "count": 8,
+        "season": 0
       },
       {
         "source": "Jarred Fox",
         "name": "Jarred Fox",
-        "count": 8
+        "count": 8,
+        "season": 0
       },
       {
         "source": "Kevin Fitzgerald",
         "name": "Kevin Fitzgerald",
-        "count": 8
+        "count": 8,
+        "season": 0
       },
       {
         "source": "Bruce Butler",
         "name": "Bruce Butler",
-        "count": 7
+        "count": 7,
+        "season": 0
       },
       {
         "source": "John Haley",
         "name": "John Haley",
-        "count": 7
+        "count": 7,
+        "season": 0
       },
       {
         "source": "Kenny Bloss",
         "name": "Kenny Bloss",
-        "count": 7
+        "count": 7,
+        "season": 0
       },
       {
         "source": "Rich Maley",
         "name": "Rich Maley",
-        "count": 7
+        "count": 7,
+        "season": 0
       },
       {
         "source": "Tom Kelly",
         "name": "Tom Kelly",
-        "count": 7
+        "count": 7,
+        "season": 0
       },
       {
         "source": "Brad Hewish",
         "name": "Brad Hewish",
-        "count": 6
+        "count": 6,
+        "season": 0
       },
       {
         "source": "Chris Tarlo",
         "name": "Chris Tarlo",
-        "count": 6
+        "count": 6,
+        "season": 0
       },
       {
         "source": "Dave Grasso",
         "name": "Dave Grasso",
-        "count": 6
+        "count": 6,
+        "season": 0
       },
       {
         "source": "James Kelly",
         "name": "James Kelly",
-        "count": 6
+        "count": 6,
+        "season": 0
       },
       {
         "source": "Mike Oertel",
         "name": "Mike Oertel",
-        "count": 6
+        "count": 6,
+        "season": 0
       },
       {
         "source": "Chris Young",
         "name": "Chris Young",
-        "count": 5
+        "count": 5,
+        "season": 0
       },
       {
         "source": "Danny Clauss",
         "name": "Danny Clauss",
-        "count": 5
+        "count": 5,
+        "season": 0
       },
       {
         "source": "Frank Yannessa",
         "name": "Frank Yannessa",
-        "count": 5
+        "count": 5,
+        "season": 0
       },
       {
         "source": "George Kraynik",
         "name": "George Kraynik",
-        "count": 5
+        "count": 5,
+        "season": 1
       },
       {
         "source": "Jerry Thompson",
         "name": "Jerry Thompson",
-        "count": 5
+        "count": 5,
+        "season": 0
       },
       {
         "source": "John Wagner",
         "name": "John Wagner",
-        "count": 5
+        "count": 5,
+        "season": 0
       },
       {
         "source": "Kevin Mellon",
         "name": "Kevin Mellon",
-        "count": 5
+        "count": 5,
+        "season": 0
       },
       {
         "source": "Matt Poole",
         "name": "Matt Poole",
-        "count": 5
+        "count": 5,
+        "season": 0
       },
       {
         "source": "Bernie Kephart",
         "name": "Bernie Kephart",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Bill Gregorio",
         "name": "Bill Gregorio",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Dan Slotterback",
         "name": "Dan Slotterback",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Dave Luxton",
         "name": "Dave Luxton",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Don Dougherty",
         "name": "Don Dougherty",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Jack Howarth",
         "name": "Jack Howarth",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Jim Kilkenny",
         "name": "Jim Kilkenny",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "John Lightner",
         "name": "John Lightner",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Ken March",
         "name": "Ken March",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Tom Freeman",
         "name": "Tom Freeman",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Tommy Martin",
         "name": "Tommy Martin",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Vinny Lapa",
         "name": "Vinny Lapa",
-        "count": 4
+        "count": 4,
+        "season": 0
       },
       {
         "source": "Bill Shreiner",
         "name": "Bill Shreiner",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Billy D'Amore",
         "name": "Billy D'Amore",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Chris Halligan",
         "name": "Chris Halligan",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Chris Kelly",
         "name": "Chris Kelly",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Chris Paquette",
         "name": "Chris Paquette",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Chuck Keller",
         "name": "Chuck Keller",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Dan Flynn",
         "name": "Dan Flynn",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Don Focht",
         "name": "Don Focht",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Jerry Purcell",
         "name": "Jerry Purcell",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "John Rafa",
         "name": "John Rafa",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Matt Yannessa",
         "name": "Matt Yannessa",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Mike Conley",
         "name": "Mike Conley",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Paddy McNicholl",
         "name": "Paddy McNicholl",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Pat Forrester",
         "name": "Pat Forrester",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Paul Yannessa",
         "name": "Paul Yannessa",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Sean Bennett",
         "name": "Sean Bennett",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Tim Teeter",
         "name": "Tim Teeter",
-        "count": 3
+        "count": 3,
+        "season": 0
       },
       {
         "source": "Todd Vitelli",
         "name": "Todd Vitelli",
-        "count": 3
+        "count": 3,
+        "season": 1
       },
       {
         "source": "Bob Hower",
         "name": "Bob Hower",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Brian Dawson",
         "name": "Brian Dawson",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Chuck Stehli",
         "name": "Chuck Stehli",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Danny Cullen",
         "name": "Danny Cullen",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Dave Kelley",
         "name": "Dave Kelley",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Dave O'Neill",
         "name": "Dave O'Neill",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Ian Jenkins",
         "name": "Ian Jenkins",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Jay Fox",
         "name": "Jay Fox",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Jim Cashley",
         "name": "Jim Cashley",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Jim Knapp",
         "name": "Jim Knapp",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "John Lillo",
         "name": "John Lillo",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Jon Martin",
         "name": "Jon Martin",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Larry Evans",
         "name": "Larry Evans",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Mary Orme",
         "name": "Mary Orme",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Matt Kileen",
         "name": "Matt Kileen",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Mike Bruton",
         "name": "Mike Bruton",
-        "count": 2
+        "count": 2,
+        "season": 1
       },
       {
         "source": "Mike Wiley",
         "name": "Mike Wiley",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Nick Evans",
         "name": "Nick Evans",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Patrick Ryan",
         "name": "Patrick Ryan",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Paul Pizzillo",
         "name": "Paul Pizzillo",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Rich Conroy",
         "name": "Rich Conroy",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Ron Grasso",
         "name": "Ron Grasso",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Ryan Clauss",
         "name": "Ryan Clauss",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Ryan Handel",
         "name": "Ryan Handel",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Scott Quinn",
         "name": "Scott Quinn",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Sean O'Brien",
         "name": "Sean O'Brien",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Steve Kraynik",
         "name": "Steve Kraynik",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Tim Bentley",
         "name": "Tim Bentley",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Tommy Regan",
         "name": "Tommy Regan",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Trevor Martin",
         "name": "Trevor Martin",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Will Ferrino",
         "name": "Will Ferrino",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Will Haasz",
         "name": "Will Haasz",
-        "count": 2
+        "count": 2,
+        "season": 0
       },
       {
         "source": "Adam Schneck",
         "name": "Adam Schneck",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Bill Clauss",
         "name": "Bill Clauss",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Bob Schumacher",
         "name": "Bob Schumacher",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Bobby Harris",
         "name": "Bobby Harris",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Brett Martin",
         "name": "Brett Martin",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Brian Cullen",
         "name": "Brian Cullen",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Chip Diehl",
         "name": "Chip Diehl",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Chris Horst",
         "name": "Chris Horst",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Courtney James",
         "name": "Courtney James",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Don McErlane",
         "name": "Don McErlane",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Donna Carabba",
         "name": "Donna Carabba",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Ed McCauley, Jr.",
         "name": "Ed McCauley Jr.",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Eric Lacovara",
         "name": "Eric Lacovara",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Fred Bucci",
         "name": "Fred Bucci",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Glen Davis",
         "name": "Glen Davis",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "James Mitchell",
         "name": "James Mitchell",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Jay Silver",
         "name": "Jay Silver",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Jim Bohr",
         "name": "Jim Bohr",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Jim Serrill",
         "name": "Jim Serrill",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Jim Smith",
         "name": "Jim Smith",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "JJ Merrill",
         "name": "Jj Merrill",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "John Kiley III",
         "name": "John Kiley III",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "John McNamara",
         "name": "John McNamara",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "JP Ungerean",
         "name": "JP Ungerean",
-        "count": 1
+        "count": 1,
+        "season": 1
       },
       {
         "source": "Justin Bauman",
         "name": "Justin Bauman",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Justin Baxter",
         "name": "Justin Baxter",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Justin Galante",
         "name": "Justin Galante",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Kevin Doyle",
         "name": "Kevin Doyle",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Kevin Zayas",
         "name": "Kevin Zayas",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Len Galante",
         "name": "Len Galante",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Mark Toroniewski",
         "name": "Mark Toroniewski",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Mark Wehrman",
         "name": "Mark Wehrman",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Mike Schofield",
         "name": "Mike Schofield",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Mike Slusarski",
         "name": "Mike Slusarski",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Mike Ward",
         "name": "Mike Ward",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Nick Boccella",
         "name": "Nick Boccella",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Nick Rhodes",
         "name": "Nick Rhodes",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Pat Crowley",
         "name": "Pat Crowley",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Paul McBride",
         "name": "Paul McBride",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Pete Howarth",
         "name": "Pete Howarth",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Rob Jorett",
         "name": "Rob Jorett",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Scott Reed",
         "name": "Scott Reed",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Sean Giossio",
         "name": "Sean Giossio",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Sean Hunsicker",
         "name": "Sean Hunsicker",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Shane Kraynik",
         "name": "Shane Kraynik",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Shay Lynskey",
         "name": "Shay Lynskey",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Skip Hartung",
         "name": "Skip Hartung",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Steve McKenna",
         "name": "Steve McKenna",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Ted Hellmann",
         "name": "Ted Hellmann",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Timmy Clauss",
         "name": "Timmy Clauss",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Tom McLaughlin",
         "name": "Tom McLaughlin",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Uncle Joe",
         "name": "Uncle Joe",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Vance Thompson",
         "name": "Vance Thompson",
-        "count": 1
+        "count": 1,
+        "season": 0
       },
       {
         "source": "Vince Ciletti",
         "name": "Vince Ciletti",
-        "count": 1
+        "count": 1,
+        "season": 0
       }
     ],
     "pow": [

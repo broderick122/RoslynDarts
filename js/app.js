@@ -2,7 +2,7 @@
   'use strict';
 
   var names = window.RoslynNames;
-  var config = window.SITE_CONFIG || { version: '1.1.0' };
+  var config = window.SITE_CONFIG || { version: '1.2.0' };
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
   function esc(value) {
@@ -401,6 +401,14 @@
     html += leaderList('Most 30+ games', byThirty.map(function (p) {
       return '<li><a href="' + playerHref(p.id) + '">' + esc(p.name) + '</a> ' + p.thirtyCount + '</li>';
     }));
+    var byGinz = data.players.filter(function (p) { return p.ginzburgh != null; })
+      .sort(function (a, b) { return b.ginzburgh - a.ginzburgh || a.name.localeCompare(b.name); }).slice(0, 5);
+    if (byGinz.length) {
+      html += leaderList('Ginzburghs (9-dart hits)', byGinz.map(function (p) {
+        var season = p.seasonGinzburghs ? ' · ' + p.seasonGinzburghs + ' this season' : '';
+        return '<li><a href="' + playerHref(p.id) + '">' + esc(p.name) + '</a> ' + p.ginzburgh + ' lifetime' + season + '</li>';
+      }));
+    }
     html += '</div>';
     html += '<div class="tools"><label>Team<select id="team-filter"><option value="">All teams</option>' + data.teams.map(function (t) {
       return '<option value="' + esc(t.name) + '">' + esc(t.name) + '</option>';
@@ -564,8 +572,11 @@
       });
     }
     html += '<p class="note">Player of the Week is the shooter whose three-game total beats three times their average by the most. That is the POW column in the workbook.</p>';
+    html += '<div class="panel"><h2>Ginzburghs (9-dart hits)</h2>';
+    html += '<p>A Ginzburgh is a nine-dart hit: nine marks in one round. Lifetime counts are on the all-time sheet. A season count is shown only when the news log records one.</p>';
+    html += '<p><a href="ginzburghs.html">All Ginzburgh counts</a></p></div>';
     if (data.pow.log.length) {
-      html += '<h2 class="section">Ginzburghs this season</h2>';
+      html += '<h2 class="section">Ginzburghs logged this season</h2>';
       data.pow.log.forEach(function (line) { html += '<p>' + esc(line) + '</p>'; });
     }
     var all = data.pow.allTime || {};
@@ -573,7 +584,7 @@
       html += '<h2 class="section">All-time league totals</h2><p class="meta-line">';
       html += fmtInt(all.thirtyPlus) + ' games of 30 or more · ' + fmtInt(all.games) + ' games · average ' + fmtAvg(all.average) + ' · ' + fmtInt(all.points) + ' points</p>';
     }
-    var ginz = honorList('All-time Ginzburghs', data.honors.ginzburgh, 25);
+    var ginz = honorList('Lifetime Ginzburghs (9-dart hits)', data.honors.ginzburgh, 25);
     var pows = honorList('All-time Player of the Week', data.honors.pow, 25);
     html += ginz.html + pows.html;
     return { html: html, lists: [ginz, pows] };
@@ -599,7 +610,8 @@
 
   function renderRules(data) {
     var html = '<p class="kicker">House rules</p><h1>Rules</h1>';
-    html += '<div class="panel"><p>Each match is worth 4 points: one point for each of the three games, plus one point for the higher team total. The top 8 teams make the playoffs.</p></div>';
+    html += '<div class="panel"><p>Each match is worth 4 points: one point for each of the three games, plus one point for the higher team total. The top 8 teams make the playoffs.</p>';
+    html += '<p>A Ginzburgh is a nine-dart hit, nine marks in one round. The league counts them under that name. The workbook does not list other per-inning marks or darts thrown.</p></div>';
     html += '<div class="prose">';
     data.rules.forEach(function (line) { html += '<p>' + esc(line) + '</p>'; });
     html += '</div>';
@@ -638,6 +650,9 @@
       if (player.highSeriesDate) bits.push(prettySheetDate(player.highSeriesDate));
       if (bits.length) html += '<p class="meta-line">High series ' + bits.map(esc).join(' · ') + '</p>';
     }
+    if (player.seasonGinzburghs) {
+      html += '<p class="meta-line">Ginzburghs (9-dart hits) logged this season: ' + player.seasonGinzburghs + '</p>';
+    }
     html += '<h2 class="section">30+ games · ' + (player.thirtyCount || 0) + '</h2>';
     if (player.thirty && player.thirty.length) {
       html += player.thirty.map(function (row) {
@@ -658,13 +673,13 @@
       else if (week.total != null) html += '<p class="meta-line">Points ' + week.total + '</p>';
       html += '</article>';
     });
-    html += '<h2 class="section">All-time in this workbook</h2>';
-    if (player.ginzburgh == null && player.powCount == null) {
-      html += '<p class="meta-line">No all-time Ginzburgh or Player of the Week count is listed for this name.</p>';
-    } else {
-      if (player.ginzburgh != null) html += '<p>Ginzburghs: ' + player.ginzburgh + '</p>';
-      if (player.powCount != null) html += '<p>Player of the Week awards: ' + player.powCount + '</p>';
-    }
+    html += '<h2 class="section">Lifetime</h2>';
+    html += '<p class="meta-line">All-time figures from the workbook. A blank stat is not listed for this shooter.</p>';
+    var lifetime = [];
+    if (player.ginzburgh != null) lifetime.push('<div class="stat"><span>Ginzburghs (9-dart hits)</span><strong>' + player.ginzburgh + '</strong></div>');
+    if (player.powCount != null) lifetime.push('<div class="stat"><span>Player of the Week awards</span><strong>' + player.powCount + '</strong></div>');
+    if (lifetime.length) html += '<div class="stat-grid">' + lifetime.join('') + '</div>';
+    else html += '<p class="meta-line">No lifetime counts are listed for this name.</p>';
     var key = names.normKey(player.name);
     var mentions = (data.pow.log || []).filter(function (line) {
       return names.normKey(line).indexOf(key) !== -1;
@@ -677,7 +692,7 @@
     if (thisWeek) {
       html += '<p class="meta-line">Latest Player of the Week board: ' + fmtAvg(thisWeek.over) + ' over average' + (data.pow.rows[0] && data.pow.rows[0].name === player.name ? ' · winner' : '') + '.</p>';
     }
-    html += '<p class="note">Scores, series, and 30+ games come from the workbook. It does not track nine-marks or other per-inning marks, so those are not shown.</p>';
+    html += '<p class="note">Season games, points, and average are this summer only. A Ginzburgh is a nine-dart hit. The workbook does not list other per-inning marks or darts thrown.</p>';
     return html;
   }
 
@@ -824,6 +839,27 @@
     html += '<section class="cmp-row"><h2>30+ games</h2><div class="cmp-pair"><div>' + thirtyBlock(a) + '</div><div>' + thirtyBlock(b) + '</div></div>';
     html += '<p class="meta-line">Counts are the 30+ games listed for each shooter, including multiples such as ×2.</p></section>';
 
+    function ginzBlock(team) {
+      var squad = rosterPlayers(data, team);
+      var listed = squad.filter(function (p) { return p.ginzburgh != null; });
+      var total = listed.reduce(function (sum, p) { return sum + p.ginzburgh; }, 0);
+      var season = squad.reduce(function (sum, p) { return sum + (p.seasonGinzburghs || 0); }, 0);
+      var leader = null;
+      listed.forEach(function (p) {
+        if (!leader || p.ginzburgh > leader.ginzburgh || (p.ginzburgh === leader.ginzburgh && p.name < leader.name)) leader = p;
+      });
+      if (!listed.length && !season) {
+        return '<span class="cmp-team">' + esc(team.name) + '</span><strong>—</strong><p class="meta-line">No Ginzburgh count is listed for this roster.</p>';
+      }
+      var line = '<span class="cmp-team">' + esc(team.name) + '</span><strong>' + (listed.length ? total : '—') + '</strong>';
+      line += '<p class="meta-line">Roster total</p>';
+      if (leader) line += '<p class="meta-line">Most: <a href="' + playerHref(leader.id) + '">' + esc(leader.name) + '</a> ' + leader.ginzburgh + '</p>';
+      line += '<p class="meta-line">' + (season ? season + ' logged this season' : 'None logged this season') + '</p>';
+      return line;
+    }
+    html += '<section class="cmp-row"><h2>Ginzburghs (9-dart hits)</h2><div class="cmp-pair"><div>' + ginzBlock(a) + '</div><div>' + ginzBlock(b) + '</div></div>';
+    html += '<p class="meta-line">Lifetime totals add the all-time counts of shooters on this roster. They are not a separate team lifetime. Season numbers count only the news log.</p></section>';
+
     var played = meetings(data, a, b);
     html += '<section class="cmp-row"><h2>Week by week</h2>';
     if (!played.length) {
@@ -896,6 +932,45 @@
     draw(true);
   }
 
+  function renderGinzburghs(data) {
+    var html = '<p class="kicker">Nine-dart hits</p><h1>Ginzburghs</h1>';
+    html += '<p class="lede">A Ginzburgh is a nine-dart hit: nine marks in one round. The list is every shooter on the all-time sheet, highest count first. The same count is sorted by name.</p>';
+    html += '<label class="ginz-find">Find a shooter<input id="ginz-filter" class="text-input" type="search" placeholder="Type a name" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="search"></label>';
+    html += '<p id="ginz-count" class="meta-line"></p>';
+    html += '<div id="ginz-list"></div>';
+    return html;
+  }
+
+  function bindGinzburghs(data) {
+    var input = document.getElementById('ginz-filter');
+    var list = document.getElementById('ginz-list');
+    var count = document.getElementById('ginz-count');
+    if (!input || !list) return;
+    var rows = (data.honors.ginzburgh || []).slice().sort(function (a, b) {
+      return b.count - a.count || a.name.localeCompare(b.name);
+    });
+    function draw() {
+      var q = input.value.trim().toLowerCase();
+      var shown = rows.filter(function (row) {
+        return !q || row.name.toLowerCase().indexOf(q) !== -1;
+      });
+      if (count) count.textContent = shown.length + (shown.length === 1 ? ' shooter' : ' shooters');
+      if (!shown.length) {
+        list.innerHTML = '<p class="banner warn">No shooter matches that.</p>';
+        return;
+      }
+      list.innerHTML = shown.map(function (row) {
+        var player = data.players.find(function (item) { return item.name === row.name; });
+        var season = row.season ? '<p class="meta-line">' + row.season + ' logged this season</p>' : '';
+        var body = '<div class="shooter-top"><h2>' + esc(row.name) + '</h2><span class="avg">' + row.count + '</span></div><p class="meta-line">Lifetime Ginzburghs (9-dart hits)</p>' + season;
+        if (player) return '<a class="shooter" href="' + playerHref(player.id) + '">' + body + '</a>';
+        return '<article class="shooter">' + body + '<p class="meta-line">Not on this season\'s roster</p></article>';
+      }).join('');
+    }
+    input.addEventListener('input', draw);
+    draw();
+  }
+
   var pages = {
     home: function (data) { return renderHome(data); },
     standings: function (data) { return renderStandings(data); },
@@ -906,7 +981,8 @@
     awards: function (data) { return renderAwards(data); },
     rules: function (data) { return renderRules(data); },
     player: function (data) { return renderPlayer(data); },
-    compare: function (data) { return renderCompare(data); }
+    compare: function (data) { return renderCompare(data); },
+    ginzburghs: function (data) { return renderGinzburghs(data); }
   };
 
   async function boot() {
@@ -928,6 +1004,7 @@
       if (page === 'standings') bindStandings(data);
       if (page === 'players') bindPlayers(data);
       if (page === 'compare') bindCompare(data);
+      if (page === 'ginzburghs') bindGinzburghs(data);
     } catch (err) {
       showError('The scores could not be loaded. If you just opened the file from a folder, the data scripts need to sit next to this page.');
     }
