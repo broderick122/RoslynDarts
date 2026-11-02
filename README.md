@@ -79,6 +79,6 @@ Each match is 4 points: three games plus the team total. The top 8 teams make th
 
 ## Version
 
-The footer shows the site version from `js/config.js` (currently 1.3.0). Styles and scripts are loaded with `?v=1.3.0` so a changed design is not stuck in a phone cache. League data is fetched with a fresh query on each visit, so a published workbook update shows up without bumping that version.
+The header has a Dark / Light button. With no saved choice, the site follows the phone's system setting. The choice is stored only in that browser. The footer shows the site version from `js/config.js` (currently 1.4.0). Styles and scripts are loaded with `?v=1.4.0` so a changed design is not stuck in a phone cache. League data is fetched with a fresh query on each visit, so a published workbook update shows up without bumping that version.
 
 SheetJS (`vendor/xlsx.full.min.js`, Apache-2.0) reads the workbook on the Update page only.

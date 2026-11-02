@@ -2,7 +2,56 @@
   'use strict';
 
   var names = window.RoslynNames;
-  var config = window.SITE_CONFIG || { version: '1.3.0' };
+  var config = window.SITE_CONFIG || { version: '1.4.0' };
+  var THEME_KEY = 'roslynDarts.theme';
+
+  function systemTheme() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function currentTheme() {
+    var set = document.documentElement.getAttribute('data-theme');
+    return set === 'dark' || set === 'light' ? set : systemTheme();
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#10241c' : '#1c4a38');
+    var next = theme === 'dark' ? 'light' : 'dark';
+    document.querySelectorAll('.theme-toggle').forEach(function (btn) {
+      btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      btn.setAttribute('aria-label', next === 'dark' ? 'Switch to dark mode' : 'Switch to light mode');
+      var label = btn.querySelector('.theme-label');
+      if (label) label.textContent = next === 'dark' ? 'Dark' : 'Light';
+    });
+  }
+
+  function wireTheme() {
+    applyTheme(currentTheme());
+    document.querySelectorAll('.theme-toggle').forEach(function (btn) {
+      if (btn.dataset.ready) return;
+      btn.dataset.ready = '1';
+      btn.addEventListener('click', function () {
+        var next = currentTheme() === 'dark' ? 'light' : 'dark';
+        try { localStorage.setItem(THEME_KEY, next); } catch (err) { /* private mode */ }
+        applyTheme(next);
+      });
+    });
+    if (window.matchMedia) {
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+      var onChange = function () {
+        var saved = '';
+        try { saved = localStorage.getItem(THEME_KEY) || ''; } catch (err) { saved = 'keep'; }
+        if (saved === 'light' || saved === 'dark') return;
+        applyTheme(systemTheme());
+      };
+      if (mq.addEventListener) mq.addEventListener('change', onChange);
+      else if (mq.addListener) mq.addListener(onChange);
+    }
+  }
+
+  wireTheme();
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
   function esc(value) {
@@ -132,6 +181,9 @@
     data.honors.pow.forEach(function (row) { row.name = playerName(row.source, row.name, aliases); });
     data.playerById = {};
     data.players.forEach(function (p) { data.playerById[p.id] = p; });
+    data.directory = buildDirectory(data);
+    data.directoryById = {};
+    data.directory.forEach(function (p) { data.directoryById[p.id] = p; });
     data.teamBySlug = {};
     data.teamByName = {};
     data.teams.forEach(function (t) {
@@ -139,6 +191,53 @@
       data.teamByName[t.name] = t;
     });
     return data;
+  }
+
+  function buildDirectory(data) {
+    var map = {};
+    function slot(name) {
+      if (!name) return null;
+      if (!map[name]) {
+        map[name] = {
+          name: name,
+          id: names.slugify(name),
+          team: '',
+          average: null,
+          ginzburgh: null,
+          powCount: null,
+          seasonGinzburghs: 0,
+          lifetimeOnly: true
+        };
+      }
+      return map[name];
+    }
+    (data.honors.ginzburgh || []).forEach(function (row) {
+      var person = slot(row.name);
+      person.ginzburgh = row.count;
+      person.seasonGinzburghs = row.season || 0;
+    });
+    (data.honors.pow || []).forEach(function (row) {
+      var person = slot(row.name);
+      if (person.powCount == null || row.count > person.powCount) person.powCount = row.count;
+    });
+    var taken = {};
+    data.players.forEach(function (p) {
+      var person = slot(p.name);
+      person.id = p.id;
+      person.team = p.team;
+      person.average = p.average;
+      if (p.ginzburgh != null) person.ginzburgh = p.ginzburgh;
+      if (p.powCount != null) person.powCount = p.powCount;
+      person.seasonGinzburghs = p.seasonGinzburghs || person.seasonGinzburghs || 0;
+      person.lifetimeOnly = false;
+      taken[p.id] = true;
+    });
+    Object.keys(map).forEach(function (name) {
+      var person = map[name];
+      if (person.lifetimeOnly && taken[person.id]) person.id = names.slugify(name + ' lifetime');
+      taken[person.id] = true;
+    });
+    return Object.keys(map).map(function (name) { return map[name]; });
   }
 
   function playerHref(id) { return 'player.html?p=' + encodeURIComponent(id); }
@@ -170,7 +269,7 @@
       if (n.indexOf(q) === 0) score = 0;
       else if (n.split(/\s+/).some(function (word) { return word.indexOf(q) === 0; })) score = 1;
       else if (n.indexOf(q) !== -1) score = 2;
-      else if (p.team.toLowerCase().indexOf(q) !== -1) score = 3;
+      else if (p.team && p.team.toLowerCase().indexOf(q) !== -1) score = 3;
       return { p: p, score: score };
     }).filter(function (row) { return row.score < 9; }).sort(function (a, b) {
       return a.score - b.score || (b.p.average || 0) - (a.p.average || 0) || a.p.name.localeCompare(b.p.name);
@@ -189,7 +288,7 @@
 
     function render() {
       var q = input.value.trim();
-      hits = q ? rankPlayers(players, q).slice(0, 8) : [];
+      hits = q ? rankPlayers(players, q).slice(0, 12) : [];
       active = Math.min(active, hits.length - 1);
       list.innerHTML = '';
       if (!q) { list.hidden = true; return; }
@@ -203,7 +302,10 @@
         link.href = playerHref(p.id);
         link.className = 'hit' + (i === active ? ' is-active' : '');
         link.setAttribute('role', 'option');
-        link.innerHTML = '<span>' + highlight(p.name, q) + '</span><span class="hit-team">' + esc(p.team) + ' · ' + fmtAvg(p.average) + '</span>';
+        var detail = p.lifetimeOnly
+          ? 'Lifetime' + (p.ginzburgh != null ? ' · ' + p.ginzburgh + ' Ginzburghs' : (p.powCount != null ? ' · ' + p.powCount + ' POW' : ''))
+          : esc(p.team) + ' · ' + fmtAvg(p.average);
+        link.innerHTML = '<span>' + highlight(p.name, q) + '</span><span class="hit-team">' + detail + '</span>';
         list.appendChild(link);
       });
     }
@@ -245,7 +347,7 @@
     document.querySelectorAll('[data-updated]').forEach(function (el) {
       el.textContent = 'Updated ' + fmtUpdated(data.meta.updated);
     });
-    document.querySelectorAll('.finder').forEach(function (form) { mountSearch(form, data.players); });
+    document.querySelectorAll('.finder').forEach(function (form) { mountSearch(form, data.directory || data.players); });
   }
 
   function showError(message) {
@@ -677,10 +779,24 @@
     return '<h2 class="section">30+ games</h2><p class="meta-line">No 30+ game is listed for this shooter.</p>';
   }
 
+  function renderLifetimeOnly(person) {
+    var html = '<p class="kicker">Lifetime</p><h1>' + esc(person.name) + '</h1>';
+    html += '<p class="lede">Not on this season\'s roster. Only the all-time counts stored for this name are shown.</p>';
+    var bits = [];
+    if (person.ginzburgh != null) bits.push('<div class="stat"><span>Ginzburghs (9-dart hits)</span><strong>' + person.ginzburgh + '</strong></div>');
+    if (person.powCount != null) bits.push('<div class="stat"><span>Player of the Week awards</span><strong>' + person.powCount + '</strong></div>');
+    if (bits.length) html += '<div class="stat-grid section">' + bits.join('') + '</div>';
+    else html += '<p class="meta-line">No lifetime counts are listed for this name.</p>';
+    html += '<p><a href="ginzburghs.html">All Ginzburghs</a></p>';
+    return html;
+  }
+
   function renderPlayer(data) {
     var params = new URLSearchParams(location.search);
     var player = data.playerById[params.get('p') || ''];
     if (!player) {
+      var person = data.directoryById && data.directoryById[params.get('p') || ''];
+      if (person && person.lifetimeOnly) return renderLifetimeOnly(person);
       return '<h1>Find a shooter</h1><p>Use the search box and pick a name. That opens everything the workbook has for them.</p>';
     }
     var team = data.teamByName[player.team];
@@ -1003,11 +1119,12 @@
         return;
       }
       list.innerHTML = shown.map(function (row) {
-        var player = data.players.find(function (item) { return item.name === row.name; });
         var season = row.season ? '<p class="meta-line">' + row.season + ' logged this season</p>' : '';
         var body = '<div class="shooter-top"><h2>' + esc(row.name) + '</h2><span class="avg">' + row.count + '</span></div><p class="meta-line">Lifetime Ginzburghs (9-dart hits)</p>' + season;
-        if (player) return '<a class="shooter" href="' + playerHref(player.id) + '">' + body + '</a>';
-        return '<article class="shooter">' + body + '<p class="meta-line">Not on this season\'s roster</p></article>';
+        var person = (data.directory || []).find(function (item) { return item.name === row.name; });
+        var href = playerHref(person ? person.id : (player ? player.id : names.slugify(row.name)));
+        var note = person && person.lifetimeOnly ? '<p class="meta-line">Not on this season\'s roster</p>' : '';
+        return '<a class="shooter" href="' + href + '">' + body + note + '</a>';
       }).join('');
     }
     input.addEventListener('input', draw);
