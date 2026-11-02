@@ -2,7 +2,56 @@
   'use strict';
 
   var names = window.RoslynNames;
-  var config = window.SITE_CONFIG || { version: '1.2.0' };
+  var config = window.SITE_CONFIG || { version: '1.3.0' };
+  var THEME_KEY = 'roslynDarts.theme';
+
+  function systemTheme() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function currentTheme() {
+    var set = document.documentElement.getAttribute('data-theme');
+    return set === 'dark' || set === 'light' ? set : systemTheme();
+  }
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    var meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', theme === 'dark' ? '#10241c' : '#1c4a38');
+    var next = theme === 'dark' ? 'light' : 'dark';
+    document.querySelectorAll('.theme-toggle').forEach(function (btn) {
+      btn.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+      btn.setAttribute('aria-label', next === 'dark' ? 'Switch to dark mode' : 'Switch to light mode');
+      var label = btn.querySelector('.theme-label');
+      if (label) label.textContent = next === 'dark' ? 'Dark' : 'Light';
+    });
+  }
+
+  function wireTheme() {
+    applyTheme(currentTheme());
+    document.querySelectorAll('.theme-toggle').forEach(function (btn) {
+      if (btn.dataset.ready) return;
+      btn.dataset.ready = '1';
+      btn.addEventListener('click', function () {
+        var next = currentTheme() === 'dark' ? 'light' : 'dark';
+        try { localStorage.setItem(THEME_KEY, next); } catch (err) { /* private mode */ }
+        applyTheme(next);
+      });
+    });
+    if (window.matchMedia) {
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+      var onChange = function () {
+        var saved = '';
+        try { saved = localStorage.getItem(THEME_KEY) || ''; } catch (err) { saved = 'keep'; }
+        if (saved === 'light' || saved === 'dark') return;
+        applyTheme(systemTheme());
+      };
+      if (mq.addEventListener) mq.addEventListener('change', onChange);
+      else if (mq.addListener) mq.addListener(onChange);
+    }
+  }
+
+  wireTheme();
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
   function esc(value) {
