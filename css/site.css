@@ -389,6 +389,11 @@ button.ghost, a.ghost {
 
 :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
 
+.ginz-find {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.8rem 0 0.4rem;
+}
 .cmp-row { margin: 1rem 0; }
 .cmp-row h2 { font-size: 1.15rem; }
 .cmp-pair {

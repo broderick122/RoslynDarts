@@ -1288,9 +1288,21 @@
     honors.ginzburgh.forEach(function (row) { ginzByName.set(row.name, row.count); });
     var powByName = new Map();
     honors.pow.forEach(function (row) { powByName.set(row.name, row.count); });
+    var seasonGinz = {};
+    (pow.log || []).forEach(function (line) {
+      var mentioned = String(line).match(/:\s*(.+?)\s*\(/);
+      if (!mentioned) return;
+      var who = Names.canonicalPlayer(mentioned[1], aliases);
+      if (!who) return;
+      seasonGinz[who] = (seasonGinz[who] || 0) + 1;
+    });
+    honors.ginzburgh.forEach(function (row) {
+      row.season = seasonGinz[row.name] || 0;
+    });
     players.forEach(function (p) {
       p.ginzburgh = ginzByName.has(p.name) ? ginzByName.get(p.name) : null;
       p.powCount = powByName.has(p.name) ? powByName.get(p.name) : null;
+      p.seasonGinzburghs = seasonGinz[p.name] || 0;
     });
 
     if (ctx.skippedPlaceholders) {
